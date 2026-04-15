@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search | Legalize PK</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&family=Source+Serif+4:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="/ui/styles/main.css" />
+    <script defer src="https://unpkg.com/lucide@latest"></script>
+    <script type="module" src="/ui/scripts/pages/search.js"></script>
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="site-header">
+        <div class="site-header__inner">
+          <a class="brand" href="/"><span class="brand__mark">LP</span><span>Legalize PK</span></a>
+          <nav class="site-nav" aria-label="Primary">
+            <a href="/" data-nav-key="home">Home</a>
+            <a href="/constitution" data-nav-key="constitution">Current Constitution</a>
+            <a href="/explore" data-nav-key="explore">Explore</a>
+            <a href="/timeline" data-nav-key="timeline">Timeline</a>
+            <a href="/search" data-nav-key="search">Search</a>
+          </nav>
+        </div>
+      </header>
+
+      <main class="page">
+        <section class="page-intro">
+          <p class="page-kicker">Global Search</p>
+          <h1 class="page-title">Search Articles and Amendments</h1>
+          <p class="page-subtitle">Instant client-side search powered by local JSON only.</p>
+        </section>
+
+        <section class="search-toolbar">
+          <input id="global-search" type="search" placeholder="Try: 63-A, 18th amendment, judiciary" />
+        </section>
+
+        <section class="search-presets" data-search-presets aria-label="Suggested search terms">
+          <p class="search-presets__label">Try one:</p>
+          <button class="button button--ghost search-presets__item" type="button" data-query-preset="63-A" aria-pressed="false">Article 63-A</button>
+          <button class="button button--ghost search-presets__item" type="button" data-query-preset="18th amendment" aria-pressed="false">18th Amendment</button>
+          <button class="button button--ghost search-presets__item" type="button" data-query-preset="federal constitutional court" aria-pressed="false">Federal Constitutional Court</button>
+          <button class="button button--ghost search-presets__item" type="button" data-query-preset="fundamental rights" aria-pressed="false">Fundamental Rights</button>
+          <button class="button button--ghost search-presets__item" type="button" data-query-preset="environment" aria-pressed="false">Environment</button>
+        </section>
+
+        <section data-search-results></section>
+        <div class="error-slot" data-search-error></div>
+      </main>
+    </div>
+  </body>
+</html>

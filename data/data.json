@@ -1,0 +1,3491 @@
+{
+  "commits": [
+    {
+      "hash": "1eab093823230a641e5d6ae8e19197aadffa3269",
+      "commitNumber": 1,
+      "message": "Original Constitution 1973-08-14 Zulfikar Ali Bhutto",
+      "author": "Zulfikar Ali Bhutto",
+      "date": "1973-08-14T12:00:00Z",
+      "filesChanged": [
+        ".gitignore",
+        "README.md",
+        "federal-ammendment-summaries/07-1973-original-constitution.md",
+        "federal-constitution/article-001.md",
+        "federal-constitution/article-002.md",
+        "federal-constitution/article-003.md",
+        "federal-constitution/article-004.md",
+        "federal-constitution/article-005.md",
+        "federal-constitution/article-006.md",
+        "federal-constitution/article-007.md",
+        "federal-constitution/article-008.md",
+        "federal-constitution/article-009.md",
+        "federal-constitution/article-010.md",
+        "federal-constitution/article-011.md",
+        "federal-constitution/article-012.md",
+        "federal-constitution/article-013.md",
+        "federal-constitution/article-014.md",
+        "federal-constitution/article-015.md",
+        "federal-constitution/article-016.md",
+        "federal-constitution/article-017.md",
+        "federal-constitution/article-018.md",
+        "federal-constitution/article-019.md",
+        "federal-constitution/article-020.md",
+        "federal-constitution/article-021.md",
+        "federal-constitution/article-022.md",
+        "federal-constitution/article-023.md",
+        "federal-constitution/article-024.md",
+        "federal-constitution/article-025.md",
+        "federal-constitution/article-026.md",
+        "federal-constitution/article-027.md",
+        "federal-constitution/article-028.md",
+        "federal-constitution/article-029.md",
+        "federal-constitution/article-030.md",
+        "federal-constitution/article-031.md",
+        "federal-constitution/article-032.md",
+        "federal-constitution/article-033.md",
+        "federal-constitution/article-034.md",
+        "federal-constitution/article-035.md",
+        "federal-constitution/article-036.md",
+        "federal-constitution/article-037.md",
+        "federal-constitution/article-039.md",
+        "federal-constitution/article-040.md",
+        "federal-constitution/article-041.md",
+        "federal-constitution/article-042.md",
+        "federal-constitution/article-043.md",
+        "federal-constitution/article-044.md",
+        "federal-constitution/article-045.md",
+        "federal-constitution/article-046.md",
+        "federal-constitution/article-047.md",
+        "federal-constitution/article-048.md",
+        "federal-constitution/article-049.md",
+        "federal-constitution/article-050.md",
+        "federal-constitution/article-051.md",
+        "federal-constitution/article-052.md",
+        "federal-constitution/article-053.md",
+        "federal-constitution/article-054.md",
+        "federal-constitution/article-055.md",
+        "federal-constitution/article-056.md",
+        "federal-constitution/article-057.md",
+        "federal-constitution/article-058.md",
+        "federal-constitution/article-059.md",
+        "federal-constitution/article-060.md",
+        "federal-constitution/article-061.md",
+        "federal-constitution/article-062.md",
+        "federal-constitution/article-063.md",
+        "federal-constitution/article-064.md",
+        "federal-constitution/article-065.md",
+        "federal-constitution/article-066.md",
+        "federal-constitution/article-067.md",
+        "federal-constitution/article-068.md",
+        "federal-constitution/article-069.md",
+        "federal-constitution/article-070.md",
+        "federal-constitution/article-071.md",
+        "federal-constitution/article-072.md",
+        "federal-constitution/article-073.md",
+        "federal-constitution/article-074.md",
+        "federal-constitution/article-075.md",
+        "federal-constitution/article-076.md",
+        "federal-constitution/article-077.md",
+        "federal-constitution/article-078.md",
+        "federal-constitution/article-079.md",
+        "federal-constitution/article-080.md",
+        "federal-constitution/article-081.md",
+        "federal-constitution/article-082.md",
+        "federal-constitution/article-083.md",
+        "federal-constitution/article-084.md",
+        "federal-constitution/article-085.md",
+        "federal-constitution/article-086.md",
+        "federal-constitution/article-087.md",
+        "federal-constitution/article-088.md",
+        "federal-constitution/article-089.md",
+        "federal-constitution/article-090.md",
+        "federal-constitution/article-091.md",
+        "federal-constitution/article-092.md",
+        "federal-constitution/article-093.md",
+        "federal-constitution/article-094.md",
+        "federal-constitution/article-095.md",
+        "federal-constitution/article-096.md",
+        "federal-constitution/article-097.md",
+        "federal-constitution/article-098.md",
+        "federal-constitution/article-099.md",
+        "federal-constitution/article-100.md",
+        "federal-constitution/article-101.md",
+        "federal-constitution/article-102.md",
+        "federal-constitution/article-103.md",
+        "federal-constitution/article-104.md",
+        "federal-constitution/article-105.md",
+        "federal-constitution/article-106.md",
+        "federal-constitution/article-107.md",
+        "federal-constitution/article-108.md",
+        "federal-constitution/article-109.md",
+        "federal-constitution/article-110.md",
+        "federal-constitution/article-111.md",
+        "federal-constitution/article-112.md",
+        "federal-constitution/article-113.md",
+        "federal-constitution/article-114.md",
+        "federal-constitution/article-115.md",
+        "federal-constitution/article-116.md",
+        "federal-constitution/article-117.md",
+        "federal-constitution/article-118.md",
+        "federal-constitution/article-119.md",
+        "federal-constitution/article-120.md",
+        "federal-constitution/article-121.md",
+        "federal-constitution/article-122.md",
+        "federal-constitution/article-123.md",
+        "federal-constitution/article-124.md",
+        "federal-constitution/article-125.md",
+        "federal-constitution/article-126.md",
+        "federal-constitution/article-127.md",
+        "federal-constitution/article-128.md",
+        "federal-constitution/article-129.md",
+        "federal-constitution/article-130.md",
+        "federal-constitution/article-131.md",
+        "federal-constitution/article-132.md",
+        "federal-constitution/article-133.md",
+        "federal-constitution/article-134.md",
+        "federal-constitution/article-135.md",
+        "federal-constitution/article-136.md",
+        "federal-constitution/article-137.md",
+        "federal-constitution/article-138.md",
+        "federal-constitution/article-139.md",
+        "federal-constitution/article-140.md",
+        "federal-constitution/article-141.md",
+        "federal-constitution/article-142.md",
+        "federal-constitution/article-143.md",
+        "federal-constitution/article-144.md",
+        "federal-constitution/article-145.md",
+        "federal-constitution/article-146.md",
+        "federal-constitution/article-147.md",
+        "federal-constitution/article-148.md",
+        "federal-constitution/article-149.md",
+        "federal-constitution/article-150.md",
+        "federal-constitution/article-151.md",
+        "federal-constitution/article-152.md",
+        "federal-constitution/article-153.md",
+        "federal-constitution/article-154.md",
+        "federal-constitution/article-155.md",
+        "federal-constitution/article-156.md",
+        "federal-constitution/article-157.md",
+        "federal-constitution/article-158.md",
+        "federal-constitution/article-159.md",
+        "federal-constitution/article-160.md",
+        "federal-constitution/article-161.md",
+        "federal-constitution/article-162.md",
+        "federal-constitution/article-163.md",
+        "federal-constitution/article-164.md",
+        "federal-constitution/article-165.md",
+        "federal-constitution/article-166.md",
+        "federal-constitution/article-167.md",
+        "federal-constitution/article-168.md",
+        "federal-constitution/article-169.md",
+        "federal-constitution/article-170.md",
+        "federal-constitution/article-171.md",
+        "federal-constitution/article-172.md",
+        "federal-constitution/article-173.md",
+        "federal-constitution/article-174.md",
+        "federal-constitution/article-175.md",
+        "federal-constitution/article-176.md",
+        "federal-constitution/article-177.md",
+        "federal-constitution/article-178.md",
+        "federal-constitution/article-179.md",
+        "federal-constitution/article-180.md",
+        "federal-constitution/article-181.md",
+        "federal-constitution/article-182.md",
+        "federal-constitution/article-183.md",
+        "federal-constitution/article-184.md",
+        "federal-constitution/article-185.md",
+        "federal-constitution/article-186.md",
+        "federal-constitution/article-187.md",
+        "federal-constitution/article-188.md",
+        "federal-constitution/article-189.md",
+        "federal-constitution/article-190.md",
+        "federal-constitution/article-191.md",
+        "federal-constitution/article-192.md",
+        "federal-constitution/article-193.md",
+        "federal-constitution/article-194.md",
+        "federal-constitution/article-195.md",
+        "federal-constitution/article-196.md",
+        "federal-constitution/article-197.md",
+        "federal-constitution/article-198.md",
+        "federal-constitution/article-199.md",
+        "federal-constitution/article-200.md",
+        "federal-constitution/article-201.md",
+        "federal-constitution/article-202.md",
+        "federal-constitution/article-203.md",
+        "federal-constitution/article-204.md",
+        "federal-constitution/article-205.md",
+        "federal-constitution/article-206.md",
+        "federal-constitution/article-207.md",
+        "federal-constitution/article-208.md",
+        "federal-constitution/article-209.md",
+        "federal-constitution/article-210.md",
+        "federal-constitution/article-211.md",
+        "federal-constitution/article-212.md",
+        "federal-constitution/article-213.md",
+        "federal-constitution/article-214.md",
+        "federal-constitution/article-215.md",
+        "federal-constitution/article-216.md",
+        "federal-constitution/article-217.md",
+        "federal-constitution/article-218.md",
+        "federal-constitution/article-219.md",
+        "federal-constitution/article-220.md",
+        "federal-constitution/article-221.md",
+        "federal-constitution/article-222.md",
+        "federal-constitution/article-223.md",
+        "federal-constitution/article-224.md",
+        "federal-constitution/article-225.md",
+        "federal-constitution/article-226.md",
+        "federal-constitution/article-227.md",
+        "federal-constitution/article-228.md",
+        "federal-constitution/article-229.md",
+        "federal-constitution/article-230.md",
+        "federal-constitution/article-231.md",
+        "federal-constitution/article-232.md",
+        "federal-constitution/article-233.md",
+        "federal-constitution/article-234.md",
+        "federal-constitution/article-235.md",
+        "federal-constitution/article-236.md",
+        "federal-constitution/article-237.md",
+        "federal-constitution/article-238.md",
+        "federal-constitution/article-239.md",
+        "federal-constitution/article-240.md",
+        "federal-constitution/article-241.md",
+        "federal-constitution/article-242.md",
+        "federal-constitution/article-243.md",
+        "federal-constitution/article-244.md",
+        "federal-constitution/article-245.md",
+        "federal-constitution/article-246.md",
+        "federal-constitution/article-247.md",
+        "federal-constitution/article-248.md",
+        "federal-constitution/article-249.md",
+        "federal-constitution/article-250.md",
+        "federal-constitution/article-251.md",
+        "federal-constitution/article-252.md",
+        "federal-constitution/article-253.md",
+        "federal-constitution/article-254.md",
+        "federal-constitution/article-255.md",
+        "federal-constitution/article-256.md",
+        "federal-constitution/article-257.md",
+        "federal-constitution/article-258.md",
+        "federal-constitution/article-259.md",
+        "federal-constitution/article-260.md",
+        "federal-constitution/article-261.md",
+        "federal-constitution/article-262.md",
+        "federal-constitution/article-263.md",
+        "federal-constitution/article-264.md",
+        "federal-constitution/article-265.md",
+        "federal-constitution/article-266.md",
+        "federal-constitution/article-267.md",
+        "federal-constitution/article-268.md",
+        "federal-constitution/article-269.md",
+        "federal-constitution/article-270.md",
+        "federal-constitution/article-271.md",
+        "federal-constitution/article-272.md",
+        "federal-constitution/article-273.md",
+        "federal-constitution/article-274.md",
+        "federal-constitution/article-275.md",
+        "federal-constitution/article-276.md",
+        "federal-constitution/article-277.md",
+        "federal-constitution/article-278.md",
+        "federal-constitution/article-279.md",
+        "federal-constitution/article-280.md",
+        "federal-constitution/preamble.md"
+      ],
+      "summary": "The original 1973 Constitution was a 'healing document' born out of the crisis of 1971. After the loss of East Pakistan, the country was legally adrift; the previous constitutions had failed to prevent civil war or keep the military out of politics. In 1973, Zulfikar Ali Bhutto’s government achieved the impossible: a unanimous agreement between secular socialists, religious parties, and regional nationalists. This gave the document a level of moral and legal authority that no Pakistani law has had before or since. Structurally, the original text was designed to be 'dictator-proof.' It shifted the country from a Presidential system to a Federal Parliamentary one, making the Prime Minister the powerful head of government while the President became a ceremonial figurehead. To keep the four provinces united, it created a 'Bicameral' legislature, introducing the Senate to give smaller provinces an equal voice alongside the more populated Punjab in the National Assembly. Most importantly, the 1973 original was a 'Social Contract.' It explicitly listed Fundamental Rights (Articles 8–28) that the state could not take away, such as protection against retrospective punishment and the right to freedom of speech. It wasn't just a set of rules; it was the first time Pakistanis had a clear, written definition of what it meant to be a citizen with protected rights in a sovereign Republic."
+    },
+    {
+      "hash": "b9b13725a9079991836ec3f0c37a30a0cb2ebbe7",
+      "commitNumber": 2,
+      "message": "First Amendment 1974-05-04 Fazal Ilahi Chaudhry",
+      "author": "Fazal Ilahi Chaudhry",
+      "date": "1974-05-04T12:00:00Z",
+      "filesChanged": [
+        "federal-ammendment-summaries/05-1974-first-amendment.md",
+        "federal-constitution/article-001.md",
+        "federal-constitution/article-008.md",
+        "federal-constitution/article-017.md",
+        "federal-constitution/article-061.md",
+        "federal-constitution/article-101.md",
+        "federal-constitution/article-127.md",
+        "federal-constitution/article-193.md",
+        "federal-constitution/article-199.md",
+        "federal-constitution/article-200.md",
+        "federal-constitution/article-209.md",
+        "federal-constitution/article-212.md",
+        "federal-constitution/article-250.md",
+        "federal-constitution/article-259.md",
+        "federal-constitution/article-260.md",
+        "federal-constitution/article-272.md"
+      ],
+      "summary": "The most immediate impact was a \"legal closing of the door\" on the past. By officially removing East Pakistan from the Constitution, the state finally aligned its supreme law with the reality of its new borders. It was a somber but necessary administrative step to stabilize the identity of the \"new\" Pakistan.\n\nHowever, for the average citizen and political worker, the impact was a bit more restrictive. The amendment gave the government a powerful legal tool to ban political parties it deemed a threat to national integrity. While the Supreme Court was kept as a \"safety valve\" to make the final call, the balance of power shifted toward the executive branch. Additionally, by restricting the High Court's jurisdiction over military and civil service matters, the amendment created \"specialized lanes\" for legal disputes, making it harder for those in the service of Pakistan to seek traditional judicial relief in standard courts."
+    },
+    {
+      "hash": "b15a257d0cdb43f3300bce7063dd878e84c88b6d",
+      "commitNumber": 3,
+      "message": "Second Amendment 1974-09-17 Fazal Ilahi Chaudhry",
+      "author": "Fazal Ilahi Chaudhry",
+      "date": "1974-09-17T12:00:00Z",
+      "filesChanged": [
+        "federal-ammendment-summaries/09-1974-second-amendment.md",
+        "federal-constitution/article-106.md",
+        "federal-constitution/article-260.md"
+      ],
+      "summary": "Before this amendment, the question of who was or wasn't a Muslim was largely considered a private or theological matter. By passing this law, the state took on the power to legally define a person's faith. For the average citizen, this meant that a specific group—the Ahmadis—who identified as Muslims were now officially categorized as a non-Muslim minority by the government.\n\nIn practical terms, this shifted the balance of power toward the state and religious authorities in matters of personal identity. It restricted the legal rights of the Ahmadi community to identify themselves as they chose, and it set a precedent for the law to be used to regulate religious definitions and affiliations within Pakistan."
+    },
+    {
+      "hash": "73343e0b2bb92989d28fb88984d827b9f348594c",
+      "commitNumber": 4,
+      "message": "Third Amendment 1975-02-18 Fazal Ilahi Chaudhry",
+      "author": "Fazal Ilahi Chaudhry",
+      "date": "1975-02-18T12:00:00Z",
+      "filesChanged": [
+        "federal-ammendment-summaries/02-1975-third-amendment.md",
+        "federal-constitution/article-010.md",
+        "federal-constitution/article-232.md"
+      ],
+      "summary": "Before this amendment, the 1973 Constitution provided relatively tight protections against arbitrary arrest; the state had to work quickly to justify holding someone. This change effectively tilted the scales in favor of the government’s security apparatus. By tripling the time someone could be held before a review, the state gained a much longer window to detain political opponents or activists without the immediate interference of the judiciary.\n\nFor the average citizen, this meant that the constitutional \"shield\" against being picked up and held in secret was weakened. It gave the executive branch more breathing room to keep people in custody during times of political unrest. Additionally, by making it harder to end a state of emergency, the government ensured that special, more restrictive powers could stay in place for longer periods with less frequent parliamentary interference."
+    },
+    {
+      "hash": "ecb63084f571d096abfa0b6d129c54538470ea63",
+      "commitNumber": 5,
+      "message": "Fourth Amendment 1975-11-21 Fazal Ilahi Chaudhry",
+      "author": "Fazal Ilahi Chaudhry",
+      "date": "1975-11-21T12:00:00Z",
+      "filesChanged": [
+        "federal-ammendment-summaries/11-1975-fourth-amendment.md",
+        "federal-constitution/article-008.md",
+        "federal-constitution/article-017.md",
+        "federal-constitution/article-019.md",
+        "federal-constitution/article-051.md",
+        "federal-constitution/article-054.md",
+        "federal-constitution/article-106.md",
+        "federal-constitution/article-199.md",
+        "federal-constitution/article-271.md",
+        "federal-constitution/article-272.md",
+        "federal-constitution/article-273.md"
+      ],
+      "summary": "The \"then vs. now\" shift of this amendment was largely about weakening the citizen's legal shield. Before this change, if a person was arrested for political reasons, they could appeal to a High Court for immediate bail. After this amendment, the High Courts essentially had their \"hands tied\"—they were legally forbidden from releasing anyone held under detention laws. This shifted a massive amount of power from the judges to the government's executive branch.\n\nFurthermore, the \"60-day rule\" for court orders meant that the government could effectively outwait the legal system. If the government took an action (like collecting a controversial tax or seizing property) and a court paused it, the government only had to wait two months for that pause to disappear. This made it much harder for ordinary citizens or businesses to use the courts to stop government overreach in a meaningful way."
+    },
+    {
+      "hash": "1a57ab05c9d142064bc9e9f70d7be5a90227d4cd",
+      "commitNumber": 6,
+      "message": "Fifth Amendment 1976-09-16 Fazal Ilahi Chaudhry",
+      "author": "Fazal Ilahi Chaudhry",
+      "date": "1976-09-16T12:00:00Z",
+      "filesChanged": [
+        "federal-ammendment-summaries/09-1976-fifth-amendment.md",
+        "federal-constitution/article-101.md",
+        "federal-constitution/article-160.md",
+        "federal-constitution/article-175.md",
+        "federal-constitution/article-179.md",
+        "federal-constitution/article-180.md",
+        "federal-constitution/article-187.md",
+        "federal-constitution/article-192.md",
+        "federal-constitution/article-195.md",
+        "federal-constitution/article-196.md",
+        "federal-constitution/article-199.md",
+        "federal-constitution/article-200.md",
+        "federal-constitution/article-204.md",
+        "federal-constitution/article-206.md",
+        "federal-constitution/article-212.md",
+        "federal-constitution/article-260.md",
+        "federal-constitution/article-280.md"
+      ],
+      "summary": "By 1976, the government of Zulfikar Ali Bhutto was increasingly at odds with the superior judiciary. The courts were frequently issuing \"stay orders\" and granting bail to political detainees, which the administration viewed as an obstacle to executive governance and national security.\n\nThe Fifth Amendment represented a significant shift in the Separation of Powers, moving Pakistan toward a system where the executive branch held the upper hand over the judiciary. Before this amendment, the Chief Justice held their position until retirement, providing a level of stability and independence from political whims. By introducing term limits and the power to transfer judges without consent, the government gained the ability to \"rotate out\" or \"relocate\" judges who were perceived as being too critical of the state.\n\nFor the ordinary citizen, the most direct impact was the loss of a legal safety net. If a citizen was arrested or detained by the government, the High Court’s power to intervene via bail was effectively stripped away in many scenarios. This meant that the state could keep individuals in custody for longer periods without judicial oversight, significantly weakening the constitutional protections and individual rights that were originally intended to balance the state's power."
+    },
+    {
+      "hash": "f9a01db704234022d5442ca57399404b687d8adc",
+      "commitNumber": 7,
+      "message": "Sixth Amendment 1976-12-31 Fazal Ilahi Chaudhry",
+      "author": "Fazal Ilahi Chaudhry",
+      "date": "1976-12-31T12:00:00Z",
+      "filesChanged": [
+        "federal-ammendment-summaries/12-1976-sixth-amendment.md",
+        "federal-constitution/article-179.md",
+        "federal-constitution/article-195.md",
+        "federal-constitution/article-246.md",
+        "federal-constitution/article-260.md"
+      ],
+      "summary": "By late 1976, Prime Minister Zulfikar Ali Bhutto was preparing for upcoming general elections and wanted to ensure stability within the judicial branch—or, more accurately, to retain \"favorable\" leadership in the courts. The previous amendment (the Fifth) had already introduced a five-year term for the Chief Justice. However, a specific problem arose: the sitting Chief Justice of the Supreme Court, Justice Yaqub Ali, was set to hit the mandatory retirement age of 65 before his five-year term was up. The Sixth Amendment was widely seen as a \"tailor-made\" law designed to keep him in power longer.\n\nThe Sixth Amendment finalized the government’s grip on the judiciary by creating what critics call \"person-specific\" law. Before this, the retirement age was a hard line in the sand; once a judge turned 65, they had to go, making way for the next senior judge. By allowing a Chief Justice to stay past that age to finish a \"term,\" the government effectively broke the natural line of succession. This prevented more independent or \"unfavorable\" senior judges from ascending to the top spot.\n\nFor the average citizen, this meant the highest court in the land was no longer functioning solely on the principle of seniority and merit, but rather on rules that could be bent to keep specific individuals in office. It turned the position of Chief Justice into something that felt more like a political appointment than a neutral judicial office. This further eroded the \"legal safety net\" we discussed, as the government proved it could change the Constitution simply to keep its preferred \"referee\" on the field."
+    },
+    {
+      "hash": "aab6e95edcfabc40a92ef6e5fd093dd959ab9bc5",
+      "commitNumber": 8,
+      "message": "Seventh Amendment 1977-05-16 Fazal Ilahi Chaudhry",
+      "author": "Fazal Ilahi Chaudhry",
+      "date": "1977-05-16T12:00:00Z",
+      "filesChanged": [
+        "federal-ammendment-summaries/05-1977-seventh-amendment.md",
+        "federal-constitution/article-096-A.md",
+        "federal-constitution/article-101.md",
+        "federal-constitution/article-245.md"
+      ],
+      "summary": "By May 1977, Pakistan was in a state of total political meltdown. Following the general elections in March, the opposition (the PNA) accused Zulfikar Ali Bhutto’s government of massive rigging. Protests, strikes, and violent clashes paralyzed the country. Bhutto was caught between a rock and a hard place: the opposition refused to recognize his legitimacy in Parliament, and the streets were slipping out of his control. The Seventh Amendment was a \"desperation move\" to bypass the deadlocked Parliament and go directly to the public to prove he still had support, while simultaneously giving the military more legal cover to suppress the unrest.\n\nThe Seventh Amendment was essentially a \"Political Hail Mary.\" Before this, the Prime Minister was only answerable to the National Assembly; if he lost their support, he was out. By introducing a referendum, Bhutto tried to change the rules of the game mid-match—seeking a \"direct mandate\" from the masses to override the opposition’s demands for new general elections. It was a shift toward a more populist, \"plebiscite\" style of leadership rather than a purely parliamentary one.\n\nHowever, for the average citizen, the impact was much darker. It effectively created \"Legal No-Go Zones.\" If the government called the army into your city to stop protests, the High Court lost the power to protect your rights in that area. You could no longer file a petition against illegal arrest or government overreach in those zones. This represented the ultimate collapse of the \"legal safety net\" we have tracked through these amendments—not only was the judiciary being weakened, it was now being physically removed from the parts of the country where it was needed most."
+    },
+    {
+      "hash": "e0ddba7c820aff60efd8f8c5a5ffd02401efc2d2",
+      "commitNumber": 9,
+      "message": "Eighth Amendment 1985-11-11 Muhammad Zia-ul-Haq",
+      "author": "Muhammad Zia-ul-Haq",
+      "date": "1985-11-11T12:00:00Z",
+      "filesChanged": [
+        "federal-ammendment-summaries/11-1985-eigth-amendment.md",
+        "federal-constitution/article-048.md",
+        "federal-constitution/article-051.md",
+        "federal-constitution/article-056.md",
+        "federal-constitution/article-058.md",
+        "federal-constitution/article-059.md",
+        "federal-constitution/article-060.md",
+        "federal-constitution/article-075.md",
+        "federal-constitution/article-090.md",
+        "federal-constitution/article-091.md",
+        "federal-constitution/article-101.md",
+        "federal-constitution/article-105.md",
+        "federal-constitution/article-106.md",
+        "federal-constitution/article-112.md",
+        "federal-constitution/article-116.md",
+        "federal-constitution/article-130.md",
+        "federal-constitution/article-144.md",
+        "federal-constitution/article-270-A.md"
+      ],
+      "summary": "After General Zia-ul-Haq overthrew the government in 1977, Pakistan lived under Martial Law for eight years. In 1985, Zia wanted to transition to a civilian government while ensuring he retained ultimate control. He held non-party elections and handpicked Muhammad Khan Junejo as Prime Minister. However, before Zia would agree to lift Martial Law and restore the Constitution, he demanded this amendment. It was the \"price\" the newly elected Parliament had to pay to get the military to formally step back from daily rule.\n\nThe Eighth Amendment turned the President from a \"ceremonial figurehead\" into the most powerful person in Pakistan. In a healthy parliamentary democracy, the Prime Minister is the captain of the ship. After this amendment, the President became the owner of the ship who could fire the captain and sink the entire boat (the Parliament) whenever he felt it was necessary.\n\nFor the average citizen, this meant a period of extreme political instability. Because the President had the power to dissolve assemblies, Pakistan saw four different governments dismissed between 1985 and 1997. It created a \"Sword of Damocles\" hanging over every elected government; if a Prime Minister disagreed with the President or the military establishment, the President could simply use Article 58(2)(b) to send everyone home and call for new elections. This effectively shifted the \"final word\" in Pakistani politics from the voters and their representatives to a single, non-elected office."
+    },
+    {
+      "hash": "d13d65ef1546350de916df621b68bf0b9192c3a7",
+      "commitNumber": 10,
+      "message": "Tenth Amendment 1987-03-29 Muhammad Zia-ul-Haq",
+      "author": "Muhammad Zia-ul-Haq",
+      "date": "1987-03-29T12:00:00Z",
+      "filesChanged": [
+        "federal-ammendment-summaries/03-1987-tenth-amendment.md",
+        "federal-constitution/article-054.md",
+        "federal-constitution/article-061.md"
+      ],
+      "summary": "By 1987, Pakistan was operating under the semi-civilian setup established after the 1985 non-party elections. While the military’s direct Martial Law had ended, the government—led by Prime Minister Muhammad Khan Junejo under the watchful eye of President Zia-ul-Haq—was looking for ways to streamline government operations. The original 1973 Constitution had set very high requirements for how often Parliament must meet, which was becoming difficult to maintain in a political environment where the executive held most of the decision-making power. The Tenth Amendment was a \"housekeeping\" move to reduce the mandatory workload of the legislature.\n\nThe \"then vs. now\" of this amendment is a story of quantity versus oversight. In the original 1973 vision, the high number of mandatory working days (160) was designed to ensure that the Parliament was a permanent, bustling center of power. It forced the government to constantly face the opposition and answer questions for the majority of the year.\n\nBy reducing these days, the Tenth Amendment effectively made the Parliament a \"part-time\" body. For the average citizen, this meant their elected representatives were spending less time debating laws and scrutinizing the government's budget and actions. While it made the government’s life easier by reducing the time they had to spend defending their policies on the floor of the House, it ultimately weakened the Parliament's role as a 24/7 watchdog over the country’s affairs."
+    },
+    {
+      "hash": "5f77ace41208dca8d0530410cba13c4fedf95a1b",
+      "commitNumber": 11,
+      "message": "Twelfth Amendment 1991-07-28 Ghulam Ishaq Khan",
+      "author": "Ghulam Ishaq Khan",
+      "date": "1991-07-28T12:00:00Z",
+      "filesChanged": [
+        "federal-ammendment-summaries/07-1991-twelfth-amendment.md",
+        "federal-constitution/article-212-B.md"
+      ],
+      "summary": "In the early 1990s, the government of Prime Minister Nawaz Sharif faced a severe wave of violent crime, sectarian killings, and \"sensational\" murders. The public was terrified, and the traditional judicial system was seen as too slow and bogged down by procedure to provide a deterrent. The government believed that \"justice delayed is justice denied,\" and sought this amendment to bypass the regular courts and create a parallel system that could hand out punishments rapidly to restore public order.\n\nBefore this, every citizen had the right to a trial in a standard court where established rules of evidence and lengthy appeal processes served as a safety net against wrongful conviction. This amendment prioritized speed over those traditional protections, effectively creating a \"shadow\" judiciary controlled largely by the Federal Government.\n\nFor the average citizen, this meant that if they were accused of a crime the government labeled as \"heinous,\" they could be tried, convicted, and have their appeal exhausted all within 60 days. While the goal was to scare criminals and provide \"speedy justice,\" it significantly shifted the balance of power toward the executive. By cutting out the regular High Courts' oversight, the amendment weakened the long-standing constitutional right to a fair and deliberate trial, trading deep judicial scrutiny for a quick verdict."
+    },
+    {
+      "hash": "fa6eb54f2f322aad41a7f66184c2b53935567ef9",
+      "commitNumber": 12,
+      "message": "Thirteenth Amendment 1997-04-04 Farooq Leghari",
+      "author": "Farooq Leghari",
+      "date": "1997-04-04T12:00:00Z",
+      "filesChanged": [
+        "federal-ammendment-summaries/04-1997-thirteenth-amendment.md",
+        "federal-constitution/article-058.md",
+        "federal-constitution/article-101.md",
+        "federal-constitution/article-112.md",
+        "federal-constitution/article-243.md"
+      ],
+      "summary": "After a decade of extreme political instability, the 1997 elections gave Nawaz Sharif a \"heavy mandate\" (a massive two-thirds majority) in Parliament. Since 1985, Pakistan had seen four different governments dismissed by various Presidents using the powers given to them by General Zia’s 8th Amendment. The political atmosphere was one of deep frustration with the \"musical chairs\" of democracy. Sharif used his overwhelming majority to strike back at the presidency and reclaim the authority that had been stripped from the Prime Minister’s office over the previous twelve years.\n\nThe 13th Amendment was the \"Great Restoration\" for the Prime Minister. If the 8th Amendment had turned the President into a king-like figure who could end a government on a whim, the 13th Amendment turned the President back into a ceremonial figurehead. The \"then vs. now\" shift was dramatic: before this, the Prime Minister lived in constant fear of being dismissed by the President; after this, the Prime Minister became the undisputed \"captain of the ship\" once again.\n\nFor the average citizen, this meant the end of the \"Sword of Damocles\" hanging over their elected representatives. It was intended to bring stability to the country by ensuring that only the voters (through their representatives) could decide when a government should end, not a single individual in the President's House. However, by removing the \"safety valve\" that allowed the President to resolve political deadlocks, it also meant that if a Prime Minister became too powerful or faced a crisis, there was no longer a constitutional way to remove them other than a vote of no-confidence or, as history eventually showed, a military coup."
+    },
+    {
+      "hash": "c338658a2acdf4fdaa9baf5993a7c50d9d13e495",
+      "commitNumber": 13,
+      "message": "Fourteenth Amendment 1997-07-03 Farooq Leghari",
+      "author": "Farooq Leghari",
+      "date": "1997-07-03T12:00:00Z",
+      "filesChanged": [
+        "federal-ammendment-summaries/07-1997-fourteenth-amendment.md",
+        "federal-constitution/article-063-A.md"
+      ],
+      "summary": "During the 1990s, Pakistani politics was plagued by \"lotas\"—a term used for politicians who switched loyalties for money or power (horse-trading). This constant \"floor-crossing\" made it impossible for any government to stay stable, as members of Parliament would often abandon their party to join the opposition during a crucial vote. After Nawaz Sharif won a massive majority in 1997, he was determined to end this practice. The 14th Amendment was his tool to \"lock\" members into their party lines and prevent the internal rebellions that had collapsed previous governments.\n\nThe 14th Amendment shifted the balance of power from the individual lawmaker to the Party Leader. Before this, an MP could vote according to their conscience (or a bribe) without necessarily losing their job. After this amendment, the Party Head became a virtual dictator over their members. If an MP disagreed with a single party policy or chose not to show up for a vote, the Party Head could effectively \"fire\" them from Parliament.\n\nFor the average citizen, this was a double-edged sword. On one hand, it brought a much-needed end to the \"musical chairs\" of government and stabilized the democratic system against bribery. On the other hand, it turned elected representatives into \"voting machines\" for their leaders. The \"then vs. now\" reality meant that your local representative could no longer represent your specific interests if those interests clashed with the national party’s agenda—doing so would mean political suicide. It silenced internal dissent and made the leadership of political parties almost untouchable."
+    },
+    {
+      "hash": "38e5fd919424d1203b4d4b8852e34562c0ec4d68",
+      "commitNumber": 14,
+      "message": "Sixteenth Amendment 1999-08-05 Muhammad Rafiq Tarar",
+      "author": "Muhammad Rafiq Tarar",
+      "date": "1999-08-05T12:00:00Z",
+      "filesChanged": [
+        "federal-ammendment-summaries/08-1999-sixteenth-amendment.md",
+        "federal-constitution/article-027.md"
+      ],
+      "summary": "By 1999, Pakistan was grappling with the long-term reality of its regional economic disparities. Since the early days of the country, a \"Quota System\" had been put in place to ensure that people from underdeveloped or rural areas (like Sindh, Balochistan, and FATA) could get government jobs, even if they couldn't compete on \"pure merit\" against candidates from highly developed urban centers like Lahore or Karachi. The original 1973 Constitution allowed this quota to exist for only 10 years, which was later extended to 20 years. As that deadline approached, politicians from smaller provinces feared their people would be completely shut out of the civil service, leading to intense political pressure to keep the system alive.\n\nThe \"then vs. now\" of the 16th Amendment was the official admission that regional inequality had not been solved in the two decades originally planned. Before this amendment, the Constitution viewed quotas as a temporary \"crutch\" that should eventually be thrown away in favor of 100% open merit. By doubling that time to 40 years, the government essentially acknowledged that the gap between rural and urban education and opportunity remained massive.\n\nFor the average citizen, the impact depends entirely on where they live. For a student in a highly competitive city, it meant that \"merit\" would continue to play a smaller role in getting a government job than their place of birth. For a resident of a remote area, it preserved their \"legal safety net,\" ensuring they still had a dedicated slice of the national pie. It maintained the status quo of regional representation, preventing the civil service from being dominated by just a few developed cities, but it also extended a system that many argue discourages pure competitive excellence."
+    },
+    {
+      "hash": "bcad3e892450e90edcde0effcc5793c4ae9f88c4",
+      "commitNumber": 15,
+      "message": "Seventeenth Amendment 2003-12-31 Pervez Musharraf",
+      "author": "Pervez Musharraf",
+      "date": "2003-12-31T12:00:00Z",
+      "filesChanged": [
+        "federal-ammendment-summaries/12-2003-seventeenth-amendment.md",
+        "federal-constitution/article-041.md",
+        "federal-constitution/article-058.md",
+        "federal-constitution/article-112.md",
+        "federal-constitution/article-152.md",
+        "federal-constitution/article-179.md",
+        "federal-constitution/article-195.md",
+        "federal-constitution/article-243.md",
+        "federal-constitution/article-268.md",
+        "federal-constitution/article-270-AA.md"
+      ],
+      "summary": "After General Pervez Musharraf took power in a 1999 coup, he operated for years under \"Emergency\" rule and a \"Legal Framework Order\" (LFO). However, to gain international and domestic legitimacy, he needed to transition to a semi-civilian system. The 2002 elections resulted in a hung parliament where Musharraf's supporters needed the help of the religious political alliance (MMA) to pass constitutional changes. The 17th Amendment was the result of this \"grand bargain.\" Musharraf wanted his military decrees validated and his powers as President solidified, while the opposition pushed for some judicial oversight and a deadline for him to take off his military uniform.\n\nThe 17th Amendment was the second time in Pakistan's history that the country shifted from a Parliamentary system back to a Semi-Presidential one. The \"then vs. now\" shift was a reversal of the 13th Amendment. Once again, the Prime Minister became secondary to the President. The President was no longer just a figurehead; he was the man who could shut down Parliament if he felt the \"government could not be carried on.\"\n\nFor the average citizen, this meant that political power was concentrated back into the hands of a single individual who also happened to be the head of the military. While the requirement to involve the Supreme Court in the dissolution of Parliament was marketed as a \"safety net,\" it effectively pulled the judiciary into the heat of political battles. It created a system where the \"referee\" (the Court) was constantly asked to decide if the \"owner\" (the President) was right to fire the \"team\" (the Parliament), leading to years of political and legal instability."
+    },
+    {
+      "hash": "29a2c35ccfc1f50b4025ffc510adfc24bf149270",
+      "commitNumber": 16,
+      "message": "Eighteenth Amendment 2010-04-19 Asif Ali Zardari",
+      "author": "Asif Ali Zardari",
+      "date": "2010-04-19T12:00:00Z",
+      "filesChanged": [
+        "federal-ammendment-summaries/04-2010-eighteenth-amendment.md",
+        "federal-constitution/article-001.md",
+        "federal-constitution/article-006.md",
+        "federal-constitution/article-010-A.md",
+        "federal-constitution/article-017.md",
+        "federal-constitution/article-019-A.md",
+        "federal-constitution/article-025-A.md",
+        "federal-constitution/article-025.md",
+        "federal-constitution/article-027.md",
+        "federal-constitution/article-029.md",
+        "federal-constitution/article-037.md",
+        "federal-constitution/article-038.md",
+        "federal-constitution/article-041.md",
+        "federal-constitution/article-046.md",
+        "federal-constitution/article-048.md",
+        "federal-constitution/article-051.md",
+        "federal-constitution/article-058.md",
+        "federal-constitution/article-059.md",
+        "federal-constitution/article-061.md",
+        "federal-constitution/article-062.md",
+        "federal-constitution/article-063-A.md",
+        "federal-constitution/article-063.md",
+        "federal-constitution/article-070.md",
+        "federal-constitution/article-071.md",
+        "federal-constitution/article-073.md",
+        "federal-constitution/article-075.md",
+        "federal-constitution/article-089.md",
+        "federal-constitution/article-090.md",
+        "federal-constitution/article-091.md",
+        "federal-constitution/article-092.md",
+        "federal-constitution/article-099.md",
+        "federal-constitution/article-100.md",
+        "federal-constitution/article-101.md",
+        "federal-constitution/article-104.md",
+        "federal-constitution/article-105.md",
+        "federal-constitution/article-106.md",
+        "federal-constitution/article-112.md",
+        "federal-constitution/article-116.md",
+        "federal-constitution/article-122.md",
+        "federal-constitution/article-127.md",
+        "federal-constitution/article-128.md",
+        "federal-constitution/article-129.md",
+        "federal-constitution/article-130.md",
+        "federal-constitution/article-131.md",
+        "federal-constitution/article-132.md",
+        "federal-constitution/article-139.md",
+        "federal-constitution/article-140-A.md",
+        "federal-constitution/article-140.md",
+        "federal-constitution/article-142.md",
+        "federal-constitution/article-143.md",
+        "federal-constitution/article-144.md",
+        "federal-constitution/article-147.md",
+        "federal-constitution/article-149.md",
+        "federal-constitution/article-152.md",
+        "federal-constitution/article-153.md",
+        "federal-constitution/article-154.md",
+        "federal-constitution/article-155.md",
+        "federal-constitution/article-156.md",
+        "federal-constitution/article-157.md",
+        "federal-constitution/article-160.md",
+        "federal-constitution/article-161.md",
+        "federal-constitution/article-167.md",
+        "federal-constitution/article-168.md",
+        "federal-constitution/article-170.md",
+        "federal-constitution/article-171.md",
+        "federal-constitution/article-172.md",
+        "federal-constitution/article-175-A.md",
+        "federal-constitution/article-175.md",
+        "federal-constitution/article-177.md",
+        "federal-constitution/article-193.md",
+        "federal-constitution/article-194.md",
+        "federal-constitution/article-198.md",
+        "federal-constitution/article-199.md",
+        "federal-constitution/article-200.md",
+        "federal-constitution/article-203-C.md",
+        "federal-constitution/article-203-D.md",
+        "federal-constitution/article-209.md",
+        "federal-constitution/article-213.md",
+        "federal-constitution/article-215.md",
+        "federal-constitution/article-216.md",
+        "federal-constitution/article-218.md",
+        "federal-constitution/article-219.md",
+        "federal-constitution/article-221.md",
+        "federal-constitution/article-224.md",
+        "federal-constitution/article-226.md",
+        "federal-constitution/article-228.md",
+        "federal-constitution/article-232.md",
+        "federal-constitution/article-233.md",
+        "federal-constitution/article-234.md",
+        "federal-constitution/article-242.md",
+        "federal-constitution/article-243.md",
+        "federal-constitution/article-246.md",
+        "federal-constitution/article-260.md",
+        "federal-constitution/article-267-A.md",
+        "federal-constitution/article-267-B.md",
+        "federal-constitution/article-268.md",
+        "federal-constitution/article-270-A.md",
+        "federal-constitution/article-270-AA.md",
+        "federal-constitution/article-270-B.md",
+        "federal-constitution/article-270-BB.md"
+      ],
+      "summary": "The 18th Amendment was a landmark attempt to \"reset\" Pakistan’s democracy. For years, the country had swung between civilian rule and military dictatorships. Previous leaders (like General Musharraf) had altered the Constitution to give the President massive powers, essentially allowing one person to overrule the entire elected Parliament.\n\nFollowing the 2008 elections, there was a rare political consensus: all major parties agreed that to prevent future dictatorships and address long-standing grievances from smaller provinces, the President’s powers had to be stripped away and the provinces had to be given more control over their own affairs.\n\nThe 18th Amendment fundamentally changed Pakistan from a \"Presidential-style\" system back to a true Parliamentary democracy. Before this, the President was like a \"king-maker\" who could end a government on a whim; after this, the President became a ceremonial figurehead, and the Prime Minister became the most powerful executive. It essentially \"un-did\" the changes made by military rulers to ensure that the people’s elected representatives held the real keys to the country.\n\nFor the average citizen, the biggest change was \"Provincial Autonomy.\" Instead of waiting for the capital city (Islamabad) to make decisions about local schools, hospitals, or roads, the provincial governments (Sindh, Punjab, KP, and Balochistan) were given the money and the legal right to manage these services themselves. It moved the government closer to the doorstep of the citizen, making local leaders more responsible for the daily lives of their constituents."
+    },
+    {
+      "hash": "530b9991d30712a6f999981c51530eb9536a2377",
+      "commitNumber": 17,
+      "message": "Nineteenth Amendment 2011-01-01 Asif Ali Zardari",
+      "author": "Asif Ali Zardari",
+      "date": "2011-01-01T12:00:00Z",
+      "filesChanged": [
+        "federal-ammendment-summaries/01-2011-nineteenth-amendment.md",
+        "federal-constitution/article-081.md",
+        "federal-constitution/article-175-A.md",
+        "federal-constitution/article-175.md",
+        "federal-constitution/article-182.md",
+        "federal-constitution/article-213.md",
+        "federal-constitution/article-246.md"
+      ],
+      "summary": "The 19th Amendment was essentially a \"fine-tuning\" mission. It was passed less than a year after the massive 18th Amendment to resolve a tense standoff between the Executive/Legislature and the Judiciary. The Supreme Court had expressed concerns that the 18th Amendment gave politicians too much say in how judges were appointed. To avoid a constitutional crisis and ensure the system actually worked, all political parties quickly agreed to these adjustments to satisfy the court’s concerns and clarify administrative gaps.\n\nIf the 18th Amendment was a \"grand renovation\" of the house, the 19th Amendment was the \"safety inspection\" that followed. Its primary impact was to balance the scales of power between the Parliament and the Courts. By increasing the number of judges involved in picking new judges, it reassured the public and the legal community that the judiciary would remain independent and not become a tool for politicians.\n\nFor the average citizen, this amendment ensured that the judicial system wouldn't grind to a halt due to infighting between the government and the top judges. It also finalized the creation of a dedicated High Court for the capital, Islamabad, making legal recourse more accessible for residents of the federal territory. Essentially, it took a complicated new system and smoothed out the \"bugs\" to keep the wheels of justice turning."
+    },
+    {
+      "hash": "8d521d8b4ed1a47cbe67fad306668bb1649b2a29",
+      "commitNumber": 18,
+      "message": "Twentieth Amendment 2012-02-28 Asif Ali Zardari",
+      "author": "Asif Ali Zardari",
+      "date": "2012-02-28T12:00:00Z",
+      "filesChanged": [
+        "federal-ammendment-summaries/02-2012-twentieth-amendment.md",
+        "federal-constitution/article-048.md",
+        "federal-constitution/article-214.md",
+        "federal-constitution/article-215.md",
+        "federal-constitution/article-216.md",
+        "federal-constitution/article-218.md",
+        "federal-constitution/article-219.md",
+        "federal-constitution/article-224-A.md",
+        "federal-constitution/article-224.md"
+      ],
+      "summary": "The 20th Amendment was triggered by a need for \"election insurance.\" Leading up to the 2013 general elections, there was deep-seated mistrust between the ruling parties and the opposition. In Pakistan’s history, elections were often accused of being \"fixed\" by the sitting government.\n\nThe political atmosphere was focused on ensuring that no single party could manipulate the transition of power. Specifically, there was a legal vacuum regarding what happens if the Prime Minister and the Leader of the Opposition cannot agree on who should lead the \"Caretaker Government\" (the temporary neutral government that runs the country during election season). This amendment was passed to create a foolproof, step-by-step manual for a neutral transition.\n\nThe 20th Amendment acted as a \"neutrality shield\" for the democratic process. Before this, the process of picking a temporary government to oversee elections was vague and prone to backroom deals or endless arguments. Now, there is a strict countdown timer: if the politicians can’t agree, the decision is automatically taken out of their hands and given to a neutral committee or the Election Commission.\n\nFor the average citizen, this amendment was about the integrity of their vote. By making the Election Commission more independent and ensuring the \"Caretaker\" government is truly neutral, it reduced the chances of the sitting government using state resources to win an election. It essentially ensured that when a government’s term ends, the \"referees\" for the next election are picked fairly, making the \"then vs. now\" difference a shift from political guesswork to a legal guarantee of fair play."
+    },
+    {
+      "hash": "9ef55875ceabc9d338cd176694208e3e7fd7556e",
+      "commitNumber": 19,
+      "message": "Twenty-first Amendment 2015-01-07 Mamnoon Hussain",
+      "author": "Mamnoon Hussain",
+      "date": "2015-01-07T12:00:00Z",
+      "filesChanged": [
+        "federal-ammendment-summaries/07-2015-twenty-first-amendment.md",
+        "federal-constitution/article-175.md"
+      ],
+      "summary": "The 21st Amendment was a direct response to one of the darkest days in Pakistan's history: the terror attack on the Army Public School (APS) in Peshawar on December 16, 2014. The brutal massacre of schoolchildren created an intense national outcry for immediate and severe justice.\n\nThe political and military leadership felt that the civilian court system was too slow and that witnesses or judges were often too intimidated to convict hardened terrorists. In an atmosphere of \"national emergency,\" this amendment was sought to bypass the traditional legal system for specific terror-related cases to ensure swift, high-speed trials.\n\nThe 21st Amendment created a \"fast-track\" lane for justice that operated outside the normal civilian rules. Before this, any person accused of a crime—no matter how heinous—had to be tried in a civilian court with standard rights of defense and public hearings. After this amendment, the military was given the power to act as judge and jury for terrorism suspects, leading to much faster convictions and executions.\n\nFor the average citizen, this represented a significant trade-off: the country sacrificed a degree of \"due process\" and judicial independence in exchange for the promise of national security and \"speedy justice.\" It shifted the balance of power heavily toward the military establishment, allowing them to handle internal threats with the same legal authority usually reserved for a battlefield. While it was intended only for \"terrorists using the name of religion,\" it sparked intense debate about whether it set a dangerous precedent for bypassing the fundamental rights of a citizen in the future."
+    },
+    {
+      "hash": "844462f8db036568f97423a5ae3e0625abbc8352",
+      "commitNumber": 20,
+      "message": "Twenty-second Amendment 2016-06-08 Mamnoon Hussain",
+      "author": "Mamnoon Hussain",
+      "date": "2016-06-08T12:00:00Z",
+      "filesChanged": [
+        "federal-ammendment-summaries/06-2016-twenty-second-amendment.md",
+        "federal-constitution/article-081.md",
+        "federal-constitution/article-213.md",
+        "federal-constitution/article-215.md",
+        "federal-constitution/article-216.md",
+        "federal-constitution/article-217.md",
+        "federal-constitution/article-218.md",
+        "federal-constitution/article-219.md",
+        "federal-constitution/article-221.md",
+        "federal-constitution/article-222.md"
+      ],
+      "summary": "By 2016, Pakistan was preparing for future general elections while still dealing with the fallout and accusations of \"rigging\" from previous polls. A major point of contention was the eligibility criteria for the Election Commission of Pakistan (ECP). Historically, only retired judges could lead the Commission.\n\nThere was a growing political consensus that the ECP needed more than just legal expertise; it needed administrative experience and \"technocratic\" knowledge to handle the massive logistical challenge of a modern election. The 22nd Amendment was introduced to diversify the leadership of the ECP and ensure that the Commission remained functional even when political leaders couldn't agree on appointments.\n\nThe 22nd Amendment was about professionalizing the \"referees\" of Pakistan’s democracy. Before this, the ECP was seen almost exclusively as a legal body run by retired judges. By opening the doors to retired bureaucrats and experts (technocrats), the amendment acknowledged that running an election is as much a massive management and IT task as it is a legal one.\n\nFor the average citizen, the \"then vs. now\" is significant. Previously, if the top politicians disagreed on appointments, the system could stall. Now, there are strict deadlines and \"staggered\" terms to ensure that the Election Commission is always staffed and ready to work. Furthermore, by giving the ECP control over local government elections, it brought more transparency to the \"third tier\" of democracy—the local counselors and mayors who impact a citizen's daily life the most. Essentially, it made the election machinery more robust, permanent, and less dependent on the whims of a few top leaders."
+    },
+    {
+      "hash": "6b777373c4416a8e99c0a9c28b6631aab8cc84dc",
+      "commitNumber": 21,
+      "message": "Twenty-third Amendment 2017-01-07 Mamnoon Hussain",
+      "author": "Mamnoon Hussain",
+      "date": "2017-01-07T12:00:00Z",
+      "filesChanged": [
+        "federal-ammendment-summaries/01-2017-twenty-third-amendment.md",
+        "federal-constitution/article-175.md"
+      ],
+      "summary": "The 23rd Amendment was essentially a \"Part 2\" to the 21st Amendment. When the military courts were established in 2015 to handle terrorism cases after the Peshawar school attack, they were given a strict two-year \"sunset clause.\" By January 2017, that time had run out, and the military courts technically ceased to exist.\n\nHowever, the government and military argued that the threat of terrorism was still too high and the civilian courts were still too vulnerable to handle these specific high-profile cases. The political atmosphere was tense; while some lawmakers were wary of extending military powers over civilians, the consensus was that the \"job wasn't finished.\" This amendment was sought to bring back the military courts for another two-year period.\n\nThe 23rd Amendment was a \"renewal of an emergency lease\" on power. In simple terms, it told the country that the normal rules of justice still weren't enough to handle the security crisis. By passing this, the Parliament admitted that the civilian court system hadn't been reformed enough in the previous two years to take these cases back. It kept the \"fast-track\" military trial system alive, ensuring that suspects could be tried and sentenced quickly without the long delays typical of the standard legal process.\n\nFor the citizen, this meant that for another two years, the military remained a central player in the country's legal and judicial landscape. While it was marketed as a necessary tool to fight \"the worst of the worst,\" it highlighted a \"Then vs. Now\" reality where the exception (military trials for civilians) was starting to look like a recurring habit rather than a one-time emergency. It reinforced a system where, for a specific group of people, the constitutional right to a trial in a traditional civilian court was suspended in favor of national security."
+    },
+    {
+      "hash": "fc40fa818007abb2cc48425ca62e525d910b366c",
+      "commitNumber": 22,
+      "message": "Twenty-fourth Amendment 2017-12-22 Mamnoon Hussain",
+      "author": "Mamnoon Hussain",
+      "date": "2017-12-22T12:00:00Z",
+      "filesChanged": [
+        "federal-ammendment-summaries/12-2017-twenty-fourth-amendment.md",
+        "federal-constitution/article-051.md"
+      ],
+      "summary": "In 2017, Pakistan was facing a constitutional \"math problem\" with a very tight deadline. A new national census had been conducted earlier that year (the first in 19 years), but the official, final results were taking a long time to be formally published. Under the existing rules, the government could only redraw election boundaries based on final published census data.\n\nWith the 2018 General Elections fast approaching, the political atmosphere was anxious. If the government waited for the final report, there wouldn't be enough time to adjust the number of seats for each district, potentially delaying the elections or making them legally \"unfair\" because they would be based on 20-year-old population data. This amendment was a one-time emergency fix to allow the upcoming elections to proceed using the provisional (preliminary) census results instead.\n\nThe 24th Amendment was essentially a \"legal bridge\" that prevented a massive constitutional deadlock. Without it, the 2018 elections would have been held using population data from 1998, which would have been highly inaccurate. By allowing the use of preliminary 2017 data, the law ensured that the number of representatives each province sent to Islamabad actually matched the number of people living there today.\n\nFor the average citizen, the \"Then vs. Now\" impact was about fair representation. It meant that if your city’s population had doubled since the 90s, you were finally going to get the appropriate number of representatives in Parliament. It protected the citizen's right to a \"timely election\" by removing a bureaucratic hurdle that could have postponed the entire democratic process. It was a rare moment where all political parties agreed to a shortcut to ensure the 2018 vote could happen on time and with updated maps."
+    },
+    {
+      "hash": "7dbf4522e2bde6aa6c5ea4d6e96d667a550d2465",
+      "commitNumber": 23,
+      "message": "Twenty-fifth Amendment 2018-05-31 Mamnoon Hussain",
+      "author": "Mamnoon Hussain",
+      "date": "2018-05-31T12:00:00Z",
+      "filesChanged": [
+        "federal-ammendment-summaries/05-2018-twenty-fifth-amendment.md",
+        "federal-constitution/article-001.md",
+        "federal-constitution/article-051.md",
+        "federal-constitution/article-059.md",
+        "federal-constitution/article-062.md",
+        "federal-constitution/article-106.md",
+        "federal-constitution/article-155.md",
+        "federal-constitution/article-246.md",
+        "federal-constitution/article-247.md"
+      ],
+      "summary": "The 25th Amendment is perhaps the most historic administrative change in Pakistan's recent history. For over 70 years, the Federally Administered Tribal Areas (FATA) existed as a \"buffer zone\" governed by colonial-era laws (the Frontier Crimes Regulation) rather than the Pakistani Constitution. People living there did not have access to the same high courts or the same fundamental rights as other Pakistanis.\n\nThe political atmosphere in 2018 was driven by a powerful demand for \"mainstreaming.\" There was a realization that keeping FATA as a separate, lawless territory had fueled instability and left millions of citizens behind. To ensure security and provide equal rights, the government and opposition moved to abolish the separate status of FATA and merge it into the neighboring province of Khyber Pakhtunkhwa (KP).\n\nThe 25th Amendment was the \"Great Integration.\" Before this, if you lived in FATA, you were essentially a \"half-citizen.\" You couldn't appeal a local leader's decision to a High Court, and you were governed by a \"collective punishment\" system where an entire tribe could be punished for one person's crime. After this amendment, that \"black law\" was wiped away. Every resident of the former FATA became a full citizen of Khyber Pakhtunkhwa, with the same legal protections, police system, and court access as someone in Peshawar or Lahore.\n\nIn terms of the balance of power, it significantly strengthened the province of Khyber Pakhtunkhwa by increasing its land size and population. It also shifted power away from the Federal Government (the President and Bureaucracy) and gave it to the Provincial Assembly and the independent Judiciary. For the first time since 1947, the \"tribal\" label was removed from the map, signaling an end to the colonial-style governance and the beginning of a unified legal system for all Pakistanis."
+    },
+    {
+      "hash": "599ecf2f28a1f4c65149e341b154acd170cebe20",
+      "commitNumber": 24,
+      "message": "Twenty-sixth Amendment 2024-10-21 Asif Ali Zardari",
+      "author": "Asif Ali Zardari",
+      "date": "2024-10-21T12:00:00Z",
+      "filesChanged": [
+        "federal-ammendment-summaries/10-2024-twenty-sixth-amendment.md",
+        "federal-constitution/article-009-A.md",
+        "federal-constitution/article-038.md",
+        "federal-constitution/article-048.md",
+        "federal-constitution/article-081.md",
+        "federal-constitution/article-111.md",
+        "federal-constitution/article-175-A.md",
+        "federal-constitution/article-177.md",
+        "federal-constitution/article-179.md",
+        "federal-constitution/article-184.md",
+        "federal-constitution/article-185.md",
+        "federal-constitution/article-186-A.md",
+        "federal-constitution/article-187.md",
+        "federal-constitution/article-191-A.md",
+        "federal-constitution/article-193.md",
+        "federal-constitution/article-199.md",
+        "federal-constitution/article-202-A.md",
+        "federal-constitution/article-203-C.md",
+        "federal-constitution/article-203-D.md",
+        "federal-constitution/article-208.md",
+        "federal-constitution/article-209.md",
+        "federal-constitution/article-215.md",
+        "federal-constitution/article-229.md",
+        "federal-constitution/article-230.md",
+        "federal-constitution/article-255.md",
+        "federal-constitution/article-259.md"
+      ],
+      "summary": "The 26th Amendment was not just a single-issue law; it was a \"multi-purpose\" package intended to address several long-standing issues. First, there was a decades-old constitutional mandate to eliminate \"Riba\" (interest) from the economy, which had faced constant delays. Second, as Pakistan became one of the world’s most climate-vulnerable nations, there was a growing push to make environmental protection a fundamental right.\n\nFinally, the amendment addressed a severe \"Institutional Friction\" between the Parliament and the Judiciary. The government felt the Supreme Court had become a \"political player\" through its own self-initiated cases (suo motu). The amendment was sought to modernize rights while simultaneously re-establishing the Parliament as the ultimate power in the country.\n\nThe 26th Amendment is a double-edged sword for the Pakistani citizen. On the positive side, it brings the Constitution into the 21st century by making a clean environment a legal right. This gives you a stronger legal standing to sue over pollution or climate neglect. It also settles a long-standing religious-economic debate by putting a clock on interest-free banking, which could fundamentally reshape how people save and borrow money.\n\nHowever, in terms of government structure, the \"Then vs. Now\" is a massive shift in who has the final say. Before, the Supreme Court could jump into any government decision and stop it . Now, the \"referees\" have had their whistles taken away in many areas. The Parliament is back in the driving seat, and the Judiciary has been restructured to be more predictable and less capable of challenging the executive. It makes the system more \"Parliament-heavy,\" reducing the chance of judicial interference but also potentially weakening the court's role as a check on government power.\n\nTo many observers, the amendment appeared to be a tactical maneuver designed to prevent a specific \"unfavorable\" judge from taking power. Previously, the promotion to Chief Justice was an automatic, predictable event based purely on seniority, acting as a shield that kept the government out of the courtroom's leadership. Now, by allowing a political committee to handpick a leader from the top three candidates, the executive branch has effectively gained a \"veto\" over its own referees. This turns the highest judicial office into a potential political reward; instead of an independent protector of the law, a senior judge might now be seen as being under a permanent \"job interview,\" where ruling against the government could mean being skipped for the top spot in favor of a more compliant colleague."
+    },
+    {
+      "hash": "c5fda48dbfca6f6795ca81ad6188aaa9c12843a4",
+      "commitNumber": 25,
+      "message": "Twenty-seventh Amendment 2025-11-13 Asif Ali Zardari",
+      "author": "Asif Ali Zardari",
+      "date": "2025-11-13T12:00:00Z",
+      "filesChanged": [
+        "README.md",
+        "assets/git-log-commits.png",
+        "assets/timeline-amendments.png",
+        "federal-ammendment-summaries/11-2025-twenty-seventh-amendment.md",
+        "federal-constitution/article-042.md",
+        "federal-constitution/article-059.md",
+        "federal-constitution/article-063-A.md",
+        "federal-constitution/article-068.md",
+        "federal-constitution/article-078.md",
+        "federal-constitution/article-081.md",
+        "federal-constitution/article-093.md",
+        "federal-constitution/article-100.md",
+        "federal-constitution/article-114.md",
+        "federal-constitution/article-130.md",
+        "federal-constitution/article-165-A.md",
+        "federal-constitution/article-175-A.md",
+        "federal-constitution/article-175-B.md",
+        "federal-constitution/article-175-C.md",
+        "federal-constitution/article-175-D.md",
+        "federal-constitution/article-175-E.md",
+        "federal-constitution/article-175-F.md",
+        "federal-constitution/article-175-G.md",
+        "federal-constitution/article-175-H.md",
+        "federal-constitution/article-175-I.md",
+        "federal-constitution/article-175-J.md",
+        "federal-constitution/article-175-K.md",
+        "federal-constitution/article-175-L.md",
+        "federal-constitution/article-175.md",
+        "federal-constitution/article-176.md",
+        "federal-constitution/article-177.md",
+        "federal-constitution/article-178.md",
+        "federal-constitution/article-179.md",
+        "federal-constitution/article-180.md",
+        "federal-constitution/article-182.md",
+        "federal-constitution/article-183.md",
+        "federal-constitution/article-184.md",
+        "federal-constitution/article-185.md",
+        "federal-constitution/article-186-A.md",
+        "federal-constitution/article-186.md",
+        "federal-constitution/article-187.md",
+        "federal-constitution/article-189.md",
+        "federal-constitution/article-190.md",
+        "federal-constitution/article-191-A.md",
+        "federal-constitution/article-191.md",
+        "federal-constitution/article-192.md",
+        "federal-constitution/article-193.md",
+        "federal-constitution/article-199.md",
+        "federal-constitution/article-200.md",
+        "federal-constitution/article-202-A.md",
+        "federal-constitution/article-204.md",
+        "federal-constitution/article-205.md",
+        "federal-constitution/article-206.md",
+        "federal-constitution/article-207.md",
+        "federal-constitution/article-208.md",
+        "federal-constitution/article-209.md",
+        "federal-constitution/article-210.md",
+        "federal-constitution/article-243.md",
+        "federal-constitution/article-248.md",
+        "federal-constitution/article-260.md"
+      ],
+      "summary": "The amendment was introduced during a period of intense political polarization and followed a short-lived military conflict with India in May 2025. The government, led by the Shehbaz Sharif coalition, argued that the changes were necessary to modernize national security and fix a massive backlog of over 50,000 cases in the Supreme Court. However, critics and legal experts viewed the speed of the bill’s passage—introduced and passed within days—as a move to consolidate power and shield the executive and military leadership from future legal challenges.\n\nKey Changes :\n- Establishment of the Federal Constitutional Court (FCC): A new top-tier court was created specifically to handle constitutional matters. Previously, the Supreme Court of Pakistan held this authority; now, the Supreme Court is largely relegated to an appellate court for non-constitutional civil and criminal cases.\n- Military Command Restructuring: The amendment created the post of Chief of Defence Forces (CDF), a position held by the Army Chief (currently Field Marshal Asim Munir), granting him primacy over the Navy and Air Force.\n- Lifetime Immunity: Article 248 was amended to grant the President lifetime immunity from criminal prosecution and arrest. Similar protections and lifetime status (rank and uniform) were extended to five-star military officers.\n- Judicial Appointments & Transfers: The Executive now has a significant role in appointing the first batch of FCC judges. Furthermore, the Judicial Commission was empowered to transfer High Court judges between provinces; if a judge refuses a transfer, they face disciplinary action.\n\n\nIn simple terms, the 27th Amendment fundamentally changed the \"rules of the game\" for how the government, the courts, and the military interact. Before this, the Supreme Court was the final word on what the Constitution meant. Now, that power sits with the new Federal Constitutional Court, whose initial judges were picked with heavy influence from the sitting Prime Minister and President. This makes it much harder for the judiciary to act as a \"check\" on government decisions.\n\nFor the average citizen, the most visible change is the \"shield\" placed around top leaders. By granting lifetime immunity to the President and top generals, the amendment ensures they cannot be held legally accountable in a court of law for their actions even after they leave office. Additionally, the centralization of military power under the new \"Chief of Defence Forces\" formalizes the military’s role at the heart of Pakistan's governance, moving the country further toward a hybrid system where civilian and military authorities are deeply entwined."
+    }
+  ],
+  "articles": {
+    "federal-constitution/article-001.md": {
+      "changeCount": 4,
+      "amendments": [
+        {
+          "commitHash": "b9b13725a9079991836ec3f0c37a30a0cb2ebbe7",
+          "amendmentNumber": 1
+        },
+        {
+          "commitHash": "29a2c35ccfc1f50b4025ffc510adfc24bf149270",
+          "amendmentNumber": 15
+        },
+        {
+          "commitHash": "7dbf4522e2bde6aa6c5ea4d6e96d667a550d2465",
+          "amendmentNumber": 22
+        }
+      ]
+    },
+    "federal-constitution/article-002.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-003.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-004.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-005.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-006.md": {
+      "changeCount": 2,
+      "amendments": [
+        {
+          "commitHash": "29a2c35ccfc1f50b4025ffc510adfc24bf149270",
+          "amendmentNumber": 15
+        }
+      ]
+    },
+    "federal-constitution/article-007.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-008.md": {
+      "changeCount": 3,
+      "amendments": [
+        {
+          "commitHash": "b9b13725a9079991836ec3f0c37a30a0cb2ebbe7",
+          "amendmentNumber": 1
+        },
+        {
+          "commitHash": "ecb63084f571d096abfa0b6d129c54538470ea63",
+          "amendmentNumber": 4
+        }
+      ]
+    },
+    "federal-constitution/article-009-A.md": {
+      "changeCount": 1,
+      "amendments": [
+        {
+          "commitHash": "599ecf2f28a1f4c65149e341b154acd170cebe20",
+          "amendmentNumber": 23
+        }
+      ]
+    },
+    "federal-constitution/article-009.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-010-A.md": {
+      "changeCount": 1,
+      "amendments": [
+        {
+          "commitHash": "29a2c35ccfc1f50b4025ffc510adfc24bf149270",
+          "amendmentNumber": 15
+        }
+      ]
+    },
+    "federal-constitution/article-010.md": {
+      "changeCount": 2,
+      "amendments": [
+        {
+          "commitHash": "73343e0b2bb92989d28fb88984d827b9f348594c",
+          "amendmentNumber": 3
+        }
+      ]
+    },
+    "federal-constitution/article-011.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-012.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-013.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-014.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-015.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-016.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-017.md": {
+      "changeCount": 4,
+      "amendments": [
+        {
+          "commitHash": "b9b13725a9079991836ec3f0c37a30a0cb2ebbe7",
+          "amendmentNumber": 1
+        },
+        {
+          "commitHash": "ecb63084f571d096abfa0b6d129c54538470ea63",
+          "amendmentNumber": 4
+        },
+        {
+          "commitHash": "29a2c35ccfc1f50b4025ffc510adfc24bf149270",
+          "amendmentNumber": 15
+        }
+      ]
+    },
+    "federal-constitution/article-018.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-019-A.md": {
+      "changeCount": 1,
+      "amendments": [
+        {
+          "commitHash": "29a2c35ccfc1f50b4025ffc510adfc24bf149270",
+          "amendmentNumber": 15
+        }
+      ]
+    },
+    "federal-constitution/article-019.md": {
+      "changeCount": 2,
+      "amendments": [
+        {
+          "commitHash": "ecb63084f571d096abfa0b6d129c54538470ea63",
+          "amendmentNumber": 4
+        }
+      ]
+    },
+    "federal-constitution/article-020.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-021.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-022.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-023.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-024.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-025-A.md": {
+      "changeCount": 1,
+      "amendments": [
+        {
+          "commitHash": "29a2c35ccfc1f50b4025ffc510adfc24bf149270",
+          "amendmentNumber": 15
+        }
+      ]
+    },
+    "federal-constitution/article-025.md": {
+      "changeCount": 2,
+      "amendments": [
+        {
+          "commitHash": "29a2c35ccfc1f50b4025ffc510adfc24bf149270",
+          "amendmentNumber": 15
+        }
+      ]
+    },
+    "federal-constitution/article-026.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-027.md": {
+      "changeCount": 3,
+      "amendments": [
+        {
+          "commitHash": "38e5fd919424d1203b4d4b8852e34562c0ec4d68",
+          "amendmentNumber": 13
+        },
+        {
+          "commitHash": "29a2c35ccfc1f50b4025ffc510adfc24bf149270",
+          "amendmentNumber": 15
+        }
+      ]
+    },
+    "federal-constitution/article-028.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-029.md": {
+      "changeCount": 2,
+      "amendments": [
+        {
+          "commitHash": "29a2c35ccfc1f50b4025ffc510adfc24bf149270",
+          "amendmentNumber": 15
+        }
+      ]
+    },
+    "federal-constitution/article-030.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-031.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-032.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-033.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-034.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-035.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-036.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-037.md": {
+      "changeCount": 2,
+      "amendments": [
+        {
+          "commitHash": "29a2c35ccfc1f50b4025ffc510adfc24bf149270",
+          "amendmentNumber": 15
+        }
+      ]
+    },
+    "federal-constitution/article-038.md": {
+      "changeCount": 2,
+      "amendments": [
+        {
+          "commitHash": "29a2c35ccfc1f50b4025ffc510adfc24bf149270",
+          "amendmentNumber": 15
+        },
+        {
+          "commitHash": "599ecf2f28a1f4c65149e341b154acd170cebe20",
+          "amendmentNumber": 23
+        }
+      ]
+    },
+    "federal-constitution/article-039.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-040.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-041.md": {
+      "changeCount": 3,
+      "amendments": [
+        {
+          "commitHash": "bcad3e892450e90edcde0effcc5793c4ae9f88c4",
+          "amendmentNumber": 14
+        },
+        {
+          "commitHash": "29a2c35ccfc1f50b4025ffc510adfc24bf149270",
+          "amendmentNumber": 15
+        }
+      ]
+    },
+    "federal-constitution/article-042.md": {
+      "changeCount": 2,
+      "amendments": [
+        {
+          "commitHash": "c5fda48dbfca6f6795ca81ad6188aaa9c12843a4",
+          "amendmentNumber": 24
+        }
+      ]
+    },
+    "federal-constitution/article-043.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-044.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-045.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-046.md": {
+      "changeCount": 2,
+      "amendments": [
+        {
+          "commitHash": "29a2c35ccfc1f50b4025ffc510adfc24bf149270",
+          "amendmentNumber": 15
+        }
+      ]
+    },
+    "federal-constitution/article-047.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-048.md": {
+      "changeCount": 5,
+      "amendments": [
+        {
+          "commitHash": "e0ddba7c820aff60efd8f8c5a5ffd02401efc2d2",
+          "amendmentNumber": 8
+        },
+        {
+          "commitHash": "29a2c35ccfc1f50b4025ffc510adfc24bf149270",
+          "amendmentNumber": 15
+        },
+        {
+          "commitHash": "8d521d8b4ed1a47cbe67fad306668bb1649b2a29",
+          "amendmentNumber": 17
+        },
+        {
+          "commitHash": "599ecf2f28a1f4c65149e341b154acd170cebe20",
+          "amendmentNumber": 23
+        }
+      ]
+    },
+    "federal-constitution/article-049.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-050.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-051.md": {
+      "changeCount": 6,
+      "amendments": [
+        {
+          "commitHash": "ecb63084f571d096abfa0b6d129c54538470ea63",
+          "amendmentNumber": 4
+        },
+        {
+          "commitHash": "e0ddba7c820aff60efd8f8c5a5ffd02401efc2d2",
+          "amendmentNumber": 8
+        },
+        {
+          "commitHash": "29a2c35ccfc1f50b4025ffc510adfc24bf149270",
+          "amendmentNumber": 15
+        },
+        {
+          "commitHash": "fc40fa818007abb2cc48425ca62e525d910b366c",
+          "amendmentNumber": 21
+        },
+        {
+          "commitHash": "7dbf4522e2bde6aa6c5ea4d6e96d667a550d2465",
+          "amendmentNumber": 22
+        }
+      ]
+    },
+    "federal-constitution/article-052.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-053.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-054.md": {
+      "changeCount": 3,
+      "amendments": [
+        {
+          "commitHash": "ecb63084f571d096abfa0b6d129c54538470ea63",
+          "amendmentNumber": 4
+        },
+        {
+          "commitHash": "d13d65ef1546350de916df621b68bf0b9192c3a7",
+          "amendmentNumber": 9
+        }
+      ]
+    },
+    "federal-constitution/article-055.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-056.md": {
+      "changeCount": 2,
+      "amendments": [
+        {
+          "commitHash": "e0ddba7c820aff60efd8f8c5a5ffd02401efc2d2",
+          "amendmentNumber": 8
+        }
+      ]
+    },
+    "federal-constitution/article-057.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-058.md": {
+      "changeCount": 5,
+      "amendments": [
+        {
+          "commitHash": "e0ddba7c820aff60efd8f8c5a5ffd02401efc2d2",
+          "amendmentNumber": 8
+        },
+        {
+          "commitHash": "fa6eb54f2f322aad41a7f66184c2b53935567ef9",
+          "amendmentNumber": 11
+        },
+        {
+          "commitHash": "bcad3e892450e90edcde0effcc5793c4ae9f88c4",
+          "amendmentNumber": 14
+        },
+        {
+          "commitHash": "29a2c35ccfc1f50b4025ffc510adfc24bf149270",
+          "amendmentNumber": 15
+        }
+      ]
+    },
+    "federal-constitution/article-059.md": {
+      "changeCount": 5,
+      "amendments": [
+        {
+          "commitHash": "e0ddba7c820aff60efd8f8c5a5ffd02401efc2d2",
+          "amendmentNumber": 8
+        },
+        {
+          "commitHash": "29a2c35ccfc1f50b4025ffc510adfc24bf149270",
+          "amendmentNumber": 15
+        },
+        {
+          "commitHash": "7dbf4522e2bde6aa6c5ea4d6e96d667a550d2465",
+          "amendmentNumber": 22
+        },
+        {
+          "commitHash": "c5fda48dbfca6f6795ca81ad6188aaa9c12843a4",
+          "amendmentNumber": 24
+        }
+      ]
+    },
+    "federal-constitution/article-060.md": {
+      "changeCount": 2,
+      "amendments": [
+        {
+          "commitHash": "e0ddba7c820aff60efd8f8c5a5ffd02401efc2d2",
+          "amendmentNumber": 8
+        }
+      ]
+    },
+    "federal-constitution/article-061.md": {
+      "changeCount": 4,
+      "amendments": [
+        {
+          "commitHash": "b9b13725a9079991836ec3f0c37a30a0cb2ebbe7",
+          "amendmentNumber": 1
+        },
+        {
+          "commitHash": "d13d65ef1546350de916df621b68bf0b9192c3a7",
+          "amendmentNumber": 9
+        },
+        {
+          "commitHash": "29a2c35ccfc1f50b4025ffc510adfc24bf149270",
+          "amendmentNumber": 15
+        }
+      ]
+    },
+    "federal-constitution/article-062.md": {
+      "changeCount": 3,
+      "amendments": [
+        {
+          "commitHash": "29a2c35ccfc1f50b4025ffc510adfc24bf149270",
+          "amendmentNumber": 15
+        },
+        {
+          "commitHash": "7dbf4522e2bde6aa6c5ea4d6e96d667a550d2465",
+          "amendmentNumber": 22
+        }
+      ]
+    },
+    "federal-constitution/article-063-A.md": {
+      "changeCount": 3,
+      "amendments": [
+        {
+          "commitHash": "c338658a2acdf4fdaa9baf5993a7c50d9d13e495",
+          "amendmentNumber": 12
+        },
+        {
+          "commitHash": "29a2c35ccfc1f50b4025ffc510adfc24bf149270",
+          "amendmentNumber": 15
+        },
+        {
+          "commitHash": "c5fda48dbfca6f6795ca81ad6188aaa9c12843a4",
+          "amendmentNumber": 24
+        }
+      ]
+    },
+    "federal-constitution/article-063.md": {
+      "changeCount": 2,
+      "amendments": [
+        {
+          "commitHash": "29a2c35ccfc1f50b4025ffc510adfc24bf149270",
+          "amendmentNumber": 15
+        }
+      ]
+    },
+    "federal-constitution/article-064.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-065.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-066.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-067.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-068.md": {
+      "changeCount": 2,
+      "amendments": [
+        {
+          "commitHash": "c5fda48dbfca6f6795ca81ad6188aaa9c12843a4",
+          "amendmentNumber": 24
+        }
+      ]
+    },
+    "federal-constitution/article-069.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-070.md": {
+      "changeCount": 2,
+      "amendments": [
+        {
+          "commitHash": "29a2c35ccfc1f50b4025ffc510adfc24bf149270",
+          "amendmentNumber": 15
+        }
+      ]
+    },
+    "federal-constitution/article-071.md": {
+      "changeCount": 2,
+      "amendments": [
+        {
+          "commitHash": "29a2c35ccfc1f50b4025ffc510adfc24bf149270",
+          "amendmentNumber": 15
+        }
+      ]
+    },
+    "federal-constitution/article-072.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-073.md": {
+      "changeCount": 2,
+      "amendments": [
+        {
+          "commitHash": "29a2c35ccfc1f50b4025ffc510adfc24bf149270",
+          "amendmentNumber": 15
+        }
+      ]
+    },
+    "federal-constitution/article-074.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-075.md": {
+      "changeCount": 3,
+      "amendments": [
+        {
+          "commitHash": "e0ddba7c820aff60efd8f8c5a5ffd02401efc2d2",
+          "amendmentNumber": 8
+        },
+        {
+          "commitHash": "29a2c35ccfc1f50b4025ffc510adfc24bf149270",
+          "amendmentNumber": 15
+        }
+      ]
+    },
+    "federal-constitution/article-076.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-077.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-078.md": {
+      "changeCount": 2,
+      "amendments": [
+        {
+          "commitHash": "c5fda48dbfca6f6795ca81ad6188aaa9c12843a4",
+          "amendmentNumber": 24
+        }
+      ]
+    },
+    "federal-constitution/article-079.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-080.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-081.md": {
+      "changeCount": 5,
+      "amendments": [
+        {
+          "commitHash": "530b9991d30712a6f999981c51530eb9536a2377",
+          "amendmentNumber": 16
+        },
+        {
+          "commitHash": "844462f8db036568f97423a5ae3e0625abbc8352",
+          "amendmentNumber": 19
+        },
+        {
+          "commitHash": "599ecf2f28a1f4c65149e341b154acd170cebe20",
+          "amendmentNumber": 23
+        },
+        {
+          "commitHash": "c5fda48dbfca6f6795ca81ad6188aaa9c12843a4",
+          "amendmentNumber": 24
+        }
+      ]
+    },
+    "federal-constitution/article-082.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-083.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-084.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-085.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-086.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-087.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-088.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-089.md": {
+      "changeCount": 2,
+      "amendments": [
+        {
+          "commitHash": "29a2c35ccfc1f50b4025ffc510adfc24bf149270",
+          "amendmentNumber": 15
+        }
+      ]
+    },
+    "federal-constitution/article-090.md": {
+      "changeCount": 3,
+      "amendments": [
+        {
+          "commitHash": "e0ddba7c820aff60efd8f8c5a5ffd02401efc2d2",
+          "amendmentNumber": 8
+        },
+        {
+          "commitHash": "29a2c35ccfc1f50b4025ffc510adfc24bf149270",
+          "amendmentNumber": 15
+        }
+      ]
+    },
+    "federal-constitution/article-091.md": {
+      "changeCount": 3,
+      "amendments": [
+        {
+          "commitHash": "e0ddba7c820aff60efd8f8c5a5ffd02401efc2d2",
+          "amendmentNumber": 8
+        },
+        {
+          "commitHash": "29a2c35ccfc1f50b4025ffc510adfc24bf149270",
+          "amendmentNumber": 15
+        }
+      ]
+    },
+    "federal-constitution/article-092.md": {
+      "changeCount": 2,
+      "amendments": [
+        {
+          "commitHash": "29a2c35ccfc1f50b4025ffc510adfc24bf149270",
+          "amendmentNumber": 15
+        }
+      ]
+    },
+    "federal-constitution/article-093.md": {
+      "changeCount": 2,
+      "amendments": [
+        {
+          "commitHash": "c5fda48dbfca6f6795ca81ad6188aaa9c12843a4",
+          "amendmentNumber": 24
+        }
+      ]
+    },
+    "federal-constitution/article-094.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-095.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-096-A.md": {
+      "changeCount": 1,
+      "amendments": [
+        {
+          "commitHash": "aab6e95edcfabc40a92ef6e5fd093dd959ab9bc5",
+          "amendmentNumber": 7
+        }
+      ]
+    },
+    "federal-constitution/article-096.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-097.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-098.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-099.md": {
+      "changeCount": 2,
+      "amendments": [
+        {
+          "commitHash": "29a2c35ccfc1f50b4025ffc510adfc24bf149270",
+          "amendmentNumber": 15
+        }
+      ]
+    },
+    "federal-constitution/article-100.md": {
+      "changeCount": 3,
+      "amendments": [
+        {
+          "commitHash": "29a2c35ccfc1f50b4025ffc510adfc24bf149270",
+          "amendmentNumber": 15
+        },
+        {
+          "commitHash": "c5fda48dbfca6f6795ca81ad6188aaa9c12843a4",
+          "amendmentNumber": 24
+        }
+      ]
+    },
+    "federal-constitution/article-101.md": {
+      "changeCount": 7,
+      "amendments": [
+        {
+          "commitHash": "b9b13725a9079991836ec3f0c37a30a0cb2ebbe7",
+          "amendmentNumber": 1
+        },
+        {
+          "commitHash": "1a57ab05c9d142064bc9e9f70d7be5a90227d4cd",
+          "amendmentNumber": 5
+        },
+        {
+          "commitHash": "aab6e95edcfabc40a92ef6e5fd093dd959ab9bc5",
+          "amendmentNumber": 7
+        },
+        {
+          "commitHash": "e0ddba7c820aff60efd8f8c5a5ffd02401efc2d2",
+          "amendmentNumber": 8
+        },
+        {
+          "commitHash": "fa6eb54f2f322aad41a7f66184c2b53935567ef9",
+          "amendmentNumber": 11
+        },
+        {
+          "commitHash": "29a2c35ccfc1f50b4025ffc510adfc24bf149270",
+          "amendmentNumber": 15
+        }
+      ]
+    },
+    "federal-constitution/article-102.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-103.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-104.md": {
+      "changeCount": 2,
+      "amendments": [
+        {
+          "commitHash": "29a2c35ccfc1f50b4025ffc510adfc24bf149270",
+          "amendmentNumber": 15
+        }
+      ]
+    },
+    "federal-constitution/article-105.md": {
+      "changeCount": 3,
+      "amendments": [
+        {
+          "commitHash": "e0ddba7c820aff60efd8f8c5a5ffd02401efc2d2",
+          "amendmentNumber": 8
+        },
+        {
+          "commitHash": "29a2c35ccfc1f50b4025ffc510adfc24bf149270",
+          "amendmentNumber": 15
+        }
+      ]
+    },
+    "federal-constitution/article-106.md": {
+      "changeCount": 6,
+      "amendments": [
+        {
+          "commitHash": "b15a257d0cdb43f3300bce7063dd878e84c88b6d",
+          "amendmentNumber": 2
+        },
+        {
+          "commitHash": "ecb63084f571d096abfa0b6d129c54538470ea63",
+          "amendmentNumber": 4
+        },
+        {
+          "commitHash": "e0ddba7c820aff60efd8f8c5a5ffd02401efc2d2",
+          "amendmentNumber": 8
+        },
+        {
+          "commitHash": "29a2c35ccfc1f50b4025ffc510adfc24bf149270",
+          "amendmentNumber": 15
+        },
+        {
+          "commitHash": "7dbf4522e2bde6aa6c5ea4d6e96d667a550d2465",
+          "amendmentNumber": 22
+        }
+      ]
+    },
+    "federal-constitution/article-107.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-108.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-109.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-110.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-111.md": {
+      "changeCount": 2,
+      "amendments": [
+        {
+          "commitHash": "599ecf2f28a1f4c65149e341b154acd170cebe20",
+          "amendmentNumber": 23
+        }
+      ]
+    },
+    "federal-constitution/article-112.md": {
+      "changeCount": 5,
+      "amendments": [
+        {
+          "commitHash": "e0ddba7c820aff60efd8f8c5a5ffd02401efc2d2",
+          "amendmentNumber": 8
+        },
+        {
+          "commitHash": "fa6eb54f2f322aad41a7f66184c2b53935567ef9",
+          "amendmentNumber": 11
+        },
+        {
+          "commitHash": "bcad3e892450e90edcde0effcc5793c4ae9f88c4",
+          "amendmentNumber": 14
+        },
+        {
+          "commitHash": "29a2c35ccfc1f50b4025ffc510adfc24bf149270",
+          "amendmentNumber": 15
+        }
+      ]
+    },
+    "federal-constitution/article-113.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-114.md": {
+      "changeCount": 2,
+      "amendments": [
+        {
+          "commitHash": "c5fda48dbfca6f6795ca81ad6188aaa9c12843a4",
+          "amendmentNumber": 24
+        }
+      ]
+    },
+    "federal-constitution/article-115.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-116.md": {
+      "changeCount": 3,
+      "amendments": [
+        {
+          "commitHash": "e0ddba7c820aff60efd8f8c5a5ffd02401efc2d2",
+          "amendmentNumber": 8
+        },
+        {
+          "commitHash": "29a2c35ccfc1f50b4025ffc510adfc24bf149270",
+          "amendmentNumber": 15
+        }
+      ]
+    },
+    "federal-constitution/article-117.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-118.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-119.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-120.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-121.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-122.md": {
+      "changeCount": 2,
+      "amendments": [
+        {
+          "commitHash": "29a2c35ccfc1f50b4025ffc510adfc24bf149270",
+          "amendmentNumber": 15
+        }
+      ]
+    },
+    "federal-constitution/article-123.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-124.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-125.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-126.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-127.md": {
+      "changeCount": 3,
+      "amendments": [
+        {
+          "commitHash": "b9b13725a9079991836ec3f0c37a30a0cb2ebbe7",
+          "amendmentNumber": 1
+        },
+        {
+          "commitHash": "29a2c35ccfc1f50b4025ffc510adfc24bf149270",
+          "amendmentNumber": 15
+        }
+      ]
+    },
+    "federal-constitution/article-128.md": {
+      "changeCount": 2,
+      "amendments": [
+        {
+          "commitHash": "29a2c35ccfc1f50b4025ffc510adfc24bf149270",
+          "amendmentNumber": 15
+        }
+      ]
+    },
+    "federal-constitution/article-129.md": {
+      "changeCount": 2,
+      "amendments": [
+        {
+          "commitHash": "29a2c35ccfc1f50b4025ffc510adfc24bf149270",
+          "amendmentNumber": 15
+        }
+      ]
+    },
+    "federal-constitution/article-130.md": {
+      "changeCount": 4,
+      "amendments": [
+        {
+          "commitHash": "e0ddba7c820aff60efd8f8c5a5ffd02401efc2d2",
+          "amendmentNumber": 8
+        },
+        {
+          "commitHash": "29a2c35ccfc1f50b4025ffc510adfc24bf149270",
+          "amendmentNumber": 15
+        },
+        {
+          "commitHash": "c5fda48dbfca6f6795ca81ad6188aaa9c12843a4",
+          "amendmentNumber": 24
+        }
+      ]
+    },
+    "federal-constitution/article-131.md": {
+      "changeCount": 2,
+      "amendments": [
+        {
+          "commitHash": "29a2c35ccfc1f50b4025ffc510adfc24bf149270",
+          "amendmentNumber": 15
+        }
+      ]
+    },
+    "federal-constitution/article-132.md": {
+      "changeCount": 2,
+      "amendments": [
+        {
+          "commitHash": "29a2c35ccfc1f50b4025ffc510adfc24bf149270",
+          "amendmentNumber": 15
+        }
+      ]
+    },
+    "federal-constitution/article-133.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-134.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-135.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-136.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-137.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-138.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-139.md": {
+      "changeCount": 2,
+      "amendments": [
+        {
+          "commitHash": "29a2c35ccfc1f50b4025ffc510adfc24bf149270",
+          "amendmentNumber": 15
+        }
+      ]
+    },
+    "federal-constitution/article-140-A.md": {
+      "changeCount": 1,
+      "amendments": [
+        {
+          "commitHash": "29a2c35ccfc1f50b4025ffc510adfc24bf149270",
+          "amendmentNumber": 15
+        }
+      ]
+    },
+    "federal-constitution/article-140.md": {
+      "changeCount": 2,
+      "amendments": [
+        {
+          "commitHash": "29a2c35ccfc1f50b4025ffc510adfc24bf149270",
+          "amendmentNumber": 15
+        }
+      ]
+    },
+    "federal-constitution/article-141.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-142.md": {
+      "changeCount": 2,
+      "amendments": [
+        {
+          "commitHash": "29a2c35ccfc1f50b4025ffc510adfc24bf149270",
+          "amendmentNumber": 15
+        }
+      ]
+    },
+    "federal-constitution/article-143.md": {
+      "changeCount": 2,
+      "amendments": [
+        {
+          "commitHash": "29a2c35ccfc1f50b4025ffc510adfc24bf149270",
+          "amendmentNumber": 15
+        }
+      ]
+    },
+    "federal-constitution/article-144.md": {
+      "changeCount": 3,
+      "amendments": [
+        {
+          "commitHash": "e0ddba7c820aff60efd8f8c5a5ffd02401efc2d2",
+          "amendmentNumber": 8
+        },
+        {
+          "commitHash": "29a2c35ccfc1f50b4025ffc510adfc24bf149270",
+          "amendmentNumber": 15
+        }
+      ]
+    },
+    "federal-constitution/article-145.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-146.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-147.md": {
+      "changeCount": 2,
+      "amendments": [
+        {
+          "commitHash": "29a2c35ccfc1f50b4025ffc510adfc24bf149270",
+          "amendmentNumber": 15
+        }
+      ]
+    },
+    "federal-constitution/article-148.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-149.md": {
+      "changeCount": 2,
+      "amendments": [
+        {
+          "commitHash": "29a2c35ccfc1f50b4025ffc510adfc24bf149270",
+          "amendmentNumber": 15
+        }
+      ]
+    },
+    "federal-constitution/article-150.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-151.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-152.md": {
+      "changeCount": 3,
+      "amendments": [
+        {
+          "commitHash": "bcad3e892450e90edcde0effcc5793c4ae9f88c4",
+          "amendmentNumber": 14
+        },
+        {
+          "commitHash": "29a2c35ccfc1f50b4025ffc510adfc24bf149270",
+          "amendmentNumber": 15
+        }
+      ]
+    },
+    "federal-constitution/article-153.md": {
+      "changeCount": 2,
+      "amendments": [
+        {
+          "commitHash": "29a2c35ccfc1f50b4025ffc510adfc24bf149270",
+          "amendmentNumber": 15
+        }
+      ]
+    },
+    "federal-constitution/article-154.md": {
+      "changeCount": 2,
+      "amendments": [
+        {
+          "commitHash": "29a2c35ccfc1f50b4025ffc510adfc24bf149270",
+          "amendmentNumber": 15
+        }
+      ]
+    },
+    "federal-constitution/article-155.md": {
+      "changeCount": 3,
+      "amendments": [
+        {
+          "commitHash": "29a2c35ccfc1f50b4025ffc510adfc24bf149270",
+          "amendmentNumber": 15
+        },
+        {
+          "commitHash": "7dbf4522e2bde6aa6c5ea4d6e96d667a550d2465",
+          "amendmentNumber": 22
+        }
+      ]
+    },
+    "federal-constitution/article-156.md": {
+      "changeCount": 2,
+      "amendments": [
+        {
+          "commitHash": "29a2c35ccfc1f50b4025ffc510adfc24bf149270",
+          "amendmentNumber": 15
+        }
+      ]
+    },
+    "federal-constitution/article-157.md": {
+      "changeCount": 2,
+      "amendments": [
+        {
+          "commitHash": "29a2c35ccfc1f50b4025ffc510adfc24bf149270",
+          "amendmentNumber": 15
+        }
+      ]
+    },
+    "federal-constitution/article-158.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-159.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-160.md": {
+      "changeCount": 3,
+      "amendments": [
+        {
+          "commitHash": "1a57ab05c9d142064bc9e9f70d7be5a90227d4cd",
+          "amendmentNumber": 5
+        },
+        {
+          "commitHash": "29a2c35ccfc1f50b4025ffc510adfc24bf149270",
+          "amendmentNumber": 15
+        }
+      ]
+    },
+    "federal-constitution/article-161.md": {
+      "changeCount": 2,
+      "amendments": [
+        {
+          "commitHash": "29a2c35ccfc1f50b4025ffc510adfc24bf149270",
+          "amendmentNumber": 15
+        }
+      ]
+    },
+    "federal-constitution/article-162.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-163.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-164.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-165-A.md": {
+      "changeCount": 1,
+      "amendments": [
+        {
+          "commitHash": "c5fda48dbfca6f6795ca81ad6188aaa9c12843a4",
+          "amendmentNumber": 24
+        }
+      ]
+    },
+    "federal-constitution/article-165.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-166.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-167.md": {
+      "changeCount": 2,
+      "amendments": [
+        {
+          "commitHash": "29a2c35ccfc1f50b4025ffc510adfc24bf149270",
+          "amendmentNumber": 15
+        }
+      ]
+    },
+    "federal-constitution/article-168.md": {
+      "changeCount": 2,
+      "amendments": [
+        {
+          "commitHash": "29a2c35ccfc1f50b4025ffc510adfc24bf149270",
+          "amendmentNumber": 15
+        }
+      ]
+    },
+    "federal-constitution/article-169.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-170.md": {
+      "changeCount": 2,
+      "amendments": [
+        {
+          "commitHash": "29a2c35ccfc1f50b4025ffc510adfc24bf149270",
+          "amendmentNumber": 15
+        }
+      ]
+    },
+    "federal-constitution/article-171.md": {
+      "changeCount": 2,
+      "amendments": [
+        {
+          "commitHash": "29a2c35ccfc1f50b4025ffc510adfc24bf149270",
+          "amendmentNumber": 15
+        }
+      ]
+    },
+    "federal-constitution/article-172.md": {
+      "changeCount": 2,
+      "amendments": [
+        {
+          "commitHash": "29a2c35ccfc1f50b4025ffc510adfc24bf149270",
+          "amendmentNumber": 15
+        }
+      ]
+    },
+    "federal-constitution/article-173.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-174.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-175-A.md": {
+      "changeCount": 4,
+      "amendments": [
+        {
+          "commitHash": "29a2c35ccfc1f50b4025ffc510adfc24bf149270",
+          "amendmentNumber": 15
+        },
+        {
+          "commitHash": "530b9991d30712a6f999981c51530eb9536a2377",
+          "amendmentNumber": 16
+        },
+        {
+          "commitHash": "599ecf2f28a1f4c65149e341b154acd170cebe20",
+          "amendmentNumber": 23
+        },
+        {
+          "commitHash": "c5fda48dbfca6f6795ca81ad6188aaa9c12843a4",
+          "amendmentNumber": 24
+        }
+      ]
+    },
+    "federal-constitution/article-175-B.md": {
+      "changeCount": 1,
+      "amendments": [
+        {
+          "commitHash": "c5fda48dbfca6f6795ca81ad6188aaa9c12843a4",
+          "amendmentNumber": 24
+        }
+      ]
+    },
+    "federal-constitution/article-175-C.md": {
+      "changeCount": 1,
+      "amendments": [
+        {
+          "commitHash": "c5fda48dbfca6f6795ca81ad6188aaa9c12843a4",
+          "amendmentNumber": 24
+        }
+      ]
+    },
+    "federal-constitution/article-175-D.md": {
+      "changeCount": 1,
+      "amendments": [
+        {
+          "commitHash": "c5fda48dbfca6f6795ca81ad6188aaa9c12843a4",
+          "amendmentNumber": 24
+        }
+      ]
+    },
+    "federal-constitution/article-175-E.md": {
+      "changeCount": 1,
+      "amendments": [
+        {
+          "commitHash": "c5fda48dbfca6f6795ca81ad6188aaa9c12843a4",
+          "amendmentNumber": 24
+        }
+      ]
+    },
+    "federal-constitution/article-175-F.md": {
+      "changeCount": 1,
+      "amendments": [
+        {
+          "commitHash": "c5fda48dbfca6f6795ca81ad6188aaa9c12843a4",
+          "amendmentNumber": 24
+        }
+      ]
+    },
+    "federal-constitution/article-175-G.md": {
+      "changeCount": 1,
+      "amendments": [
+        {
+          "commitHash": "c5fda48dbfca6f6795ca81ad6188aaa9c12843a4",
+          "amendmentNumber": 24
+        }
+      ]
+    },
+    "federal-constitution/article-175-H.md": {
+      "changeCount": 1,
+      "amendments": [
+        {
+          "commitHash": "c5fda48dbfca6f6795ca81ad6188aaa9c12843a4",
+          "amendmentNumber": 24
+        }
+      ]
+    },
+    "federal-constitution/article-175-I.md": {
+      "changeCount": 1,
+      "amendments": [
+        {
+          "commitHash": "c5fda48dbfca6f6795ca81ad6188aaa9c12843a4",
+          "amendmentNumber": 24
+        }
+      ]
+    },
+    "federal-constitution/article-175-J.md": {
+      "changeCount": 1,
+      "amendments": [
+        {
+          "commitHash": "c5fda48dbfca6f6795ca81ad6188aaa9c12843a4",
+          "amendmentNumber": 24
+        }
+      ]
+    },
+    "federal-constitution/article-175-K.md": {
+      "changeCount": 1,
+      "amendments": [
+        {
+          "commitHash": "c5fda48dbfca6f6795ca81ad6188aaa9c12843a4",
+          "amendmentNumber": 24
+        }
+      ]
+    },
+    "federal-constitution/article-175-L.md": {
+      "changeCount": 1,
+      "amendments": [
+        {
+          "commitHash": "c5fda48dbfca6f6795ca81ad6188aaa9c12843a4",
+          "amendmentNumber": 24
+        }
+      ]
+    },
+    "federal-constitution/article-175.md": {
+      "changeCount": 7,
+      "amendments": [
+        {
+          "commitHash": "1a57ab05c9d142064bc9e9f70d7be5a90227d4cd",
+          "amendmentNumber": 5
+        },
+        {
+          "commitHash": "29a2c35ccfc1f50b4025ffc510adfc24bf149270",
+          "amendmentNumber": 15
+        },
+        {
+          "commitHash": "530b9991d30712a6f999981c51530eb9536a2377",
+          "amendmentNumber": 16
+        },
+        {
+          "commitHash": "9ef55875ceabc9d338cd176694208e3e7fd7556e",
+          "amendmentNumber": 18
+        },
+        {
+          "commitHash": "6b777373c4416a8e99c0a9c28b6631aab8cc84dc",
+          "amendmentNumber": 20
+        },
+        {
+          "commitHash": "c5fda48dbfca6f6795ca81ad6188aaa9c12843a4",
+          "amendmentNumber": 24
+        }
+      ]
+    },
+    "federal-constitution/article-176.md": {
+      "changeCount": 2,
+      "amendments": [
+        {
+          "commitHash": "c5fda48dbfca6f6795ca81ad6188aaa9c12843a4",
+          "amendmentNumber": 24
+        }
+      ]
+    },
+    "federal-constitution/article-177.md": {
+      "changeCount": 4,
+      "amendments": [
+        {
+          "commitHash": "29a2c35ccfc1f50b4025ffc510adfc24bf149270",
+          "amendmentNumber": 15
+        },
+        {
+          "commitHash": "599ecf2f28a1f4c65149e341b154acd170cebe20",
+          "amendmentNumber": 23
+        },
+        {
+          "commitHash": "c5fda48dbfca6f6795ca81ad6188aaa9c12843a4",
+          "amendmentNumber": 24
+        }
+      ]
+    },
+    "federal-constitution/article-178.md": {
+      "changeCount": 2,
+      "amendments": [
+        {
+          "commitHash": "c5fda48dbfca6f6795ca81ad6188aaa9c12843a4",
+          "amendmentNumber": 24
+        }
+      ]
+    },
+    "federal-constitution/article-179.md": {
+      "changeCount": 6,
+      "amendments": [
+        {
+          "commitHash": "1a57ab05c9d142064bc9e9f70d7be5a90227d4cd",
+          "amendmentNumber": 5
+        },
+        {
+          "commitHash": "f9a01db704234022d5442ca57399404b687d8adc",
+          "amendmentNumber": 6
+        },
+        {
+          "commitHash": "bcad3e892450e90edcde0effcc5793c4ae9f88c4",
+          "amendmentNumber": 14
+        },
+        {
+          "commitHash": "599ecf2f28a1f4c65149e341b154acd170cebe20",
+          "amendmentNumber": 23
+        },
+        {
+          "commitHash": "c5fda48dbfca6f6795ca81ad6188aaa9c12843a4",
+          "amendmentNumber": 24
+        }
+      ]
+    },
+    "federal-constitution/article-180.md": {
+      "changeCount": 3,
+      "amendments": [
+        {
+          "commitHash": "1a57ab05c9d142064bc9e9f70d7be5a90227d4cd",
+          "amendmentNumber": 5
+        },
+        {
+          "commitHash": "c5fda48dbfca6f6795ca81ad6188aaa9c12843a4",
+          "amendmentNumber": 24
+        }
+      ]
+    },
+    "federal-constitution/article-181.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-182.md": {
+      "changeCount": 3,
+      "amendments": [
+        {
+          "commitHash": "530b9991d30712a6f999981c51530eb9536a2377",
+          "amendmentNumber": 16
+        },
+        {
+          "commitHash": "c5fda48dbfca6f6795ca81ad6188aaa9c12843a4",
+          "amendmentNumber": 24
+        }
+      ]
+    },
+    "federal-constitution/article-183.md": {
+      "changeCount": 2,
+      "amendments": [
+        {
+          "commitHash": "c5fda48dbfca6f6795ca81ad6188aaa9c12843a4",
+          "amendmentNumber": 24
+        }
+      ]
+    },
+    "federal-constitution/article-184.md": {
+      "changeCount": 3,
+      "amendments": [
+        {
+          "commitHash": "599ecf2f28a1f4c65149e341b154acd170cebe20",
+          "amendmentNumber": 23
+        },
+        {
+          "commitHash": "c5fda48dbfca6f6795ca81ad6188aaa9c12843a4",
+          "amendmentNumber": 24
+        }
+      ]
+    },
+    "federal-constitution/article-185.md": {
+      "changeCount": 3,
+      "amendments": [
+        {
+          "commitHash": "599ecf2f28a1f4c65149e341b154acd170cebe20",
+          "amendmentNumber": 23
+        },
+        {
+          "commitHash": "c5fda48dbfca6f6795ca81ad6188aaa9c12843a4",
+          "amendmentNumber": 24
+        }
+      ]
+    },
+    "federal-constitution/article-186-A.md": {
+      "changeCount": 2,
+      "amendments": [
+        {
+          "commitHash": "599ecf2f28a1f4c65149e341b154acd170cebe20",
+          "amendmentNumber": 23
+        },
+        {
+          "commitHash": "c5fda48dbfca6f6795ca81ad6188aaa9c12843a4",
+          "amendmentNumber": 24
+        }
+      ]
+    },
+    "federal-constitution/article-186.md": {
+      "changeCount": 2,
+      "amendments": [
+        {
+          "commitHash": "c5fda48dbfca6f6795ca81ad6188aaa9c12843a4",
+          "amendmentNumber": 24
+        }
+      ]
+    },
+    "federal-constitution/article-187.md": {
+      "changeCount": 4,
+      "amendments": [
+        {
+          "commitHash": "1a57ab05c9d142064bc9e9f70d7be5a90227d4cd",
+          "amendmentNumber": 5
+        },
+        {
+          "commitHash": "599ecf2f28a1f4c65149e341b154acd170cebe20",
+          "amendmentNumber": 23
+        },
+        {
+          "commitHash": "c5fda48dbfca6f6795ca81ad6188aaa9c12843a4",
+          "amendmentNumber": 24
+        }
+      ]
+    },
+    "federal-constitution/article-188.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-189.md": {
+      "changeCount": 2,
+      "amendments": [
+        {
+          "commitHash": "c5fda48dbfca6f6795ca81ad6188aaa9c12843a4",
+          "amendmentNumber": 24
+        }
+      ]
+    },
+    "federal-constitution/article-190.md": {
+      "changeCount": 2,
+      "amendments": [
+        {
+          "commitHash": "c5fda48dbfca6f6795ca81ad6188aaa9c12843a4",
+          "amendmentNumber": 24
+        }
+      ]
+    },
+    "federal-constitution/article-191-A.md": {
+      "changeCount": 2,
+      "amendments": [
+        {
+          "commitHash": "599ecf2f28a1f4c65149e341b154acd170cebe20",
+          "amendmentNumber": 23
+        },
+        {
+          "commitHash": "c5fda48dbfca6f6795ca81ad6188aaa9c12843a4",
+          "amendmentNumber": 24
+        }
+      ]
+    },
+    "federal-constitution/article-191.md": {
+      "changeCount": 2,
+      "amendments": [
+        {
+          "commitHash": "c5fda48dbfca6f6795ca81ad6188aaa9c12843a4",
+          "amendmentNumber": 24
+        }
+      ]
+    },
+    "federal-constitution/article-192.md": {
+      "changeCount": 3,
+      "amendments": [
+        {
+          "commitHash": "1a57ab05c9d142064bc9e9f70d7be5a90227d4cd",
+          "amendmentNumber": 5
+        },
+        {
+          "commitHash": "c5fda48dbfca6f6795ca81ad6188aaa9c12843a4",
+          "amendmentNumber": 24
+        }
+      ]
+    },
+    "federal-constitution/article-193.md": {
+      "changeCount": 5,
+      "amendments": [
+        {
+          "commitHash": "b9b13725a9079991836ec3f0c37a30a0cb2ebbe7",
+          "amendmentNumber": 1
+        },
+        {
+          "commitHash": "29a2c35ccfc1f50b4025ffc510adfc24bf149270",
+          "amendmentNumber": 15
+        },
+        {
+          "commitHash": "599ecf2f28a1f4c65149e341b154acd170cebe20",
+          "amendmentNumber": 23
+        },
+        {
+          "commitHash": "c5fda48dbfca6f6795ca81ad6188aaa9c12843a4",
+          "amendmentNumber": 24
+        }
+      ]
+    },
+    "federal-constitution/article-194.md": {
+      "changeCount": 2,
+      "amendments": [
+        {
+          "commitHash": "29a2c35ccfc1f50b4025ffc510adfc24bf149270",
+          "amendmentNumber": 15
+        }
+      ]
+    },
+    "federal-constitution/article-195.md": {
+      "changeCount": 4,
+      "amendments": [
+        {
+          "commitHash": "1a57ab05c9d142064bc9e9f70d7be5a90227d4cd",
+          "amendmentNumber": 5
+        },
+        {
+          "commitHash": "f9a01db704234022d5442ca57399404b687d8adc",
+          "amendmentNumber": 6
+        },
+        {
+          "commitHash": "bcad3e892450e90edcde0effcc5793c4ae9f88c4",
+          "amendmentNumber": 14
+        }
+      ]
+    },
+    "federal-constitution/article-196.md": {
+      "changeCount": 2,
+      "amendments": [
+        {
+          "commitHash": "1a57ab05c9d142064bc9e9f70d7be5a90227d4cd",
+          "amendmentNumber": 5
+        }
+      ]
+    },
+    "federal-constitution/article-197.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-198.md": {
+      "changeCount": 2,
+      "amendments": [
+        {
+          "commitHash": "29a2c35ccfc1f50b4025ffc510adfc24bf149270",
+          "amendmentNumber": 15
+        }
+      ]
+    },
+    "federal-constitution/article-199.md": {
+      "changeCount": 7,
+      "amendments": [
+        {
+          "commitHash": "b9b13725a9079991836ec3f0c37a30a0cb2ebbe7",
+          "amendmentNumber": 1
+        },
+        {
+          "commitHash": "ecb63084f571d096abfa0b6d129c54538470ea63",
+          "amendmentNumber": 4
+        },
+        {
+          "commitHash": "1a57ab05c9d142064bc9e9f70d7be5a90227d4cd",
+          "amendmentNumber": 5
+        },
+        {
+          "commitHash": "29a2c35ccfc1f50b4025ffc510adfc24bf149270",
+          "amendmentNumber": 15
+        },
+        {
+          "commitHash": "599ecf2f28a1f4c65149e341b154acd170cebe20",
+          "amendmentNumber": 23
+        },
+        {
+          "commitHash": "c5fda48dbfca6f6795ca81ad6188aaa9c12843a4",
+          "amendmentNumber": 24
+        }
+      ]
+    },
+    "federal-constitution/article-200.md": {
+      "changeCount": 5,
+      "amendments": [
+        {
+          "commitHash": "b9b13725a9079991836ec3f0c37a30a0cb2ebbe7",
+          "amendmentNumber": 1
+        },
+        {
+          "commitHash": "1a57ab05c9d142064bc9e9f70d7be5a90227d4cd",
+          "amendmentNumber": 5
+        },
+        {
+          "commitHash": "29a2c35ccfc1f50b4025ffc510adfc24bf149270",
+          "amendmentNumber": 15
+        },
+        {
+          "commitHash": "c5fda48dbfca6f6795ca81ad6188aaa9c12843a4",
+          "amendmentNumber": 24
+        }
+      ]
+    },
+    "federal-constitution/article-201.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-202-A.md": {
+      "changeCount": 2,
+      "amendments": [
+        {
+          "commitHash": "599ecf2f28a1f4c65149e341b154acd170cebe20",
+          "amendmentNumber": 23
+        },
+        {
+          "commitHash": "c5fda48dbfca6f6795ca81ad6188aaa9c12843a4",
+          "amendmentNumber": 24
+        }
+      ]
+    },
+    "federal-constitution/article-202.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-203-C.md": {
+      "changeCount": 2,
+      "amendments": [
+        {
+          "commitHash": "29a2c35ccfc1f50b4025ffc510adfc24bf149270",
+          "amendmentNumber": 15
+        },
+        {
+          "commitHash": "599ecf2f28a1f4c65149e341b154acd170cebe20",
+          "amendmentNumber": 23
+        }
+      ]
+    },
+    "federal-constitution/article-203-D.md": {
+      "changeCount": 2,
+      "amendments": [
+        {
+          "commitHash": "29a2c35ccfc1f50b4025ffc510adfc24bf149270",
+          "amendmentNumber": 15
+        },
+        {
+          "commitHash": "599ecf2f28a1f4c65149e341b154acd170cebe20",
+          "amendmentNumber": 23
+        }
+      ]
+    },
+    "federal-constitution/article-203.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-204.md": {
+      "changeCount": 3,
+      "amendments": [
+        {
+          "commitHash": "1a57ab05c9d142064bc9e9f70d7be5a90227d4cd",
+          "amendmentNumber": 5
+        },
+        {
+          "commitHash": "c5fda48dbfca6f6795ca81ad6188aaa9c12843a4",
+          "amendmentNumber": 24
+        }
+      ]
+    },
+    "federal-constitution/article-205.md": {
+      "changeCount": 2,
+      "amendments": [
+        {
+          "commitHash": "c5fda48dbfca6f6795ca81ad6188aaa9c12843a4",
+          "amendmentNumber": 24
+        }
+      ]
+    },
+    "federal-constitution/article-206.md": {
+      "changeCount": 3,
+      "amendments": [
+        {
+          "commitHash": "1a57ab05c9d142064bc9e9f70d7be5a90227d4cd",
+          "amendmentNumber": 5
+        },
+        {
+          "commitHash": "c5fda48dbfca6f6795ca81ad6188aaa9c12843a4",
+          "amendmentNumber": 24
+        }
+      ]
+    },
+    "federal-constitution/article-207.md": {
+      "changeCount": 2,
+      "amendments": [
+        {
+          "commitHash": "c5fda48dbfca6f6795ca81ad6188aaa9c12843a4",
+          "amendmentNumber": 24
+        }
+      ]
+    },
+    "federal-constitution/article-208.md": {
+      "changeCount": 3,
+      "amendments": [
+        {
+          "commitHash": "599ecf2f28a1f4c65149e341b154acd170cebe20",
+          "amendmentNumber": 23
+        },
+        {
+          "commitHash": "c5fda48dbfca6f6795ca81ad6188aaa9c12843a4",
+          "amendmentNumber": 24
+        }
+      ]
+    },
+    "federal-constitution/article-209.md": {
+      "changeCount": 5,
+      "amendments": [
+        {
+          "commitHash": "b9b13725a9079991836ec3f0c37a30a0cb2ebbe7",
+          "amendmentNumber": 1
+        },
+        {
+          "commitHash": "29a2c35ccfc1f50b4025ffc510adfc24bf149270",
+          "amendmentNumber": 15
+        },
+        {
+          "commitHash": "599ecf2f28a1f4c65149e341b154acd170cebe20",
+          "amendmentNumber": 23
+        },
+        {
+          "commitHash": "c5fda48dbfca6f6795ca81ad6188aaa9c12843a4",
+          "amendmentNumber": 24
+        }
+      ]
+    },
+    "federal-constitution/article-210.md": {
+      "changeCount": 2,
+      "amendments": [
+        {
+          "commitHash": "c5fda48dbfca6f6795ca81ad6188aaa9c12843a4",
+          "amendmentNumber": 24
+        }
+      ]
+    },
+    "federal-constitution/article-211.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-212-B.md": {
+      "changeCount": 1,
+      "amendments": [
+        {
+          "commitHash": "5f77ace41208dca8d0530410cba13c4fedf95a1b",
+          "amendmentNumber": 10
+        }
+      ]
+    },
+    "federal-constitution/article-212.md": {
+      "changeCount": 3,
+      "amendments": [
+        {
+          "commitHash": "b9b13725a9079991836ec3f0c37a30a0cb2ebbe7",
+          "amendmentNumber": 1
+        },
+        {
+          "commitHash": "1a57ab05c9d142064bc9e9f70d7be5a90227d4cd",
+          "amendmentNumber": 5
+        }
+      ]
+    },
+    "federal-constitution/article-213.md": {
+      "changeCount": 4,
+      "amendments": [
+        {
+          "commitHash": "29a2c35ccfc1f50b4025ffc510adfc24bf149270",
+          "amendmentNumber": 15
+        },
+        {
+          "commitHash": "530b9991d30712a6f999981c51530eb9536a2377",
+          "amendmentNumber": 16
+        },
+        {
+          "commitHash": "844462f8db036568f97423a5ae3e0625abbc8352",
+          "amendmentNumber": 19
+        }
+      ]
+    },
+    "federal-constitution/article-214.md": {
+      "changeCount": 2,
+      "amendments": [
+        {
+          "commitHash": "8d521d8b4ed1a47cbe67fad306668bb1649b2a29",
+          "amendmentNumber": 17
+        }
+      ]
+    },
+    "federal-constitution/article-215.md": {
+      "changeCount": 5,
+      "amendments": [
+        {
+          "commitHash": "29a2c35ccfc1f50b4025ffc510adfc24bf149270",
+          "amendmentNumber": 15
+        },
+        {
+          "commitHash": "8d521d8b4ed1a47cbe67fad306668bb1649b2a29",
+          "amendmentNumber": 17
+        },
+        {
+          "commitHash": "844462f8db036568f97423a5ae3e0625abbc8352",
+          "amendmentNumber": 19
+        },
+        {
+          "commitHash": "599ecf2f28a1f4c65149e341b154acd170cebe20",
+          "amendmentNumber": 23
+        }
+      ]
+    },
+    "federal-constitution/article-216.md": {
+      "changeCount": 4,
+      "amendments": [
+        {
+          "commitHash": "29a2c35ccfc1f50b4025ffc510adfc24bf149270",
+          "amendmentNumber": 15
+        },
+        {
+          "commitHash": "8d521d8b4ed1a47cbe67fad306668bb1649b2a29",
+          "amendmentNumber": 17
+        },
+        {
+          "commitHash": "844462f8db036568f97423a5ae3e0625abbc8352",
+          "amendmentNumber": 19
+        }
+      ]
+    },
+    "federal-constitution/article-217.md": {
+      "changeCount": 2,
+      "amendments": [
+        {
+          "commitHash": "844462f8db036568f97423a5ae3e0625abbc8352",
+          "amendmentNumber": 19
+        }
+      ]
+    },
+    "federal-constitution/article-218.md": {
+      "changeCount": 4,
+      "amendments": [
+        {
+          "commitHash": "29a2c35ccfc1f50b4025ffc510adfc24bf149270",
+          "amendmentNumber": 15
+        },
+        {
+          "commitHash": "8d521d8b4ed1a47cbe67fad306668bb1649b2a29",
+          "amendmentNumber": 17
+        },
+        {
+          "commitHash": "844462f8db036568f97423a5ae3e0625abbc8352",
+          "amendmentNumber": 19
+        }
+      ]
+    },
+    "federal-constitution/article-219.md": {
+      "changeCount": 4,
+      "amendments": [
+        {
+          "commitHash": "29a2c35ccfc1f50b4025ffc510adfc24bf149270",
+          "amendmentNumber": 15
+        },
+        {
+          "commitHash": "8d521d8b4ed1a47cbe67fad306668bb1649b2a29",
+          "amendmentNumber": 17
+        },
+        {
+          "commitHash": "844462f8db036568f97423a5ae3e0625abbc8352",
+          "amendmentNumber": 19
+        }
+      ]
+    },
+    "federal-constitution/article-220.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-221.md": {
+      "changeCount": 3,
+      "amendments": [
+        {
+          "commitHash": "29a2c35ccfc1f50b4025ffc510adfc24bf149270",
+          "amendmentNumber": 15
+        },
+        {
+          "commitHash": "844462f8db036568f97423a5ae3e0625abbc8352",
+          "amendmentNumber": 19
+        }
+      ]
+    },
+    "federal-constitution/article-222.md": {
+      "changeCount": 2,
+      "amendments": [
+        {
+          "commitHash": "844462f8db036568f97423a5ae3e0625abbc8352",
+          "amendmentNumber": 19
+        }
+      ]
+    },
+    "federal-constitution/article-223.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-224-A.md": {
+      "changeCount": 1,
+      "amendments": [
+        {
+          "commitHash": "8d521d8b4ed1a47cbe67fad306668bb1649b2a29",
+          "amendmentNumber": 17
+        }
+      ]
+    },
+    "federal-constitution/article-224.md": {
+      "changeCount": 3,
+      "amendments": [
+        {
+          "commitHash": "29a2c35ccfc1f50b4025ffc510adfc24bf149270",
+          "amendmentNumber": 15
+        },
+        {
+          "commitHash": "8d521d8b4ed1a47cbe67fad306668bb1649b2a29",
+          "amendmentNumber": 17
+        }
+      ]
+    },
+    "federal-constitution/article-225.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-226.md": {
+      "changeCount": 2,
+      "amendments": [
+        {
+          "commitHash": "29a2c35ccfc1f50b4025ffc510adfc24bf149270",
+          "amendmentNumber": 15
+        }
+      ]
+    },
+    "federal-constitution/article-227.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-228.md": {
+      "changeCount": 2,
+      "amendments": [
+        {
+          "commitHash": "29a2c35ccfc1f50b4025ffc510adfc24bf149270",
+          "amendmentNumber": 15
+        }
+      ]
+    },
+    "federal-constitution/article-229.md": {
+      "changeCount": 2,
+      "amendments": [
+        {
+          "commitHash": "599ecf2f28a1f4c65149e341b154acd170cebe20",
+          "amendmentNumber": 23
+        }
+      ]
+    },
+    "federal-constitution/article-230.md": {
+      "changeCount": 2,
+      "amendments": [
+        {
+          "commitHash": "599ecf2f28a1f4c65149e341b154acd170cebe20",
+          "amendmentNumber": 23
+        }
+      ]
+    },
+    "federal-constitution/article-231.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-232.md": {
+      "changeCount": 3,
+      "amendments": [
+        {
+          "commitHash": "73343e0b2bb92989d28fb88984d827b9f348594c",
+          "amendmentNumber": 3
+        },
+        {
+          "commitHash": "29a2c35ccfc1f50b4025ffc510adfc24bf149270",
+          "amendmentNumber": 15
+        }
+      ]
+    },
+    "federal-constitution/article-233.md": {
+      "changeCount": 2,
+      "amendments": [
+        {
+          "commitHash": "29a2c35ccfc1f50b4025ffc510adfc24bf149270",
+          "amendmentNumber": 15
+        }
+      ]
+    },
+    "federal-constitution/article-234.md": {
+      "changeCount": 2,
+      "amendments": [
+        {
+          "commitHash": "29a2c35ccfc1f50b4025ffc510adfc24bf149270",
+          "amendmentNumber": 15
+        }
+      ]
+    },
+    "federal-constitution/article-235.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-236.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-237.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-238.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-239.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-240.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-241.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-242.md": {
+      "changeCount": 2,
+      "amendments": [
+        {
+          "commitHash": "29a2c35ccfc1f50b4025ffc510adfc24bf149270",
+          "amendmentNumber": 15
+        }
+      ]
+    },
+    "federal-constitution/article-243.md": {
+      "changeCount": 5,
+      "amendments": [
+        {
+          "commitHash": "fa6eb54f2f322aad41a7f66184c2b53935567ef9",
+          "amendmentNumber": 11
+        },
+        {
+          "commitHash": "bcad3e892450e90edcde0effcc5793c4ae9f88c4",
+          "amendmentNumber": 14
+        },
+        {
+          "commitHash": "29a2c35ccfc1f50b4025ffc510adfc24bf149270",
+          "amendmentNumber": 15
+        },
+        {
+          "commitHash": "c5fda48dbfca6f6795ca81ad6188aaa9c12843a4",
+          "amendmentNumber": 24
+        }
+      ]
+    },
+    "federal-constitution/article-244.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-245.md": {
+      "changeCount": 2,
+      "amendments": [
+        {
+          "commitHash": "aab6e95edcfabc40a92ef6e5fd093dd959ab9bc5",
+          "amendmentNumber": 7
+        }
+      ]
+    },
+    "federal-constitution/article-246.md": {
+      "changeCount": 5,
+      "amendments": [
+        {
+          "commitHash": "f9a01db704234022d5442ca57399404b687d8adc",
+          "amendmentNumber": 6
+        },
+        {
+          "commitHash": "29a2c35ccfc1f50b4025ffc510adfc24bf149270",
+          "amendmentNumber": 15
+        },
+        {
+          "commitHash": "530b9991d30712a6f999981c51530eb9536a2377",
+          "amendmentNumber": 16
+        },
+        {
+          "commitHash": "7dbf4522e2bde6aa6c5ea4d6e96d667a550d2465",
+          "amendmentNumber": 22
+        }
+      ]
+    },
+    "federal-constitution/article-247.md": {
+      "changeCount": 2,
+      "amendments": [
+        {
+          "commitHash": "7dbf4522e2bde6aa6c5ea4d6e96d667a550d2465",
+          "amendmentNumber": 22
+        }
+      ]
+    },
+    "federal-constitution/article-248.md": {
+      "changeCount": 2,
+      "amendments": [
+        {
+          "commitHash": "c5fda48dbfca6f6795ca81ad6188aaa9c12843a4",
+          "amendmentNumber": 24
+        }
+      ]
+    },
+    "federal-constitution/article-249.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-250.md": {
+      "changeCount": 2,
+      "amendments": [
+        {
+          "commitHash": "b9b13725a9079991836ec3f0c37a30a0cb2ebbe7",
+          "amendmentNumber": 1
+        }
+      ]
+    },
+    "federal-constitution/article-251.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-252.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-253.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-254.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-255.md": {
+      "changeCount": 2,
+      "amendments": [
+        {
+          "commitHash": "599ecf2f28a1f4c65149e341b154acd170cebe20",
+          "amendmentNumber": 23
+        }
+      ]
+    },
+    "federal-constitution/article-256.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-257.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-258.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-259.md": {
+      "changeCount": 3,
+      "amendments": [
+        {
+          "commitHash": "b9b13725a9079991836ec3f0c37a30a0cb2ebbe7",
+          "amendmentNumber": 1
+        },
+        {
+          "commitHash": "599ecf2f28a1f4c65149e341b154acd170cebe20",
+          "amendmentNumber": 23
+        }
+      ]
+    },
+    "federal-constitution/article-260.md": {
+      "changeCount": 7,
+      "amendments": [
+        {
+          "commitHash": "b9b13725a9079991836ec3f0c37a30a0cb2ebbe7",
+          "amendmentNumber": 1
+        },
+        {
+          "commitHash": "b15a257d0cdb43f3300bce7063dd878e84c88b6d",
+          "amendmentNumber": 2
+        },
+        {
+          "commitHash": "1a57ab05c9d142064bc9e9f70d7be5a90227d4cd",
+          "amendmentNumber": 5
+        },
+        {
+          "commitHash": "f9a01db704234022d5442ca57399404b687d8adc",
+          "amendmentNumber": 6
+        },
+        {
+          "commitHash": "29a2c35ccfc1f50b4025ffc510adfc24bf149270",
+          "amendmentNumber": 15
+        },
+        {
+          "commitHash": "c5fda48dbfca6f6795ca81ad6188aaa9c12843a4",
+          "amendmentNumber": 24
+        }
+      ]
+    },
+    "federal-constitution/article-261.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-262.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-263.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-264.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-265.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-266.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-267-A.md": {
+      "changeCount": 1,
+      "amendments": [
+        {
+          "commitHash": "29a2c35ccfc1f50b4025ffc510adfc24bf149270",
+          "amendmentNumber": 15
+        }
+      ]
+    },
+    "federal-constitution/article-267-B.md": {
+      "changeCount": 1,
+      "amendments": [
+        {
+          "commitHash": "29a2c35ccfc1f50b4025ffc510adfc24bf149270",
+          "amendmentNumber": 15
+        }
+      ]
+    },
+    "federal-constitution/article-267.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-268.md": {
+      "changeCount": 3,
+      "amendments": [
+        {
+          "commitHash": "bcad3e892450e90edcde0effcc5793c4ae9f88c4",
+          "amendmentNumber": 14
+        },
+        {
+          "commitHash": "29a2c35ccfc1f50b4025ffc510adfc24bf149270",
+          "amendmentNumber": 15
+        }
+      ]
+    },
+    "federal-constitution/article-269.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-270-A.md": {
+      "changeCount": 2,
+      "amendments": [
+        {
+          "commitHash": "e0ddba7c820aff60efd8f8c5a5ffd02401efc2d2",
+          "amendmentNumber": 8
+        },
+        {
+          "commitHash": "29a2c35ccfc1f50b4025ffc510adfc24bf149270",
+          "amendmentNumber": 15
+        }
+      ]
+    },
+    "federal-constitution/article-270-AA.md": {
+      "changeCount": 2,
+      "amendments": [
+        {
+          "commitHash": "bcad3e892450e90edcde0effcc5793c4ae9f88c4",
+          "amendmentNumber": 14
+        },
+        {
+          "commitHash": "29a2c35ccfc1f50b4025ffc510adfc24bf149270",
+          "amendmentNumber": 15
+        }
+      ]
+    },
+    "federal-constitution/article-270-B.md": {
+      "changeCount": 1,
+      "amendments": [
+        {
+          "commitHash": "29a2c35ccfc1f50b4025ffc510adfc24bf149270",
+          "amendmentNumber": 15
+        }
+      ]
+    },
+    "federal-constitution/article-270-BB.md": {
+      "changeCount": 1,
+      "amendments": [
+        {
+          "commitHash": "29a2c35ccfc1f50b4025ffc510adfc24bf149270",
+          "amendmentNumber": 15
+        }
+      ]
+    },
+    "federal-constitution/article-270.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-271.md": {
+      "changeCount": 2,
+      "amendments": [
+        {
+          "commitHash": "ecb63084f571d096abfa0b6d129c54538470ea63",
+          "amendmentNumber": 4
+        }
+      ]
+    },
+    "federal-constitution/article-272.md": {
+      "changeCount": 3,
+      "amendments": [
+        {
+          "commitHash": "b9b13725a9079991836ec3f0c37a30a0cb2ebbe7",
+          "amendmentNumber": 1
+        },
+        {
+          "commitHash": "ecb63084f571d096abfa0b6d129c54538470ea63",
+          "amendmentNumber": 4
+        }
+      ]
+    },
+    "federal-constitution/article-273.md": {
+      "changeCount": 2,
+      "amendments": [
+        {
+          "commitHash": "ecb63084f571d096abfa0b6d129c54538470ea63",
+          "amendmentNumber": 4
+        }
+      ]
+    },
+    "federal-constitution/article-274.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-275.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-276.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-277.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-278.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-279.md": {
+      "changeCount": 1,
+      "amendments": []
+    },
+    "federal-constitution/article-280.md": {
+      "changeCount": 2,
+      "amendments": [
+        {
+          "commitHash": "1a57ab05c9d142064bc9e9f70d7be5a90227d4cd",
+          "amendmentNumber": 5
+        }
+      ]
+    },
+    "federal-constitution/preamble.md": {
+      "changeCount": 1,
+      "amendments": []
+    }
+  }
+}

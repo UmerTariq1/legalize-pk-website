@@ -3,8 +3,51 @@
   functions = "netlify/functions"
 
 [[redirects]]
-  from = "/api/*"
-  to = "/.netlify/functions/:splat"
+  from = "/article"
+  to = "/article/index.html"
   status = 200
-  force = true
 
+[[redirects]]
+  from = "/article/:id"
+  to = "/article/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/amendment"
+  to = "/amendment/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/amendment/:n"
+  to = "/amendment/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/diff"
+  to = "/diff/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/diff/:article"
+  to = "/diff/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/constitution"
+  to = "/constitution/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/explore"
+  to = "/explore/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/timeline"
+  to = "/timeline/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/search"
+  to = "/search/index.html"
+  status = 200

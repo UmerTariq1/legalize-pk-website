@@ -1,0 +1,10 @@
+/article /article/index.html 200
+/article/:id /article/index.html 200
+/amendment /amendment/index.html 200
+/amendment/:n /amendment/index.html 200
+/diff /diff/index.html 200
+/diff/:article /diff/index.html 200
+/constitution /constitution/index.html 200
+/explore /explore/index.html 200
+/timeline /timeline/index.html 200
+/search /search/index.html 200

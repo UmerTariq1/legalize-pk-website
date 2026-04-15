@@ -1,215 +1,134 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>legalize-pk — Understand how our laws evolved.</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Legalize PK</title>
     <meta
       name="description"
-      content="Explore the 50-year history of the Constitution of Pakistan (1973), powered by the legalize-pk open-source archive."
+      content="Explore the constitutional history of Pakistan through article-level timelines, amendment details, and diff views."
     />
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Source+Serif+4:opsz,wght@8..60,350;400;600&family=JetBrains+Mono:wght@400;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&family=Source+Serif+4:wght@600;700&display=swap"
       rel="stylesheet"
     />
-
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/components.css" />
-    <link rel="stylesheet" href="css/diff.css" />
-    <link rel="stylesheet" href="css/animations.css" />
-
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js" defer></script>
-
-    <script src="js/config.js" defer></script>
-    <script src="js/api.js" defer></script>
-    <script src="js/ui.js" defer></script>
-    <script src="js/animations.js" defer></script>
-    <script src="js/home.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="/ui/styles/main.css" />
+    <script defer src="https://unpkg.com/lucide@latest"></script>
+    <script type="module" src="/ui/scripts/pages/home.js"></script>
   </head>
-  <body class="page page-home">
-    <a class="skip-link" href="#main">Skip to content</a>
-
-    <header class="top-nav">
-      <div class="container nav-inner">
-        <a class="brand" href="index.html" aria-label="legalize-pk home">
-          <span class="brand-mark" aria-hidden="true"></span>
-          <span class="brand-word">legalize-pk</span>
-        </a>
-
-        <nav class="nav-links" aria-label="Primary">
-          <a href="index.html" class="nav-link is-active">
-            <span aria-hidden="true">🏛</span> Home
+  <body>
+    <div class="app-shell">
+      <header class="site-header">
+        <div class="site-header__inner">
+          <a class="brand" href="/">
+            <span class="brand__mark">LP</span>
+            <span>Legalize PK</span>
           </a>
-          <a href="explorer.html" class="nav-link">
-            <span aria-hidden="true">🔍</span> Explorer
-          </a>
-          <a href="amendments.html" class="nav-link">
-            <span aria-hidden="true">⚖️</span> Amendments
-          </a>
-          <a href="timeline.html" class="nav-link">
-            <span aria-hidden="true">📅</span> Timeline
-          </a>
-          <a href="#" class="nav-link" data-github-link target="_blank" rel="noreferrer">
-            <span aria-hidden="true">↗</span> GitHub
-          </a>
-        </nav>
+          <nav class="site-nav" aria-label="Primary">
+            <a href="/" data-nav-key="home" class="is-active" aria-current="page">Home</a>
+            <a href="/constitution" data-nav-key="constitution">Current Constitution</a>
+            <a href="/explore" data-nav-key="explore">Explore</a>
+            <a href="/timeline" data-nav-key="timeline">Timeline</a>
+            <a href="/search" data-nav-key="search">Search</a>
+          </nav>
+        </div>
+      </header>
 
-        <a class="btn btn-ghost btn-start-over" href="index.html">Start Over</a>
-      </div>
-    </header>
-
-    <nav class="bottom-nav" aria-label="Primary mobile">
-      <a class="bottom-nav__item is-active" href="index.html" aria-label="Home">
-        <span class="bottom-nav__icon" aria-hidden="true">🏛</span>
-        <span class="bottom-nav__label">Home</span>
-      </a>
-      <a class="bottom-nav__item" href="explorer.html" aria-label="Explorer">
-        <span class="bottom-nav__icon" aria-hidden="true">🔍</span>
-        <span class="bottom-nav__label">Explore</span>
-      </a>
-      <a class="bottom-nav__item" href="amendments.html" aria-label="Amendments">
-        <span class="bottom-nav__icon" aria-hidden="true">⚖️</span>
-        <span class="bottom-nav__label">Amend</span>
-      </a>
-      <a class="bottom-nav__item" href="timeline.html" aria-label="Timeline">
-        <span class="bottom-nav__icon" aria-hidden="true">📅</span>
-        <span class="bottom-nav__label">Timeline</span>
-      </a>
-      <a class="bottom-nav__item" href="#" data-github-link aria-label="GitHub" target="_blank" rel="noreferrer">
-        <span class="bottom-nav__icon" aria-hidden="true">↗</span>
-        <span class="bottom-nav__label">GitHub</span>
-      </a>
-    </nav>
-
-    <main id="main" class="main">
-      <section class="hero section">
-        <div class="container hero-grid">
-          <div class="hero-copy">
-            <div class="eyebrow">Trusted constitutional resource</div>
-            <h1 class="hero-title">
-              <span>Understand how our</span><br>
-              <span class="accent">laws evolved.</span>
+      <main class="page">
+        <section class="hero home-hero">
+          <div>
+            <p class="page-kicker" data-animate>Public Constitutional Record</p>
+            <h1 class="page-title hero__title" data-animate>
+              Navigate Pakistan's Constitution as a <br /><em class="hero__accent">living timeline.</em>
             </h1>
-            <p class="hero-subtitle">
-              A tool to explore the 50-year history of the Constitution of Pakistan (1973), powered by the legalize-pk
-              open-source archive.
+            <p class="hero__lead" data-animate>
+              Legalize PK transforms constitutional amendments into a browsable civic archive. Follow article changes,
+              compare snapshots, and understand amendments in plain language.
             </p>
-
-            <div class="hero-actions">
-              <a class="btn btn-primary" href="explorer.html">🔍 Open Explorer</a>
-              <a class="btn btn-ghost" href="amendments.html">⚖️ Browse Amendments</a>
+            <div class="stat-grid" data-animate>
+              <span class="badge badge--gold" data-stat="amendments">Loading amendments...</span>
+              <span class="badge" data-stat="articles">Loading articles...</span>
+              <span class="badge badge--success" data-stat="years">Loading timeline...</span>
             </div>
-
-            <div class="stats-float" role="note" aria-label="Repository stats">
-              <div class="stats-float__inner">
-                <div class="stats-float__big">24 Amendments</div>
-                <div class="stats-float__small">· 280 Articles · 1973–2025</div>
-              </div>
-            </div>
+            <a href="/explore" class="btn-primary home-hero__cta"
+              >Get Started <i data-lucide="arrow-right" aria-hidden="true"></i
+            ></a>
+            <p class="page-subtitle home-generated-at" data-generated-at data-animate></p>
           </div>
 
-          <div class="hero-visual" aria-hidden="true">
-            <div class="hero-doc">
-              <div class="hero-doc__header">
-                <div class="hero-doc__seal">⚖</div>
-                <div class="hero-doc__title-block">
-                  <div class="hero-doc__label">CONSTITUTION OF PAKISTAN</div>
-                  <div class="hero-doc__date">Enacted · 14 August 1973</div>
-                </div>
-              </div>
-              <div class="hero-doc__divider"></div>
-              <div class="hero-doc__lines" aria-hidden="true">
-                <!-- <div class="hero-doc__line hero-doc__line--heading">Preamble</div> -->
-                <div class="hero-doc__line"></div>
-                <div class="hero-doc__line hero-doc__line--short"></div>
-                <div class="hero-doc__line"></div>
-                <div class="hero-doc__line hero-doc__line--medium"></div>
-                <div class="hero-doc__line"></div>
-                <!-- <div class="hero-doc__line hero-doc__line--heading is-amended">Article 17 — Freedom of Association</div> -->
-                <div class="hero-doc__line is-amended"></div>
-                <div class="hero-doc__line is-amended hero-doc__line--short"></div>
-                <div class="hero-doc__line"></div>
-                <!-- <div class="hero-doc__line hero-doc__line--heading">Article 25 — Equality of Citizens</div> -->
-                <div class="hero-doc__line"></div>
-                <div class="hero-doc__line hero-doc__line--medium"></div>
-                <div class="hero-doc__line hero-doc__line--short"></div>
-              </div>
-              <div class="hero-doc__meta">
-                <div class="hero-doc__meta-item">
-                  <div class="hero-doc__meta-val">280</div>
-                  <div class="hero-doc__meta-key">Articles</div>
-                </div>
-                <div class="hero-doc__meta-sep"></div>
-                <div class="hero-doc__meta-item">
-                  <div class="hero-doc__meta-val">24</div>
-                  <div class="hero-doc__meta-key">Amendments</div>
-                </div>
-                <div class="hero-doc__meta-sep"></div>
-                <div class="hero-doc__meta-item">
-                  <div class="hero-doc__meta-val">52</div>
-                  <div class="hero-doc__meta-key">Years</div>
-                </div>
-              </div>
+          <div class="hero-media-grid" data-animate>
+            <div class="media-placeholder" aria-hidden="true"></div>
+            <div class="overlay-info-card card">
+              <p class="overlay-info-card__label">Repository-backed</p>
+              <p class="overlay-info-card__copy">Every article is versioned in markdown. Every enacted amendment is a dated commit.</p>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section class="section objective">
-        <div class="container">
-          <header class="section-head">
-            <h2 class="section-title">Select your objective</h2>
-            <p class="section-subtitle">Choose how you would like to interact with the constitutional timeline.</p>
-          </header>
+        <section class="card-grid home-nav-cards" aria-label="Main navigation cards">
+          <article class="card nav-card">
+            <i data-lucide="book-open" class="nav-card__icon" aria-hidden="true"></i>
+            <h3 class="nav-card__title">Current Constitution</h3>
+            <p class="nav-card__description">Read all article texts with amendment metadata and expandable rows.</p>
+            <a href="/constitution" class="nav-card__link"
+              >Open Constitution <i data-lucide="arrow-right" aria-hidden="true"></i
+            ></a>
+          </article>
 
-          <div class="card-grid">
-            <a class="feature-card" href="explorer.html?mode=last-changed">
-              <div class="feature-card__icon" aria-hidden="true">🕐</div>
-              <div class="feature-card__title">When was this article last changed?</div>
-              <div class="feature-card__desc">Jump to the most recent amendment that touched a specific article.</div>
-              <div class="feature-card__cta">Explore →</div>
-            </a>
+          <article class="card nav-card">
+            <i data-lucide="compass" class="nav-card__icon" aria-hidden="true"></i>
+            <h3 class="nav-card__title">Explore Paths</h3>
+            <p class="nav-card__description">Jump directly to article history, amendment details, or side-by-side evolution.</p>
+            <a href="/explore" class="nav-card__link"
+              >Open Explorer <i data-lucide="arrow-right" aria-hidden="true"></i
+            ></a>
+          </article>
 
-            <a class="feature-card" href="explorer.html?mode=history">
-              <div class="feature-card__icon" aria-hidden="true">📜</div>
-              <div class="feature-card__title">See the full history of an article</div>
-              <div class="feature-card__desc">View every amendment that modified an article, in chronological context.</div>
-              <div class="feature-card__cta">Open timeline →</div>
-            </a>
+          <article class="card nav-card">
+            <i data-lucide="git-commit" class="nav-card__icon" aria-hidden="true"></i>
+            <h3 class="nav-card__title">Constitution Timeline</h3>
+            <p class="nav-card__description">See constitutional events across decades and filter by your lifetime date range.</p>
+            <a href="/timeline" class="nav-card__link"
+              >Open Timeline <i data-lucide="arrow-right" aria-hidden="true"></i
+            ></a>
+          </article>
 
-            <a class="feature-card" href="explorer.html?mode=compare">
-              <div class="feature-card__icon" aria-hidden="true">⇄</div>
-              <div class="feature-card__title">Compare article before and after an amendment</div>
-              <div class="feature-card__desc">See the exact legal edits between two constitutional states.</div>
-              <div class="feature-card__cta">Compare →</div>
-            </a>
+          <article class="card nav-card">
+            <i data-lucide="search" class="nav-card__icon" aria-hidden="true"></i>
+            <h3 class="nav-card__title">Global Search</h3>
+            <p class="nav-card__description">Search by article number, amendment number, topics, and terms.</p>
+            <a href="/search" class="nav-card__link"
+              >Open Search <i data-lucide="arrow-right" aria-hidden="true"></i
+            ></a>
+          </article>
+        </section>
 
-            <a class="feature-card" href="amendments.html">
-              <div class="feature-card__icon" aria-hidden="true">⚖️</div>
-              <div class="feature-card__title">Browse all amendments by year</div>
-              <div class="feature-card__desc">Explore a chronological archive of enacted constitutional amendments.</div>
-              <div class="feature-card__cta">Browse →</div>
-            </a>
+        <section class="home-callout-slot" data-home-callout aria-label="Editorial callout">
+          <aside class="editorial-callout" role="note">
+            <p class="editorial-callout__label">DID YOU KNOW?</p>
+            <h3 class="editorial-callout__title">Loading landmark amendment...</h3>
+            <p class="editorial-callout__body">Context is being loaded from the local constitutional timeline.</p>
+          </aside>
+        </section>
+
+        <section class="github-band">
+          <div>
+            <p class="github-band__title">Open Data Source</p>
+            <p class="github-band__copy">This site is powered by a public Git repository. Every amendment is a commit.</p>
           </div>
-        </div>
-      </section>
+          <a href="https://github.com/UmerTariq1/legalize-pk" target="_blank" rel="noopener" class="btn-ghost github-band__link" data-home-repo>
+            <i data-lucide="github" aria-hidden="true"></i> View Repository
+          </a>
+        </section>
 
-      <footer class="footer">
-        <div class="container footer-grid">
-          <div class="footer-left">
-            <div class="footer-line"><span class="muted">Source:</span> legalize-pk archive (Git history)</div>
-            <div class="footer-line"><span class="muted">Last update:</span> <span data-last-update>—</span></div>
-          </div>
-          <div class="footer-right">
-            <a class="footer-link" href="#" data-github-link target="_blank" rel="noreferrer">GitHub Repository</a>
-          </div>
-        </div>
-        <div class="container footer-bottom">© <span data-footer-year>2026</span> legalize-pk · For educational and research purposes only</div>
-      </footer>
-    </main>
+        <div class="info-empty info-empty--warning" data-home-error hidden></div>
+      </main>
+    </div>
   </body>
 </html>
