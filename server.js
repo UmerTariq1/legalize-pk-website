@@ -11,15 +11,15 @@ app.get("/", (req, res) => {
   res.sendFile(path.join(staticDir, "index.html"));
 });
 
-app.get("/article/*", (req, res) => {
+app.get(["/article", "/article/:id"], (req, res) => {
   res.sendFile(path.join(staticDir, "article", "index.html"));
 });
 
-app.get("/amendment/*", (req, res) => {
+app.get(["/amendment", "/amendment/:n"], (req, res) => {
   res.sendFile(path.join(staticDir, "amendment", "index.html"));
 });
 
-app.get("/diff/*", (req, res) => {
+app.get(["/diff", "/diff/:article"], (req, res) => {
   res.sendFile(path.join(staticDir, "diff", "index.html"));
 });
 
@@ -49,19 +49,19 @@ app.all("/.netlify/functions/github-proxy", async (req, res) => {
   }
 });
 
-app.get("/timeline/*", (req, res) => {
+app.get(["/timeline", "/timeline/:id"], (req, res) => {
   res.sendFile(path.join(staticDir, "timeline", "index.html"));
 });
 
-app.get("/search/*", (req, res) => {
+app.get(["/search", "/search/:id"], (req, res) => {
   res.sendFile(path.join(staticDir, "search", "index.html"));
 });
 
-app.get("/constitution/*", (req, res) => {
+app.get(["/constitution", "/constitution/:id"], (req, res) => {
   res.sendFile(path.join(staticDir, "constitution", "index.html"));
 });
 
-app.get("/explore/*", (req, res) => {
+app.get(["/explore", "/explore/:id"], (req, res) => {
   res.sendFile(path.join(staticDir, "explore", "index.html"));
 });
 
