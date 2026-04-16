@@ -13,6 +13,11 @@ function prefersReducedMotion() {
   return window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 }
 
+function isInViewport(element) {
+  const rect = element.getBoundingClientRect();
+  return rect.bottom > 0 && rect.top < window.innerHeight;
+}
+
 function queueReveal(element) {
   if (!(element instanceof HTMLElement) || element.classList.contains("reveal-ready") || element.classList.contains("is-visible")) {
     return;
@@ -21,6 +26,12 @@ function queueReveal(element) {
   element.classList.add("reveal-ready");
   element.style.setProperty("--reveal-delay", `${Math.min(revealSequence * 32, 280)}ms`);
   revealSequence += 1;
+
+  // If an inserted node is already in viewport, show it immediately.
+  if (isInViewport(element)) {
+    element.classList.add("is-visible");
+    return;
+  }
 
   if (revealObserver) {
     revealObserver.observe(element);

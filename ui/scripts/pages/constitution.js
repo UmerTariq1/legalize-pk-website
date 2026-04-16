@@ -12,6 +12,25 @@ function articleName(article) {
   return article.articleId === "PREAMBLE" ? "Preamble" : `Article ${article.articleId}`;
 }
 
+function matchesQuery(article, rawQuery) {
+  const query = String(rawQuery || "").trim().toLowerCase();
+  if (!query) {
+    return true;
+  }
+
+  const tokens = query.split(/\s+/).filter(Boolean);
+  const amendmentText = [...(article.amendments || []), ...(article.amendmentLinks || [])]
+    .map((entry) => `${entry?.label || ""} ${entry?.url || ""}`)
+    .join(" ");
+
+  const searchable = [article.articleId, article.displayTitle, article.fileName, article.repoPath, article.body, amendmentText]
+    .filter(Boolean)
+    .join(" ")
+    .toLowerCase();
+
+  return tokens.every((token) => searchable.includes(token));
+}
+
 function renderArticleRow(article, index) {
   const open = expandedSet.has(article.articleId);
   const omitted = isOmittedBody(article.body);
@@ -155,7 +174,7 @@ async function initPage() {
 
   const count = document.querySelector("[data-article-count]");
   if (count) {
-    count.textContent = `${allArticles.length} entries`;
+    count.textContent = `${allArticles.length} articles and sub-articles currently in effect.`;
   }
 
   renderList();

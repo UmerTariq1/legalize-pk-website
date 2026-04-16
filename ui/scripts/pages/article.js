@@ -71,11 +71,11 @@ function renderSummaryPanel() {
 
   panel.innerHTML = `
     <button type="button" class="summary-panel__mobile-toggle" data-summary-toggle aria-expanded="${!state.summaryCollapsed}">
-      <span>✨ AI Summary</span>
+      <span>✨ AI Summary. Generated with Gemini</span>
       <i data-lucide="chevron-up" aria-hidden="true"></i>
     </button>
     <div class="summary-panel__content">
-      <p class="summary-panel__eyebrow">✨ AI SUMMARY</p>
+      <p class="summary-panel__eyebrow">✨ AI SUMMARY. Generated with Gemini</p>
       <h3 class="summary-panel__title">${commit ? commitLabel(commit) : "No commit selected"}</h3>
       <div class="summary-panel__body">${renderMarkdown(summaryForCommit(commit))}</div>
     </div>

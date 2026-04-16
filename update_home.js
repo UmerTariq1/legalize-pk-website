@@ -32,7 +32,7 @@ if (mainStart !== -1) {
 
           <div class="hero-media-grid" data-animate style="position: relative; width: 100%; max-width: 480px; margin: 0 auto; min-height: 380px;">
             <div class="hero-media-frame" aria-hidden="true" style="position: absolute; top: 0; right: 0; bottom: 0; left: 24px; border-radius: 20px; overflow: hidden; box-shadow: 8px 10px 0px var(--text-gold), 16px 20px 0px rgba(27, 94, 32, 0.25);">
-              <img class="hero-media-image" src="assets/images/hero-courthouse.jpg" alt="" loading="eager" decoding="async" />
+              <img class="hero-media-image" src="assets/images/hero-courthouse.png" alt="" loading="eager" decoding="async" />
             </div>
             <div class="overlay-info-card card" style="position: absolute; bottom: -24px; left: -16px; width: 280px; padding: 24px; background: var(--surface-1); box-shadow: var(--shadow-tilt); z-index: 10;">
               <p style="font-size: 12px; font-weight: 700; text-transform: uppercase; color: var(--text-gold); margin: 0 0 8px 0; letter-spacing: 0.1em;">repository-backed</p>

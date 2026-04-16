@@ -85,7 +85,7 @@ function renderPage(data, amendmentCommit) {
     </section>
 
     <section class="card ai-summary ai-summary--amendment">
-      <h2 class="ai-summary-label">✨ AI Summary</h2>
+      <h2 class="ai-summary-label">✨ AI Summary. Generated with Gemini</h2>
       <div>${renderMarkdown(amendmentCommit.summary || "No summary available for this commit.")}</div>
     </section>
 
