@@ -180,6 +180,29 @@ function syncDiffViewToggle() {
   });
 }
 
+function applyRenderedViewMode(rawMode, options = {}) {
+  const mode = rawMode === "split" ? "split" : "unified";
+  const modeSelect = document.querySelector("#diff-mode");
+  if (modeSelect && modeSelect.value !== mode) {
+    modeSelect.value = mode;
+  }
+
+  syncDiffViewToggle();
+
+  const renderedOutput = document.querySelector("[data-diff-rendered-output]");
+  if (renderedOutput) {
+    renderedOutput.setAttribute("data-view-mode", mode);
+  }
+
+  if (options.updateAddress) {
+    const from = document.querySelector("#diff-from")?.value;
+    const to = document.querySelector("#diff-to")?.value;
+    if (from && to) {
+      updateUrl({ from, to, view: mode });
+    }
+  }
+}
+
 function initDiffViewToggle() {
   const controls = document.querySelector(".diff-controls");
   const modeSelect = document.querySelector("#diff-mode");
@@ -204,9 +227,9 @@ function initDiffViewToggle() {
       return;
     }
 
-    modeSelect.value = target.getAttribute("data-diff-view");
-    syncDiffViewToggle();
-    runComparison();
+    const nextMode = target.getAttribute("data-diff-view");
+    logInfo("diff.mode.toggle", { mode: nextMode });
+    applyRenderedViewMode(nextMode, { updateAddress: true });
   });
 
   syncDiffViewToggle();
@@ -272,15 +295,19 @@ async function runComparison() {
       </div>
     `;
 
-    const body =
-      mode === "split"
-        ? renderSplit(patch, from, to)
-        : `${compareMarkup}<pre class="diff-unified">${renderUnified(patch)}</pre>`;
+    const unifiedPanel = `${compareMarkup}<pre class="diff-unified">${renderUnified(patch)}</pre>`;
+    const splitPanel = renderSplit(patch, from, to);
 
-    output.innerHTML = `<section class="diff-output">${headerMarkup}${body}</section>`;
+    output.innerHTML = `
+      <section class="diff-output" data-diff-rendered-output data-view-mode="${mode}">
+        ${headerMarkup}
+        <section class="diff-view-panel diff-view-panel--unified" data-diff-panel="unified">${unifiedPanel}</section>
+        <section class="diff-view-panel diff-view-panel--split" data-diff-panel="split">${splitPanel}</section>
+      </section>
+    `;
     document.dispatchEvent(new CustomEvent("content:updated"));
     hydrateIcons();
-    syncDiffViewToggle();
+    applyRenderedViewMode(mode);
 
     logInfo("diff.compare.success", {
       articleId,
@@ -366,9 +393,8 @@ async function initPage() {
     runComparison();
   });
   document.querySelector("#diff-mode")?.addEventListener("change", (event) => {
-    logInfo("diff.mode.change", { mode: event.target.value });
-    syncDiffViewToggle();
-    runComparison();
+    logInfo("diff.mode.toggle", { mode: event.target.value });
+    applyRenderedViewMode(event.target.value, { updateAddress: true });
   });
 
   runComparison();

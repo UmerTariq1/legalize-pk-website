@@ -80,7 +80,7 @@ if (mainStart !== -1) {
         <section class="github-band" style="background: var(--surface-2-bottle); color: #FFFFFF; border-radius: 12px; padding: 40px 48px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 32px;">
           <div style="flex: 1; min-width: 300px;">
             <p style="font-size: 24px; font-weight: 700; margin: 0 0 8px 0; color: #FFFFFF;">Open Data Source</p>
-            <p style="margin: 0; font-size: 16px; line-height: 1.6; opacity: 0.9; color: #FFFFFF;">This site is powered by a public Git repository. Every amendment is a commit.</p>
+            <p style="margin: 0; font-size: 16px; line-height: 1.6; opacity: 0.9; color: #FFFFFF;">This site is powered by a public Git repository. Where every amendment is a commit.</p>
           </div>
           <a href="https://github.com/UmerTariq1/legalize-pk" target="_blank" rel="noopener" class="btn-ghost" style="border-color: var(--text-gold); color: var(--text-gold); text-decoration: none; padding: 12px 24px; display: inline-flex; align-items: center;">
             <i data-lucide="github" style="width: 20px; height: 20px; margin-right: 8px;"></i> View Repository

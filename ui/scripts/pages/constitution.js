@@ -7,32 +7,24 @@ import { initSharedPage } from "./shared.js";
 
 const expandedSet = new Set();
 let allArticles = [];
+let searchableByArticleId = new Map();
 
 function articleName(article) {
   return article.articleId === "PREAMBLE" ? "Preamble" : `Article ${article.articleId}`;
 }
 
-function matchesQuery(article, rawQuery) {
-  const query = String(rawQuery || "").trim().toLowerCase();
-  if (!query) {
-    return true;
-  }
-
-  const tokens = query.split(/\s+/).filter(Boolean);
+function buildSearchableText(article) {
   const amendmentText = [...(article.amendments || []), ...(article.amendmentLinks || [])]
     .map((entry) => `${entry?.label || ""} ${entry?.url || ""}`)
     .join(" ");
 
-  const searchable = [article.articleId, article.displayTitle, article.fileName, article.repoPath, article.body, amendmentText]
+  return [article.articleId, article.displayTitle, article.fileName, article.repoPath, article.body, amendmentText]
     .filter(Boolean)
     .join(" ")
     .toLowerCase();
-
-  return tokens.every((token) => searchable.includes(token));
 }
 
 function renderArticleRow(article, index) {
-  const open = expandedSet.has(article.articleId);
   const omitted = isOmittedBody(article.body);
   const surfaceClass = index % 2 === 0 ? "article-row--pale" : "article-row--cream";
 
@@ -47,7 +39,7 @@ function renderArticleRow(article, index) {
 
   return `
     <article class="article-row card ${surfaceClass}" data-article-row="${article.articleId}">
-      <button class="article-row__header" data-article-toggle="${article.articleId}" aria-expanded="${open}">
+      <button class="article-row__header" data-article-toggle="${article.articleId}" aria-expanded="false">
         <span class="article-row__titleline">
           <span class="article-row__title-group">
             <h2 class="article-row__title">
@@ -64,42 +56,101 @@ function renderArticleRow(article, index) {
           ${omitted ? '<span class="omitted-flag badge badge--danger"><i data-lucide="slash"></i> Omitted text marker</span>' : ""}
         </span>
       </button>
-      ${
-        open
-          ? `
-        <div class="article-row__panel">
-          <div class="article-row__markdown">${renderMarkdown(article.body)}</div>
-          <h3>Amendment Sources</h3>
-          ${amendmentSourceMarkup}
-        </div>
-      `
-          : ""
-      }
+      <div class="article-row__panel">
+        <div class="article-row__markdown">${renderMarkdown(article.body)}</div>
+        <h3>Amendment Sources</h3>
+        ${amendmentSourceMarkup}
+      </div>
     </article>
   `;
 }
 
-function renderList() {
-  const query = document.querySelector("#constitution-search")?.value.trim() || "";
+function ensureEmptyState() {
+  const shell = document.querySelector(".constitution-list-shell");
+  if (!shell) {
+    return null;
+  }
+
+  let emptyState = shell.querySelector("[data-constitution-empty]");
+  if (!emptyState) {
+    emptyState = document.createElement("div");
+    emptyState.className = "info-empty";
+    emptyState.setAttribute("data-constitution-empty", "");
+    emptyState.textContent = "No articles match your filter.";
+    emptyState.hidden = true;
+    shell.append(emptyState);
+  }
+
+  return emptyState;
+}
+
+function syncFilterVisibility(rawQuery) {
+  const query = String(rawQuery || "").trim().toLowerCase();
+  const tokens = query ? query.split(/\s+/).filter(Boolean) : [];
+
+  let visibleCount = 0;
+  document.querySelectorAll("[data-constitution-list] [data-article-row]").forEach((row) => {
+    const articleId = row.getAttribute("data-article-row") || "";
+    const searchable = searchableByArticleId.get(articleId) || "";
+    const visible = !tokens.length || tokens.every((token) => searchable.includes(token));
+
+    row.hidden = !visible;
+    row.classList.toggle("is-filter-hidden", !visible);
+    if (visible) {
+      visibleCount += 1;
+    }
+  });
+
+  const emptyState = ensureEmptyState();
+  if (emptyState) {
+    emptyState.hidden = visibleCount !== 0;
+  }
+
+  logInfo("constitution.search.filtered", {
+    query,
+    resultCount: visibleCount,
+    expandedCount: expandedSet.size
+  });
+}
+
+function renderListOnce() {
   const list = document.querySelector("[data-constitution-list]");
   if (!list) {
     return;
   }
 
-  const filtered = allArticles.filter((article) => matchesQuery(article, query));
-  logInfo("constitution.render", {
-    query,
-    resultCount: filtered.length,
-    expandedCount: expandedSet.size
+  searchableByArticleId = new Map(allArticles.map((article) => [article.articleId, buildSearchableText(article)]));
+  list.innerHTML = allArticles.map((article, index) => renderArticleRow(article, index)).join("");
+  ensureEmptyState();
+
+  logInfo("constitution.render.initial", {
+    articleCount: allArticles.length
   });
-  if (!filtered.length) {
-    list.innerHTML = '<div class="info-empty">No articles match your filter.</div>';
+
+  document.dispatchEvent(new CustomEvent("content:updated"));
+  hydrateIcons();
+}
+
+function toggleArticleRow(button) {
+  const row = button.closest("[data-article-row]");
+  if (!row) {
     return;
   }
 
-  list.innerHTML = filtered.map((article, index) => renderArticleRow(article, index)).join("");
-  document.dispatchEvent(new CustomEvent("content:updated"));
-  hydrateIcons();
+  const id = button.getAttribute("data-article-toggle");
+  const shouldExpand = !row.classList.contains("is-expanded");
+
+  row.classList.toggle("is-expanded", shouldExpand);
+  button.setAttribute("aria-expanded", shouldExpand ? "true" : "false");
+
+  if (shouldExpand) {
+    expandedSet.add(id);
+    logInfo("constitution.article.expand", { articleId: id });
+    return;
+  }
+
+  expandedSet.delete(id);
+  logInfo("constitution.article.collapse", { articleId: id });
 }
 
 function attachEvents() {
@@ -119,7 +170,7 @@ function attachEvents() {
   if (searchInput) {
     searchInput.addEventListener("input", () => {
       logInfo("constitution.search.input", { query: searchInput.value.trim() });
-      renderList();
+      syncFilterVisibility(searchInput.value);
       syncClearState();
     });
   }
@@ -132,7 +183,7 @@ function attachEvents() {
 
       searchInput.value = "";
       logInfo("constitution.search.clear");
-      renderList();
+      syncFilterVisibility("");
       syncClearState();
       searchInput.focus();
     });
@@ -151,15 +202,7 @@ function attachEvents() {
       return;
     }
 
-    const id = toggle.getAttribute("data-article-toggle");
-    if (expandedSet.has(id)) {
-      expandedSet.delete(id);
-      logInfo("constitution.article.collapse", { articleId: id });
-    } else {
-      expandedSet.add(id);
-      logInfo("constitution.article.expand", { articleId: id });
-    }
-    renderList();
+    toggleArticleRow(toggle);
   });
 }
 
@@ -177,8 +220,9 @@ async function initPage() {
     count.textContent = `${allArticles.length} articles and sub-articles currently in effect.`;
   }
 
-  renderList();
+  renderListOnce();
   attachEvents();
+  syncFilterVisibility(document.querySelector("#constitution-search")?.value || "");
 }
 
 initPage().catch((error) => {

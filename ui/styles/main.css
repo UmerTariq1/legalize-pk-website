@@ -1127,9 +1127,26 @@ body[data-page="search"] .search-toolbar {
 }
 
 .article-row__panel {
-  border-top: 1px solid rgba(184, 134, 11, 0.35);
+  border-top: 0 solid rgba(184, 134, 11, 0.35);
   background: var(--surface-card);
+  padding: 0 clamp(1rem, 3vw, 1.6rem);
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  pointer-events: none;
+  transition:
+    max-height 260ms ease,
+    opacity 200ms ease,
+    padding 260ms ease,
+    border-top-width 260ms ease;
+}
+
+.article-row.is-expanded .article-row__panel {
+  border-top-width: 1px;
   padding: clamp(1rem, 3vw, 1.6rem);
+  max-height: 10000px;
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .article-row__panel h3 {
@@ -1307,9 +1324,26 @@ body[data-page="article"] .commit-list {
 }
 
 .commit-card__panel {
-  border-top: 1px solid rgba(0, 0, 0, 0.09);
+  border-top: 0 solid rgba(0, 0, 0, 0.09);
   background: var(--surface-card);
+  padding: 0 clamp(0.9rem, 2.5vw, 1.35rem);
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  pointer-events: none;
+  transition:
+    max-height 260ms ease,
+    opacity 200ms ease,
+    padding 260ms ease,
+    border-top-width 260ms ease;
+}
+
+.commit-card.is-expanded .commit-card__panel {
+  border-top-width: 1px;
   padding: clamp(0.9rem, 2.5vw, 1.35rem);
+  max-height: 10000px;
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .summary-panel {
@@ -1354,6 +1388,18 @@ body[data-page="article"] .commit-list {
 
 .summary-panel__content {
   transition: opacity 180ms ease, transform 180ms ease, max-height 180ms ease;
+}
+
+.summary-panel__cards {
+  margin-top: 0.7rem;
+}
+
+.summary-panel__card {
+  display: none;
+}
+
+.summary-panel__card.is-active {
+  display: block;
 }
 
 .summary-panel__eyebrow {
@@ -1862,6 +1908,15 @@ body[data-page="diff"] .diff-controls {
   padding: 0;
   overflow: hidden;
   background: #ffffff;
+}
+
+.diff-view-panel {
+  display: none;
+}
+
+.diff-output[data-view-mode="unified"] [data-diff-panel="unified"],
+.diff-output[data-view-mode="split"] [data-diff-panel="split"] {
+  display: block;
 }
 
 body[data-page="diff"] .diff-output {

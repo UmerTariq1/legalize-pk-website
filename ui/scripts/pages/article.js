@@ -21,7 +21,7 @@ const store = createStore({
   activeHash: "",
   expanded: new Set(),
   summaryCollapsed: true,
-  status: { state: "idle", message: "Historical text will load when you expand a commit." }
+  status: { state: "idle", message: "Historical text is preloaded when this page opens." }
 });
 
 let article;
@@ -54,59 +54,93 @@ function commitLabel(commit) {
   return `Amendment ${commit.amendmentNumber}`;
 }
 
-function renderSummaryPanel() {
+function renderProxyStatus() {
+  const target = document.querySelector("[data-proxy-status]");
+  if (!target) {
+    return;
+  }
+
+  target.innerHTML = createProxyStatusMarkup(store.getState().status);
+}
+
+function syncCommitCardState() {
+  const state = store.getState();
+  document.querySelectorAll("[data-commit-card]").forEach((card) => {
+    const hash = card.getAttribute("data-commit-card") || "";
+    const expanded = state.expanded.has(hash);
+    const active = state.activeHash === hash;
+
+    card.classList.toggle("is-expanded", expanded);
+
+    const button = card.querySelector("[data-commit-toggle]");
+    if (button) {
+      button.setAttribute("aria-expanded", expanded ? "true" : "false");
+      button.classList.toggle("is-active", active);
+    }
+  });
+}
+
+function syncSummaryPanelState() {
   const panel = document.querySelector("[data-summary-panel]");
   if (!panel) {
     return;
   }
 
   const state = store.getState();
-  const commit = commits.find((item) => item.hash === state.activeHash);
-
-  if (panel.dataset.ready === "true") {
-    panel.classList.add("is-updating");
-  }
-
   panel.setAttribute("data-collapsed", state.summaryCollapsed ? "true" : "false");
 
+  const toggle = panel.querySelector("[data-summary-toggle]");
+  if (toggle) {
+    toggle.setAttribute("aria-expanded", state.summaryCollapsed ? "false" : "true");
+  }
+
+  panel.querySelectorAll("[data-summary-card]").forEach((card) => {
+    const hash = card.getAttribute("data-summary-card");
+    card.classList.toggle("is-active", hash === state.activeHash);
+  });
+}
+
+function renderSummaryPanelOnce() {
+  const panel = document.querySelector("[data-summary-panel]");
+  if (!panel) {
+    return;
+  }
+
+  const state = store.getState();
+  const summaryCards = commits
+    .map((commit) => {
+      const activeClass = state.activeHash === commit.hash ? " is-active" : "";
+      return `
+        <section class="summary-panel__card${activeClass}" data-summary-card="${commit.hash}">
+          <h3 class="summary-panel__title">${commitLabel(commit)}</h3>
+          <div class="summary-panel__body">${renderMarkdown(summaryForCommit(commit))}</div>
+        </section>
+      `;
+    })
+    .join("");
+
   panel.innerHTML = `
-    <button type="button" class="summary-panel__mobile-toggle" data-summary-toggle aria-expanded="${!state.summaryCollapsed}">
+    <button type="button" class="summary-panel__mobile-toggle" data-summary-toggle aria-expanded="${state.summaryCollapsed ? "false" : "true"}">
       <span>✨ AI Summary. Generated with Gemini</span>
       <i data-lucide="chevron-up" aria-hidden="true"></i>
     </button>
     <div class="summary-panel__content">
       <p class="summary-panel__eyebrow">✨ AI SUMMARY. Generated with Gemini</p>
-      <h3 class="summary-panel__title">${commit ? commitLabel(commit) : "No commit selected"}</h3>
-      <div class="summary-panel__body">${renderMarkdown(summaryForCommit(commit))}</div>
+      <div class="summary-panel__cards">${summaryCards}</div>
     </div>
   `;
 
-  panel.dataset.ready = "true";
-  requestAnimationFrame(() => {
-    panel.classList.remove("is-updating");
-  });
+  syncSummaryPanelState();
 }
 
-async function getHistoricalMarkup(commit) {
+async function loadHistoricalMarkup(commit) {
   if (contentCache.has(commit.hash)) {
-    logInfo("article.history.cache.hit", {
-      articleId: article?.articleId,
-      commitHash: commit.hash
-    });
-    return contentCache.get(commit.hash);
+    return {
+      cached: true,
+      error: false,
+      html: contentCache.get(commit.hash)
+    };
   }
-
-  logInfo("article.history.fetch", {
-    articleId: article?.articleId,
-    commitHash: commit.hash,
-    path: article?.repoPath
-  });
-
-  store.setState((prev) => ({
-    ...prev,
-    status: { state: "loading", message: "Fetching article text from Netlify proxy." }
-  }));
-  renderProxyStatus();
 
   try {
     const payload = await fetchFileAtCommit({
@@ -117,45 +151,80 @@ async function getHistoricalMarkup(commit) {
     const html = renderMarkdown(payload.data.contentMarkdown || "");
     contentCache.set(commit.hash, html);
 
-    store.setState((prev) => ({
-      ...prev,
-      status: {
-        state: payload.meta?.cached ? "cached" : "idle",
-        message: payload.meta?.cached ? "Loaded from cache." : "Loaded from GitHub through Netlify."
-      }
-    }));
-
-    logInfo("article.history.loaded", {
-      articleId: article?.articleId,
-      commitHash: commit.hash,
-      cached: Boolean(payload.meta?.cached)
-    });
-
-    return html;
+    return {
+      cached: Boolean(payload.meta?.cached),
+      error: false,
+      html
+    };
   } catch (error) {
-    logError("article.history.error", {
+    logError("article.history.prefetch.error", {
       articleId: article?.articleId,
       commitHash: commit.hash,
       message: error.message
     });
-    store.setState((prev) => ({
-      ...prev,
-      status: { state: "error", message: error.message }
-    }));
-    return `<div class="info-empty info-empty--warning"><i data-lucide="alert-triangle" aria-hidden="true"></i><span>Could not load historical text: ${escapeHtml(error.message)}</span></div>`;
+
+    const html = `<div class="info-empty info-empty--warning"><i data-lucide="alert-triangle" aria-hidden="true"></i><span>Could not load historical text: ${escapeHtml(error.message)}</span></div>`;
+    contentCache.set(commit.hash, html);
+
+    return {
+      cached: false,
+      error: true,
+      html
+    };
   }
 }
 
-function renderProxyStatus() {
-  const target = document.querySelector("[data-proxy-status]");
-  if (!target) {
+async function prefetchHistoricalMarkup() {
+  if (!commits.length) {
     return;
   }
 
-  target.innerHTML = createProxyStatusMarkup(store.getState().status);
+  logInfo("article.history.prefetch.start", {
+    articleId: article?.articleId,
+    commitCount: commits.length
+  });
+
+  store.setState((prev) => ({
+    ...prev,
+    status: {
+      state: "loading",
+      message: "Prefetching historical text for all commits."
+    }
+  }));
+  renderProxyStatus();
+
+  const outcomes = await Promise.all(commits.map((commit) => loadHistoricalMarkup(commit)));
+  const cachedCount = outcomes.filter((outcome) => outcome.cached).length;
+  const errorCount = outcomes.filter((outcome) => outcome.error).length;
+
+  if (errorCount) {
+    store.setState((prev) => ({
+      ...prev,
+      status: {
+        state: "error",
+        message: `Preloaded with ${errorCount} failed commit fetch${errorCount === 1 ? "" : "es"}.`
+      }
+    }));
+  } else {
+    const allCached = cachedCount === commits.length;
+    store.setState((prev) => ({
+      ...prev,
+      status: {
+        state: allCached ? "cached" : "idle",
+        message: allCached ? "All commit text loaded from cache." : "All commit text preloaded from GitHub through Netlify."
+      }
+    }));
+  }
+
+  logInfo("article.history.prefetch.complete", {
+    articleId: article?.articleId,
+    commitCount: commits.length,
+    cachedCount,
+    errorCount
+  });
 }
 
-async function renderCommitList() {
+function renderCommitListOnce() {
   const list = document.querySelector("[data-commit-list]");
   if (!list) {
     return;
@@ -163,26 +232,16 @@ async function renderCommitList() {
 
   const state = store.getState();
 
-  const cards = await Promise.all(
-    commits.map(async (commit) => {
+  list.innerHTML = commits
+    .map((commit) => {
       const open = state.expanded.has(commit.hash);
       const partyMarkup = createPartyChip(commit.party);
       const callout = commit.amendmentNumber ? createEditorialCallout(commit.amendmentNumber) : "";
       const party = commitPartyKey(commit);
-
-      let panelMarkup = "";
-      if (open) {
-        const historyHtml = await getHistoricalMarkup(commit);
-        panelMarkup = `
-          <div class="commit-card__panel">
-            ${callout}
-            <div class="article-row__markdown">${historyHtml}</div>
-          </div>
-        `;
-      }
+      const historyHtml = contentCache.get(commit.hash) || '<div class="info-empty info-empty--warning"><span>No historical text loaded for this commit.</span></div>';
 
       return `
-        <article class="commit-card commit-card--${party}" data-party="${party}">
+        <article class="commit-card commit-card--${party} ${open ? "is-expanded" : ""}" data-party="${party}" data-commit-card="${commit.hash}">
           <button class="commit-card__header ${state.activeHash === commit.hash ? "is-active" : ""}" data-commit-toggle="${commit.hash}" aria-expanded="${open}">
             <span class="article-row__titleline">
               <span>
@@ -197,39 +256,17 @@ async function renderCommitList() {
               ${partyMarkup}
             </span>
           </button>
-          ${panelMarkup}
+          <div class="commit-card__panel">
+            ${callout}
+            <div class="article-row__markdown">${historyHtml}</div>
+          </div>
         </article>
       `;
     })
-  );
+    .join("");
 
-  list.innerHTML = cards.join("");
   document.dispatchEvent(new CustomEvent("content:updated"));
   hydrateIcons();
-}
-
-async function setActiveCommit(hash, shouldExpand = true) {
-  logInfo("article.commit.select", {
-    articleId: article?.articleId,
-    commitHash: hash,
-    shouldExpand
-  });
-
-  const nextExpanded = new Set(store.getState().expanded);
-  if (shouldExpand) {
-    nextExpanded.add(hash);
-  }
-
-  store.setState((prev) => ({
-    ...prev,
-    activeHash: hash,
-    expanded: nextExpanded
-  }));
-
-  updateUrl({ active: hash });
-  renderSummaryPanel();
-  renderProxyStatus();
-  await renderCommitList();
 }
 
 function attachEvents() {
@@ -238,7 +275,7 @@ function attachEvents() {
     return;
   }
 
-  list.addEventListener("click", async (event) => {
+  list.addEventListener("click", (event) => {
     const button = event.target.closest("[data-commit-toggle]");
     if (!button) {
       return;
@@ -249,21 +286,31 @@ function attachEvents() {
 
     if (expanded.has(hash)) {
       expanded.delete(hash);
+      store.setState((prev) => ({ ...prev, expanded }));
+      syncCommitCardState();
+
       logInfo("article.commit.collapse", {
         articleId: article?.articleId,
         commitHash: hash
       });
-      store.setState((prev) => ({ ...prev, expanded }));
-      await renderCommitList();
       return;
     }
+
+    expanded.add(hash);
+    store.setState((prev) => ({
+      ...prev,
+      activeHash: hash,
+      expanded
+    }));
+
+    syncCommitCardState();
+    syncSummaryPanelState();
+    updateUrl({ active: hash });
 
     logInfo("article.commit.expand", {
       articleId: article?.articleId,
       commitHash: hash
     });
-    store.setState((prev) => ({ ...prev, expanded }));
-    await setActiveCommit(hash, true);
   });
 
   const panel = document.querySelector("[data-summary-panel]");
@@ -277,8 +324,7 @@ function attachEvents() {
       ...prev,
       summaryCollapsed: !prev.summaryCollapsed
     }));
-    renderSummaryPanel();
-    hydrateIcons();
+    syncSummaryPanelState();
   });
 
   const mobileQuery = window.matchMedia("(max-width: 980px)");
@@ -286,18 +332,14 @@ function attachEvents() {
     const isMobile = mobileQuery.matches;
     document.body.classList.toggle("has-mobile-summary", isMobile);
 
-    if (!isMobile) {
+    if (!isMobile && store.getState().summaryCollapsed) {
       store.setState((prev) => ({
         ...prev,
         summaryCollapsed: false
       }));
-      renderSummaryPanel();
-      hydrateIcons();
-      return;
     }
 
-    renderSummaryPanel();
-    hydrateIcons();
+    syncSummaryPanelState();
   };
 
   syncSummaryLayout();
@@ -372,10 +414,21 @@ async function initPage() {
     selectedHash: initialCommit.hash
   });
 
-  renderSummaryPanel();
+  store.setState((prev) => ({
+    ...prev,
+    activeHash: initialCommit.hash,
+    expanded: new Set([initialCommit.hash])
+  }));
+
+  await prefetchHistoricalMarkup();
+
+  renderSummaryPanelOnce();
+  renderCommitListOnce();
   renderProxyStatus();
   attachEvents();
-  await setActiveCommit(initialCommit.hash, true);
+  syncCommitCardState();
+  syncSummaryPanelState();
+  updateUrl({ active: initialCommit.hash });
 }
 
 initPage().catch((error) => {
