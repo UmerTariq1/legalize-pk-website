@@ -27,6 +27,55 @@ const store = createStore({
 let article;
 let commits = [];
 
+function escapePipes(value) {
+  return String(value || "").replace(/\|/g, "\\|");
+}
+
+function convertLeadingMetadataToTable(markdownText) {
+  const text = String(markdownText || "").replace(/\r\n?/g, "\n");
+  const lines = text.split("\n");
+  const metadataRows = [];
+  const metaPattern = /^([A-Za-z][A-Za-z0-9\s()/.\-]{1,80}):\s*(.+)$/;
+
+  let cursor = 0;
+  while (cursor < lines.length && !lines[cursor].trim()) {
+    cursor += 1;
+  }
+
+  let probe = cursor;
+  while (probe < lines.length) {
+    const line = lines[probe].trim();
+    if (!line) {
+      break;
+    }
+
+    if (line.startsWith("|") || line.startsWith("#") || /^[-*+]\s/.test(line)) {
+      return text;
+    }
+
+    const match = line.match(metaPattern);
+    if (!match) {
+      break;
+    }
+
+    metadataRows.push([match[1].trim(), match[2].trim()]);
+    probe += 1;
+  }
+
+  if (metadataRows.length < 2) {
+    return text;
+  }
+
+  const tableLines = [
+    "| Field | Value |",
+    "| --- | --- |",
+    ...metadataRows.map(([field, value]) => `| ${escapePipes(field)} | ${escapePipes(value)} |`)
+  ];
+
+  const remainder = lines.slice(probe).join("\n").replace(/^\s+/, "");
+  return `${tableLines.join("\n")}\n\n${remainder}`.trimEnd();
+}
+
 function commitPartyKey(commit) {
   const party = String(commit?.party || "").toLowerCase();
   if (["ppp", "military", "pmln", "coalition"].includes(party)) {
@@ -148,7 +197,9 @@ async function loadHistoricalMarkup(commit) {
       ref: commit.hash
     });
 
-    const html = renderMarkdown(payload.data.contentMarkdown || "");
+    const normalizedMarkdown = convertLeadingMetadataToTable(payload.data.contentMarkdown || "");
+
+    const html = renderMarkdown(normalizedMarkdown);
     contentCache.set(commit.hash, html);
 
     return {
