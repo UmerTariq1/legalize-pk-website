@@ -9,7 +9,7 @@
 
 (1) The Chief Justice of Supreme Court and each of the other Judges of the Supreme Court shall be appointment by the President in accordance with Article 175A.
 
-(2) A person shall not be appointed as Judge of the Supreme Court unless he is a citizen of Pakistan and—
+(2) A person shall not be appointed as Judge of the Supreme Court unless he is a citizen of Pakistan and-
 
 (a) has for a period of, or for periods aggregating, not less than five years been a Judge of a High Court; or
 

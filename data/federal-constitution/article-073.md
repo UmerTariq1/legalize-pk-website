@@ -10,7 +10,7 @@ Provided that simultaneously when a Money Bill, including the Finance Bill conta
 
 (1A) The National Assembly shall consider the recommendations of the Senate and after the Bill has been passed by the Assembly with or without incorporating the recommendations of the Senate, it shall be presented to the President for assent.
 
-(2) For the purposes of this Chapter, a Bill or amendment shall be deemed to be a Money Bill if it contains provisions dealing with all or any of the following matters, namely :—
+(2) For the purposes of this Chapter, a Bill or amendment shall be deemed to be a Money Bill if it contains provisions dealing with all or any of the following matters, namely :-
 
 (a) the imposition, abolition, remission, alteration or regulation of any tax ;
 
@@ -26,7 +26,7 @@ Provided that simultaneously when a Money Bill, including the Finance Bill conta
 
 (g) any matter incidental to any of the matters specified in the preceding paragraphs.
 
-(3) A Bill shall not be deemed to be a Money Bill by reason only that it provides—
+(3) A Bill shall not be deemed to be a Money Bill by reason only that it provides-
 
 (a) for the imposition or alteration of any fine or other pecuniary penalty, or for the demand or payment of a licence fee or a fee or charge for any service rendered; or
 

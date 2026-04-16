@@ -9,7 +9,7 @@
 
 (2) The Islamic Council shall consist of such members, being not less than eight and not more than fifteen as the President may appoint from amongst persons having knowledge of the principles and philosophy of Islam as enunciated in the Holy Quran and Sunnah, or understanding of the economic, political, legal or administrative problems of Pakistan.
 
-(3) While appointing members of the Islamic Council, the President shall ensure that—
+(3) While appointing members of the Islamic Council, the President shall ensure that-
 
 (a) so far as practicable various schools of thought are represented in the Council ;
 

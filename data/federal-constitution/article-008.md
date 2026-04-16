@@ -10,7 +10,7 @@
 
 (2) The State shall not make any law which takes away or abridges the rights so conferred and any law made in contravention of this clause shall, to the extent of such contravention, be void.
 
-(3) The provisions of this Article shall not apply to—
+(3) The provisions of this Article shall not apply to-
 (a) any law relating to members of the Armed Forces, or of the police or of such other forces as are charged with the maintenance of public order, for the purpose of ensuring the proper discharge of their duties or the maintenance of discipline among them ; or
 
 (b) any of the-
@@ -23,6 +23,6 @@ and no such law nor any provision thereof shall be void on the ground that such 
 
 Provided that the appropriate Legislature may by resolution extend the said period of two years by a period not exceeding six months.
 
-Explanation.—If in respect of any law Parliament is the appropriate Legislature, such resolution shall be a resolution of the National Assembly.
+Explanation.-If in respect of any law Parliament is the appropriate Legislature, such resolution shall be a resolution of the National Assembly.
 
 (5) The rights conferred by this Chapter shall not be suspended except as expressly provided by the Constitution.

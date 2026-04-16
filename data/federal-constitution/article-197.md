@@ -4,7 +4,7 @@
 | Last Updated | 14 August 1973                                                                              |
 | Source       | https://factfocus.com/wp-content/uploads/2021/03/Original-Constitution-of-1973-Pakistan.pdf |
 
-At any time when—
+At any time when-
 (a) the office of a Judge of a High Court is vacant ; or
 (b) a Judge of a High Court is absent or is unable to perform the functions of his office due to any other cause; or
 (c) for any reason it is necessary to increase the number of Judges of a High Court,

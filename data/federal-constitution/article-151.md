@@ -8,7 +8,7 @@
 
 (2) Parliament may by law impose such restrictions on the freedom of trade, commerce or intercourse between one Province and another or within any part of Pakistan as may be required in the public interest.
 
-(3) A Provincial Assembly or a Provincial Government shall not have power to—
+(3) A Provincial Assembly or a Provincial Government shall not have power to-
 (a) make any law, or take any executive action, prohibiting or restricting the entry into, or the export from, the Province of goods of any class or description, or
 (b) impose a tax which, as between goods manufactured or produced in the Province and similar goods not so manufactured or produced, discriminates in favour of the former goods or which, in the case of goods manufactured or produced outside the Province discriminates between goods manufactured or produced in any area in Pakistan and similar goods manufactured or produced in any other area in Pakistan.
 

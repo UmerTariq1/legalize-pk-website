@@ -7,7 +7,7 @@
 
 (1) Within six months of the commencing day and thereafter at intervals not exceeding five years, the President shall constitute a National Finance Commission consisting of the Minister of Finance of the Federal Government, the Ministers of Finance of the Provincial Governments, and such other persons as may be appointed by the President after consultation with the Governors of the Provinces.
 
-(2) It shall be the duty of the National Finance Commission to make recommendations to the President as to—
+(2) It shall be the duty of the National Finance Commission to make recommendations to the President as to-
 
 (a) the distribution between the Federation and the Provinces of the net proceeds of the taxes mentioned in clause (3) ;
 
@@ -17,7 +17,7 @@
 
 (d) any other matter relating to finance referred to the Commission by the President.
 
-(3) The taxes referred to in paragraph (a) of clause (2) are the following taxes raised under the authority of Parliament, namely :—
+(3) The taxes referred to in paragraph (a) of clause (2) are the following taxes raised under the authority of Parliament, namely :-
 
 (i) taxes on income, including corporation tax, but not including taxes on income consisting of remuneration paid out of the Federal Consolidated Fund ;
 

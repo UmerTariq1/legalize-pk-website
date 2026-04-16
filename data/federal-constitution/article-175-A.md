@@ -9,7 +9,7 @@
 
 (1) There shall be a Judicial Commission of Pakistan, hereinafter in this Article referred to as the Commission, for appointment of Judges of the Federal Constitutional Court, the Supreme Court, High Courts and the Federal Shariat Court, and for performance evaluation of Judges of the High Courts, as hereinafter provided.
 
-(2) For appointment of Judges of the Federal Constitutional Court and the Supreme Court, the Commission shall consist of—
+(2) For appointment of Judges of the Federal Constitutional Court and the Supreme Court, the Commission shall consist of-
 
 (i) Chief Justice of the Federal Constitutional Court;
 (ii) Chief Justice of the Supreme Court;
@@ -68,7 +68,7 @@ Provided also that the second, third and this proviso
 shall stand omitted on the appointment of the first Chief
 Justice and the Judges under the above said provisos.
 
-(3A) The Committee shall consist of the following twelve members, namely:—
+(3A) The Committee shall consist of the following twelve members, namely:-
 
 (i) eight members from the National Assembly; and
 (ii) four members from the Senate:
@@ -97,7 +97,7 @@ Head of Constitutional Benches of that High Court;
 (iii) Member
 Provincial Minister for Law; and
 (iv) an advocate having not less than fifteen years practice in the High Court to be nominated by the concerned Bar Council for a term of two years.
-Explanation.— If Head of Constitutional Benches of a High Court is the Chief Justice of that High Court, the Judge who is next in seniority shall become member of the Commission.
+Explanation.- If Head of Constitutional Benches of a High Court is the Chief Justice of that High Court, the Judge who is next in seniority shall become member of the Commission.
 Provided that for appointment of the Chief Justice of a High Court the Judge mentioned in paragraph (ii), if he is the most senior Judge of a High Court, shall not be member of the Commission:
 Provided further that if for any reason the Chief Justice of a High Court is not available, he shall be substituted by a former Chief Justice or former Judge of that Court, to be nominated by the Commission:
 Provided also that if Article 202A has not come into force for a High Court, the most senior Judge of such High Court shall be a member of the Commission under paragraph (ii).

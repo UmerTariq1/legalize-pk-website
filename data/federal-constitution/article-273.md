@@ -5,7 +5,7 @@
 | Source       | https://factfocus.com/wp-content/uploads/2021/03/Original-Constitution-of-1973-Pakistan.pdf |
 | Amendment 4  | https://pakistani.org/pakistan/constitution/amendments/4amendment.html |
 
-(1) Notwithstanding anything contained in the Constitution, but subject to Article 63, Article 64 and Article 223,—
+(1) Notwithstanding anything contained in the Constitution, but subject to Article 63, Article 64 and Article 223,-
 (a) the first Assembly of a Province under the Constitution shall consist of -
 (i) the members of the Assembly of that Province in existence immediately before the commencing day, and
 (ii) the additional members to be elected in accordance with law by the members of the Assembly to fill the seats referred to in clause (3) of Article 106,

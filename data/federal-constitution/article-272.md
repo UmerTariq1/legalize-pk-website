@@ -6,7 +6,7 @@
 | Amendment 1  | https://pakistani.org/pakistan/constitution/amendments/1amendment.html |
 | Amendment 4  | https://pakistani.org/pakistan/constitution/amendments/4amendment.html |
 
-Notwithstanding anything contained in the Constitution, but subject to Article 63 and Article 223,—
+Notwithstanding anything contained in the Constitution, but subject to Article 63 and Article 223,-
 
 (a) the Senate shall, until the first National Assembly under the Constitution continues in existence,
 

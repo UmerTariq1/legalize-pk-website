@@ -4,7 +4,7 @@
 | Last Updated | 14 August 1973                                                                              |
 | Source       | https://factfocus.com/wp-content/uploads/2021/03/Original-Constitution-of-1973-Pakistan.pdf |
 
-The State shall—
+The State shall-
 (a) promote, with special care, the educational and economic interests of backward classes or areas;
 (b) remove illiteracy and provide free and compulsory secondary education within minimum possible period;
 (c) make technical and professional education generally available and higher education equally accessible to all on the basis of merit;

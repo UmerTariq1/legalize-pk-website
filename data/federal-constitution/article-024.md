@@ -8,7 +8,7 @@
 
 (2) No property shall be compulsorily acquired or taken possession of save for a public purpose, and save by the authority of law which provides for compensation therefor and either fixes the amount of compensation or specifies the principles on and the manner in which compensation is to be determined and given.
 
-(3) Nothing in this Article shall affect the validity of—
+(3) Nothing in this Article shall affect the validity of-
 
 (a) any law permitting the compulsory acquisition or taking possession of any property for preventing danger to life, property or public health; or
 
@@ -18,7 +18,7 @@
 
 (d) any law providing for the taking over of the management of any property by the State for a limited period, either in the public interest or in order to secure the proper management of the property, or for the benefit of its owner; or
 
-(e) any law providing for the acquisition of any class of property for the purpose of—
+(e) any law providing for the acquisition of any class of property for the purpose of-
 
 (i) providing education and medical aid to all, or any specified class of citizens; or
 

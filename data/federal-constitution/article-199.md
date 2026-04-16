@@ -10,11 +10,11 @@
 | Amendment 26 | https://www.na.gov.pk/uploads/documents/671f74b8da9e0_263.pdf |
 | Amendment 27 | https://www.senate.gov.pk/uploads/documents/1762598611_995.pdf |
 
-(1) Subject to the Constitution, a High Court may, if it is satisfied that no other adequate remedy is provided by law,—
-(a) on the application of any aggrieved party, make an order—
+(1) Subject to the Constitution, a High Court may, if it is satisfied that no other adequate remedy is provided by law,-
+(a) on the application of any aggrieved party, make an order-
 (i) directing a person performing, within the territorial jurisdiction of the Court, functions in connection with the affairs of the Federation, a Province or a local authority, to refrain from doing anything he is not permitted by law to do, or to do anything he is required by law to do; or
 (ii) declaring that any act done or proceeding taken within the territorial jurisdiction of the Court by a person performing functions in connection with the affairs of the Federation, a Province or a local authority has been done or taken without lawful authority and is of no legal effect; or
-(b) on the application of any person, make an order—
+(b) on the application of any person, make an order-
 (i) directing that a person in custody within the territorial jurisdiction of the Court be brought before it so that the Court may satisfy itself that he is not being held in custody without lawful authority or in an unlawful manner; or
 (ii) requiring a person within the territorial jurisdiction of the Court holding or purporting to hold a public office to show under what authority of law he claims to hold that office; or
 (c) on the application of any aggrieved person, make an order giving such directions to any person
@@ -38,13 +38,13 @@ or authority, including any Government exercis- ing any power or performing any 
 
 (3-C) The provisions of clauses (3-A) and (3-B) shall also apply to the disposal of an application in a petition for leave to appeal, or in an appeal, from an order such as is referred to in the said clause (3-A) that may be pending before the Supreme Court immediately before the commencement of the Constitution (Fifth Amendment) Act, 1976.
 
-(4) Where—
+(4) Where-
 
 (a) an application is made to a High Court for an order under paragraph (a) or paragraph (c) of clause (1), and
 
 (b) the making of an interim order would have the effect of prejudicing or interfering with the carrying out of a public work or of otherwise being harmful to the public interest or of impeding the assessment or collection of public revenues,
 
-the Court shall not make an interim order unless the pres- cribed law officer has been given notice of the application and he or any person authorised by him in that behalf has had an opportunity of being heard and the Court, for reasons to be recorded in writing, is satisfied that the interim order—
+the Court shall not make an interim order unless the pres- cribed law officer has been given notice of the application and he or any person authorised by him in that behalf has had an opportunity of being heard and the Court, for reasons to be recorded in writing, is satisfied that the interim order-
 
 (i) would not have such effect as aforesaid; or
 
@@ -52,11 +52,11 @@ the Court shall not make an interim order unless the pres- cribed law officer ha
 
 (4-A) An interim order made by a High Court on an application made to it to question the validity or legal effect of any order made, proceeding taken or act done by any authority or person, which has been made, taken or done or purports to have been made, taken or done under any law which is specified in Part I of the First Schedule or relates to, or is connected with, State property or assessment or collection of public revenues shall cease to have effect on the expiration of a period of six months following the day on which it is made.
 
-(5) In this Article. unless the context otherwise requires,—
+(5) In this Article. unless the context otherwise requires,-
 
 “ person ” includes any body politic or corporate, any authority of or under the control of the Federal Government or of a Provincial Government, and any Court or tribunal, other than the Supreme Court, a High Court or a Court or tribunal established under a law relating to the Armed Forces of Pakistan ; and
 
-“ prescribed law officer ” means—
+“ prescribed law officer ” means-
 
 (a) in relation to an application affecting the Federal Government or an authority of or under the control of the Federal Government, the Attorney-General, and
 

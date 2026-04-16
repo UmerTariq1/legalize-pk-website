@@ -7,7 +7,7 @@
 | Amendment 20 | https://pakistani.org/pakistan/constitution/amendments/20amendment.html |
 | Amendment 22 | https://web.archive.org/web/20251127020631/http://www.na.gov.pk/uploads/documents/1463653975_684.pdf |
 
-The Commission shall be charged with the duty of—
+The Commission shall be charged with the duty of-
 
 (a) preparing electoral rolls for election to the National Assembly, Provincial Assemblies and local governments, and revising such rolls periodically to keep them up-to-date;
 

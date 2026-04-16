@@ -12,7 +12,7 @@ Provided that for imposition of emergency due to internal disturbances beyond th
 
 Provided further that if the President acts on his own, the Proclamation of Emergency shall be placed before both Houses of Majlis-e-Shoora (Parliament) for approval by each House within ten days.
 
-(2) Notwithstanding anything in the Constitution, while a Proclamation of Emergency is in force,—
+(2) Notwithstanding anything in the Constitution, while a Proclamation of Emergency is in force,-
 (a) Parliament shall have power to make laws for a Province, or any part thereof, with respect to any matter enumerated in Part II of the Federal Legislative List or the Concurrent Legislative List or with respect to any matter not enumerated in either of those Lists, as if it were a matter specified in Part I of the Federal Legislative List ;
 (b) the executive authority of the Federation shall extend to the giving of directions to a Province as to the manner in which the executive authority of the Province is to be exercised ; and
 (c) the Federal Government may by Order assume to itself, or direct the Governor of a Province to assume on behalf of the Federal Government, all or any of the functions of the Government of the Province, and all or any of the powers vested in, or exercisable by, any body or authority in the Province other than the Provincial Assembly, and make such incidental and consequential provisions as appear to the Federal Government to be necessary or desirable for giving effect to the objects of the Proclamation, including provisions for suspending, in whole or in part, the operation of any provisions of the Constitution relating to any body or authority in the Province :
@@ -26,7 +26,7 @@ Provided that nothing in paragraph (c) shall authorise the Federal Government to
 
 (6) While a Proclamation of Emergency is in force, Parliament may by law extend the term of the National Assembly for a period not exceeding one year and not extending in any case beyond a period of six months after the Proclamation has ceased to be in force.
 
-(7) A Proclamation of Emergency shall be laid before a joint sitting which shall be summoned by the President to meet within thirty days of the Proclamation being issued and—
+(7) A Proclamation of Emergency shall be laid before a joint sitting which shall be summoned by the President to meet within thirty days of the Proclamation being issued and-
 
 (a) shall cease to be in force at the expiration of two months unless before the expiration of that period it has been approved by a resolution of the joint sitting; and
 

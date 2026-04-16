@@ -62,7 +62,7 @@ shall act as a member of the Council in his place.
 
 (4) If, upon any matter inquired into by the Council, there is a difference of opinion amongst its members, the opinion of the majority shall prevail, and the report of the Council to the President shall be expressed in terms of the view of the majority.
 
-(5) If, on information from any source or the report from the Commission under clause (19) of Article 175A, the Council or the President is of the opinion that a Judge of the Federal Constitutional Court or of the Supreme Court or of a High Court—
+(5) If, on information from any source or the report from the Commission under clause (19) of Article 175A, the Council or the President is of the opinion that a Judge of the Federal Constitutional Court or of the Supreme Court or of a High Court-
 
      (a) may be incapable of properly performing the duties of his office by reason of physical or mental incapacity; or
 
@@ -72,7 +72,7 @@ shall act as a member of the Council in his place.
 
 the Council, on its own motion or on receipt of report from the Commission under clause (19) of Article 175A or on the direction of the President, shall inquire into the matter.
 
-(6) If, after inquiring into the matter, without unnecessary delay and in case of report or direction under clause (5), within six months, the Council reports to the President that it is of the opinion that—
+(6) If, after inquiring into the matter, without unnecessary delay and in case of report or direction under clause (5), within six months, the Council reports to the President that it is of the opinion that-
 
      (a) the Judge is incapable of performing the duties of his office or is found inefficient in performance of the duties of his office or has been guilty of misconduct; and
 

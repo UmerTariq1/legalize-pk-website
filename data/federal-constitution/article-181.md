@@ -4,7 +4,7 @@
 | Last Updated | 14 August 1973                                                                              |
 | Source       | https://factfocus.com/wp-content/uploads/2021/03/Original-Constitution-of-1973-Pakistan.pdf |
 
-(1) At any time when—
+(1) At any time when-
 
 (a) the office of a Judge of the Supreme Court is vacant ; or
 

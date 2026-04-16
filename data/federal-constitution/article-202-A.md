@@ -18,7 +18,7 @@
 
 (6) Notwithstanding anything contained in the Constitution but subject to an Act of Majlis-e-Shoora (Parliament) in respect of the Islamabad High Court and an Act of Provincial Assembly in respect of other respective High Courts, a High Court may make rules regulating the practice and procedure of the Constitutional Benches.
 
-(7) This Article shall come into force, if in respect of—
+(7) This Article shall come into force, if in respect of-
 
      (a) the Islamabad High Court, both Houses of Majlis-e-Shoora (Parliament) in the joint sitting; and
 

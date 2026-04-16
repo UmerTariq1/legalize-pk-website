@@ -10,10 +10,10 @@
 
 (1) The Chief Justice and each of the other Judges of a High Court shall be appointed by the President in accordance with Article 175A.
 
-(2) A person shall not be appointed as a Judge of a High Court unless he is a citizen of Pakistan, is not less than forty years of age, and—
+(2) A person shall not be appointed as a Judge of a High Court unless he is a citizen of Pakistan, is not less than forty years of age, and-
 
 (a) he has, for a period of not less than ten years, been an advocate of a High Court; or
 
 (b) he has, for a period of not less than ten years, held a judicial office in Pakistan.
 
-Explanation.— In computing the period during which a person has been an advocate of a High Court or has held judicial office, there shall be included any period during which he has held judicial office after he became an advocate or, as the case may be, the period during which he has been an advocate after having held judicial office.
+Explanation.- In computing the period during which a person has been an advocate of a High Court or has held judicial office, there shall be included any period during which he has held judicial office after he became an advocate or, as the case may be, the period during which he has been an advocate after having held judicial office.

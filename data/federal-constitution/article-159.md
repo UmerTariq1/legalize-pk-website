@@ -4,7 +4,7 @@
 | Last Updated | 14 August 1973                                                                              |
 | Source       | https://factfocus.com/wp-content/uploads/2021/03/Original-Constitution-of-1973-Pakistan.pdf |
 
-(1) The Federal Government shall not unreasonably refuse to entrust to a Provincial Government such functions with respect to broadcasting and telecasting as may be necessary to enable that Government—
+(1) The Federal Government shall not unreasonably refuse to entrust to a Provincial Government such functions with respect to broadcasting and telecasting as may be necessary to enable that Government-
 
 (a) to construct and use transmitters in the Province; and
 

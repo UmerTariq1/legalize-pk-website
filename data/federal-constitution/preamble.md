@@ -5,7 +5,7 @@
 
 Whereas sovereignty over the entire Universe belongs to Almighty Allah alone, and the authority to be exercised by the people of Pakistan within the limits prescribed by Him is a sacred trust;
 
-And whereas it is the will of the people of Pakistan to establish an order—
+And whereas it is the will of the people of Pakistan to establish an order-
 
 Wherein the State shall exercise its powers and authority through the chosen representatives of the people;
 

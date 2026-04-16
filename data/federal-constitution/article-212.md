@@ -6,7 +6,7 @@
 | Amendment 1  | https://pakistani.org/pakistan/constitution/amendments/1amendment.html |
 | Amendment 5  | https://pakistani.org/pakistan/constitution/amendments/5amendment.html |
 
-(1) Notwithstanding anything hereinbefore contained, the appropriate Legislature may by Act provide for establishment of one or more Administrative Courts or Tribunals to exercise exclusive jurisdiction in respect of—
+(1) Notwithstanding anything hereinbefore contained, the appropriate Legislature may by Act provide for establishment of one or more Administrative Courts or Tribunals to exercise exclusive jurisdiction in respect of-
 
 (a) matters relating to the terms and conditions of persons who are or have been in the service of Pakistan, including disciplinary matters;
 

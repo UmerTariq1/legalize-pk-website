@@ -6,7 +6,7 @@
 | Amendment 5  | https://pakistani.org/pakistan/constitution/amendments/5amendment.html |
 | Amendment 27 | https://www.senate.gov.pk/uploads/documents/1762598611_995.pdf |
 
-At any time when—
+At any time when-
 (a) the office of Chief Justice of the Supreme Court is vacant ;
 or
 (b) the Chief Justice of the Supreme Court is absent or is unable to perform the functions of his office due to any other cause,

@@ -7,7 +7,7 @@
 | Amendment 20 | https://pakistani.org/pakistan/constitution/amendments/20amendment.html                     |
 | Amendment 22 | https://web.archive.org/web/20251127020631/http://www.na.gov.pk/uploads/documents/1463653975_684.pdf |
 
-(1) The Commissioner or a member shall not—
+(1) The Commissioner or a member shall not-
 (a) hold any other office of profit in the service of Pakistan; or
 
 (b) occupy any other position carrying the right to remuneration for the rendering of services.

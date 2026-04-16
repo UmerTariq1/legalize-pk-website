@@ -12,7 +12,7 @@
 
 produce documents before a committee of the House when duly required by the chairmen of the committee so to do :
 
-Provided that any such law—
+Provided that any such law-
 
 (a) may empower a court to punish a person who refuses to give evidence or produce documents; and ;
 

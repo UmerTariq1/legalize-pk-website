@@ -10,7 +10,7 @@
 
 (3) No child below the age of fourteen years shall be engaged in any factory or mine or any other hazardous employment.
 
-(4) Nothing in this Article shall be deemed to affect compulsory service—
+(4) Nothing in this Article shall be deemed to affect compulsory service-
 
 (a) by any person undergoing punishment for an offence against any law ; or
 

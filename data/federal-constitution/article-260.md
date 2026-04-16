@@ -10,7 +10,7 @@
 | Amendment 18 | https://pakistani.org/pakistan/constitution/amendments/18amendment.html                     |
 | Amendment 27 | https://www.senate.gov.pk/uploads/documents/1762598611_995.pdf |
 
-(1) In the Constitution, unless the context otherwise requires, the following expressions have the meaning hereby respectively assigned to them, that is to say,—
+(1) In the Constitution, unless the context otherwise requires, the following expressions have the meaning hereby respectively assigned to them, that is to say,-
 
 “Act of Parliament” means an Act passed by Parliament or the National Assembly and assented to, or deemed to have been assented to, by the President ;
 
@@ -36,7 +36,7 @@ occurs ;
 
 “ corporation tax ” means any tax on income that is
 payable by companies and in respect of which
-the following conditions apply :—
+the following conditions apply :-
 
 (a) the tax is not chargeable in respect of agri-
 cultural income ;
@@ -80,7 +80,7 @@ death;
 
 “ joint sitting ” means a joint sitting of the two Houses ;
 
-“ Judge ” in relation to the Federal Constitutional Court or the Supreme Court or a High Court, includes the Chief Justice of the Court and also includes—
+“ Judge ” in relation to the Federal Constitutional Court or the Supreme Court or a High Court, includes the Chief Justice of the Court and also includes-
 
 (a) in relation to the Supreme Court, a person who is acting as a Judge of the Court ; and
 

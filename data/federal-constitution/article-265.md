@@ -6,7 +6,7 @@
 
 (1) This Constitution shall be known as the Constitution of the Islamic Republic of Pakistan.
 (2) Subject to clauses (3) and (4), the Constitution shall come into force on the fourteenth day of August, one thousand nine hundred and seventy-three or on such earlier day as the President may, by notification in the official Gazette, appoint, in the Constitution referred to as the “commencing day”.
-(3) The Constitution shall, to the extent necessary—
+(3) The Constitution shall, to the extent necessary-
 (a) for the constitution of the first Senate;
 (b) for the first meeting of a House or a joint sitting to be held ;
 (c) for the election of the President and the Prime Minister to be held; and

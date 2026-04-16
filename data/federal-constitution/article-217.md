@@ -5,7 +5,7 @@
 | Source       | https://factfocus.com/wp-content/uploads/2021/03/Original-Constitution-of-1973-Pakistan.pdf |
 | Amendment 22 | https://web.archive.org/web/20251127020631/http://www.na.gov.pk/uploads/documents/1463653975_684.pdf |
 
-At any time when—
+At any time when-
 (a) the office of Commissioner is vacant, or
 (b) the Commissioner is absent or is unable to perform the functions of his office due to any other cause,
 

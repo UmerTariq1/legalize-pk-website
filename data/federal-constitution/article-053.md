@@ -16,7 +16,7 @@
 
 (6) The Deputy Speaker may, by writing under his hand addressed to the Speaker, resign his office.
 
-(7) The office of Speaker or Deputy Speaker shall become vacant if —
+(7) The office of Speaker or Deputy Speaker shall become vacant if -
 
 (a) he resigns his office ;
 (b) he ceases to be a member of the Assembly ; or

@@ -4,7 +4,7 @@
 | Last Updated | 14 August 1973                                                                              |
 | Source       | https://factfocus.com/wp-content/uploads/2021/03/Original-Constitution-of-1973-Pakistan.pdf |
 
-(1) The Prime Minister shall authenticate by his signature a schedule specifying—
+(1) The Prime Minister shall authenticate by his signature a schedule specifying-
 
 (a) the grants made or deemed to have been made by the National Assembly under Article 82, and
 

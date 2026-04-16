@@ -19,4 +19,4 @@
 
 (7) In this Article, “existing laws” means all laws (including Ordinances, Orders-in-Council, Orders, rules, bye-laws, regulations and Letters Patent constituting a High Court, and any notifications and other legal instruments having the force of law) in force in Pakistan or any part thereof, or having extra-territorial validity, immediately before the commencing day.
 
-Explanation.—In this Article, “in force”, in relation to any law, means having effect as law whether or not the law has been brought into operation.
+Explanation.-In this Article, “in force”, in relation to any law, means having effect as law whether or not the law has been brought into operation.

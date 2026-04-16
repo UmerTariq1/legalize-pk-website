@@ -4,7 +4,7 @@
 | Last Updated | 14 August 1973                                                                              |
 | Source       | https://factfocus.com/wp-content/uploads/2021/03/Original-Constitution-of-1973-Pakistan.pdf |
 
-(1) Parliament may by law—
+(1) Parliament may by law-
 
 (a) prescribe the maximum limits as to property or any class thereof which may be owned, held, possessed or controlled by any person ; and
 

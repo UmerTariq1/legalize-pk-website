@@ -8,9 +8,9 @@
 | Amendment 26 | https://www.na.gov.pk/uploads/documents/671f74b8da9e0_263.pdf |
 | Amendment 27 | https://www.senate.gov.pk/uploads/documents/1762598611_995.pdf |
 
-The following expenditure shall be expenditure charged upon the Federal Consolidated Fund:—
+The following expenditure shall be expenditure charged upon the Federal Consolidated Fund:-
 
-(a) the remuneration payable to the President and other expenditure relating to his office, and the remuneration payable to—
+(a) the remuneration payable to the President and other expenditure relating to his office, and the remuneration payable to-
 
 (i) the Judges of the Supreme Court and the Federal Constitutional Court, the Islamabad High Court;
 (ii) the Chief Election Commissioner.

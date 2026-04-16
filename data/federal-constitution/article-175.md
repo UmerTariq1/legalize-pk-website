@@ -10,7 +10,7 @@
 | Amendment 23 | https://web.archive.org/web/20260114145032/https://na.gov.pk/uploads/documents/1491460727_515.pdf |
 | Amendment 27 | https://www.senate.gov.pk/uploads/documents/1762598611_995.pdf |
 
-—(1) There shall be a Federal Constitutional Court of Pakistan, a Supreme Court of Pakistan, a High Court for each Province and a High Court for the Islamabad Capital Territory and such other courts as may be established by law.
+-(1) There shall be a Federal Constitutional Court of Pakistan, a Supreme Court of Pakistan, a High Court for each Province and a High Court for the Islamabad Capital Territory and such other courts as may be established by law.
 
 Explanation.- Unless the context otherwise requires, the words "High Court" wherever occurring in the Constitution shall include "Islamabad High Court."
 

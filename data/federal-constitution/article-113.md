@@ -4,7 +4,7 @@
 | Last Updated | 14 August 1973                                                                              |
 | Source       | https://factfocus.com/wp-content/uploads/2021/03/Original-Constitution-of-1973-Pakistan.pdf |
 
-A person shall not be qualified to be elected a member of a Provincial Assembly unless—
+A person shall not be qualified to be elected a member of a Provincial Assembly unless-
 (a) he is a citizen of Pakistan ;
 
 (b) he is not less than twenty-five years of age;

@@ -6,7 +6,7 @@
 | Amendment 18 | https://pakistani.org/pakistan/constitution/amendments/18amendment.html |
 | Amendment 25 | https://www.senate.gov.pk/uploads/documents/1528343985_133.pdf |
 
-(1) If the interests of a Province, the Federal Capital, or any of the inhabitants thereof, in water from any natural source of supply or reservoir have been or are likely to be affected prejudicially by—
+(1) If the interests of a Province, the Federal Capital, or any of the inhabitants thereof, in water from any natural source of supply or reservoir have been or are likely to be affected prejudicially by-
 
 (a) any executive act or legislation taken or passed or proposed to be taken or passed, or
 

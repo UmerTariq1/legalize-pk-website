@@ -5,7 +5,7 @@
 | Source       | https://factfocus.com/wp-content/uploads/2021/03/Original-Constitution-of-1973-Pakistan.pdf |
 
 (1) A Money Bill, or a Bill or amendment which if enacted and brought into operation would involve expenditure from the Provincial Consolidated Fund or withdrawal from the Public Account of the Province shall not be introduced or moved in the Provincial Assembly except by or with the consent of the Provincial Government.
-(2) For the purposes of this Article, a Bill or amendment shall be deemed to be a Money Bill if it contains provisions dealing with all or any of the following matters, namely :—
+(2) For the purposes of this Article, a Bill or amendment shall be deemed to be a Money Bill if it contains provisions dealing with all or any of the following matters, namely :-
 (a) the imposition, abolition, remission, alteration or regulation of any tax ;
 (b) the borrowing of money, or the giving of any guarantee, by the Provincial Government or the amendment of the law relating to the financial obligations of that Government ;
 (c) the custody of the Provincial Consolidated Fund, the payment of moneys into, or issue of moneys from, that Fund ;
@@ -14,7 +14,7 @@
 
 (f) any matter incidental to any of the matters specified in the preceding paragraphs.
 
-(3) A Bill shall not be deemed to be a Money Bill by reason only that it provides—
+(3) A Bill shall not be deemed to be a Money Bill by reason only that it provides-
 
 (a) for the imposition or alteration of any fine or other pecuniary penalty or for the demand or payment or a licence fee or a fee or charge for any service rendered ; or
 

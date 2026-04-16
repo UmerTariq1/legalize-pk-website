@@ -5,7 +5,7 @@
 | Source       | https://factfocus.com/wp-content/uploads/2021/03/Original-Constitution-of-1973-Pakistan.pdf |
 | Amendment 26 | https://www.na.gov.pk/uploads/documents/671f74b8da9e0_263.pdf |
 
-(1) The functions of the Islamic Council shall be—
+(1) The functions of the Islamic Council shall be-
 (a) to make recommendations to Parliament and the Provincial Assemblies as to the ways and means of enabling and encouraging the Muslims of Pakistan to order their lives individually and collectively in all respects in accordance with the principles and concepts of Islam as enunciated in the Holy Quran and Sunnah ;
 (b) to advise a House, a Provincial Assembly, the President or a Governor on any question referred to the Council as to whether a proposed law is or is not repugnant to the Injunctions of Islam ;
 (c) to make recommendations as to the measures for bringing existing laws into conformity with the Injunctions of Islam and the stages by which such measures should be brought into effect ; and

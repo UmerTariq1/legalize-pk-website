@@ -6,7 +6,7 @@
 | Amendment 18 | https://pakistani.org/pakistan/constitution/amendments/18amendment.html |
 | Amendment 26 | https://www.na.gov.pk/uploads/documents/671f74b8da9e0_263.pdf |
 
-The State shall—
+The State shall-
 
 (a) secure the well-being of the people, irrespective of sex, caste, creed or race, by raising their standard of living, by preventing the concentration of wealth and means of production and distribution in the hands of a few to the detriment of general interest and by ensuring equitable adjustment of rights between employers and employees, and landlords and tenants ;
 

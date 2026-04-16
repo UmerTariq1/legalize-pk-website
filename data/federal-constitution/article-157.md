@@ -8,7 +8,7 @@
 (1) The Federal Government may in any province construct or cause to be constructed hydro-electric or thermal power installations or grid stations for the generation of electricity and lay or cause to be laid inter-Provincial transmission lines:  
 Provided that the Federal Government shall, prior to taking a decision to construct or cause to be constructed, hydro-electric power stations in any Province, shall consult the Provincial Government concerned.
 
-(2) The Government of a Province may—
+(2) The Government of a Province may-
 
 (a) to the extent electricity is supplied to that Province from the national grid, require supply to be made in bulk for transmission and distribution within the Province;
 
