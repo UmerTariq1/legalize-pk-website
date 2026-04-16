@@ -2,7 +2,7 @@ import { hydrateIcons, setActiveNav } from "../core/ui-helpers.js";
 import { logInfo } from "../core/logger.js";
 
 const REVEAL_SELECTOR =
-  ".page-intro, .timeline-filter, .diff-controls, .search-toolbar, .explore-hero, .github-band, .result-group, .card, .article-row, .commit-card, .timeline-node__card, .result-item, .explore-card, .editorial-callout, .summary-panel, .diff-output";
+  ".page-intro, .timeline-filter, .diff-controls, .search-toolbar, .explore-hero, .github-band, .result-group, .card:not(.overlay-info-card), .article-row, .commit-card, .timeline-node__card, .result-item, .explore-card, .editorial-callout, .summary-panel, .diff-output";
 
 let revealObserver = null;
 let mutationObserver = null;
