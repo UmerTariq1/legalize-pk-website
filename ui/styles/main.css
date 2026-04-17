@@ -2525,7 +2525,9 @@ body[data-page="amendment"] [data-amendment-content] {
   }
 
   body[data-page="diff"] .diff-controls {
-    top: 7.1rem;
+    position: static;
+    top: auto;
+    z-index: auto;
   }
 
   .search-presets {
