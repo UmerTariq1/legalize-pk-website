@@ -111,16 +111,30 @@ async function initPage() {
     label: `${choice.label} - ${choice.displayTitle}`
   }));
 
-  fillSelect(document.querySelector("#explore-article"), articleOptions, (option) => option.label);
-  fillSelect(document.querySelector("#diff-article"), articleOptions, (option) => option.label);
+  const preferredArticleOption = articleOptions.find((option) => option.value === "1") || articleOptions[1] || articleOptions[0];
+  const exploreArticleSelect = document.querySelector("#explore-article");
+  const diffArticleSelect = document.querySelector("#diff-article");
+
+  fillSelect(exploreArticleSelect, articleOptions, (option) => option.label);
+  fillSelect(diffArticleSelect, articleOptions, (option) => option.label);
+
+  if (preferredArticleOption) {
+    if (exploreArticleSelect) {
+      exploreArticleSelect.value = preferredArticleOption.value;
+    }
+    if (diffArticleSelect) {
+      diffArticleSelect.value = preferredArticleOption.value;
+    }
+  }
+
   fillSelect(
     document.querySelector("#explore-amendment"),
     amendmentChoices.map((choice) => ({ value: String(choice.number), label: `${choice.label} - ${choice.message}` })),
     (option) => option.label
   );
 
-  if (articleOptions.length) {
-    await fillDiffCommits(articleOptions[0].value);
+  if (preferredArticleOption) {
+    await fillDiffCommits(diffArticleSelect?.value || preferredArticleOption.value);
   }
 
   wireForms();
