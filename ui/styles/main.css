@@ -1474,6 +1474,16 @@ body[data-page="article"] .commit-list {
   line-height: 1.8;
 }
 
+.summary-panel__footer {
+  margin: 0.9rem 0 0;
+  padding-top: 0.6rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.24);
+  color: rgba(255, 255, 255, 0.74);
+  font-size: 0.74rem;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+}
+
 .summary-panel.is-updating .summary-panel__content {
   opacity: 0;
   transform: translateY(6px);
@@ -1541,6 +1551,17 @@ body[data-page="article"] .commit-list {
   background: var(--color-pale-green);
   box-shadow: var(--shadow-ambient);
   backdrop-filter: blur(2px);
+}
+
+.timeline-filter__dates {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(10.5rem, 1fr));
+  gap: var(--space-3);
+  flex: 1 1 24rem;
+}
+
+.timeline-filter__dates label {
+  min-width: 0;
 }
 
 .timeline-filter label {
@@ -2175,6 +2196,16 @@ body[data-page="amendment"] [data-amendment-content] {
   font-size: 0.94rem;
 }
 
+.ai-summary-footer {
+  margin: 0.9rem 0 0;
+  padding-top: 0.6rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.24);
+  color: rgba(255, 255, 255, 0.74);
+  font-size: 0.74rem;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+}
+
 .results-grid {
   display: grid;
   gap: var(--space-6);
@@ -2555,6 +2586,12 @@ body[data-page="amendment"] [data-amendment-content] {
   .timeline-filter,
   .diff-controls {
     padding: var(--space-3);
+  }
+
+  .timeline-filter__dates {
+    width: 100%;
+    grid-template-columns: 1fr;
+    gap: var(--space-2);
   }
 
   .button,

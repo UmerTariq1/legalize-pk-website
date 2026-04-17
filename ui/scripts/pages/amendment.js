@@ -81,12 +81,14 @@ function renderPage(data, amendmentCommit) {
 
     <section class="card card--pale">
       <h2>Affected Articles</h2>
+      <p>Click on the article to view its details</p>
       <div class="article-chip-grid">${articleChips}</div>
     </section>
 
     <section class="card ai-summary ai-summary--amendment">
-      <h2 class="ai-summary-label">✨ AI Summary. Generated with Gemini</h2>
+      <h2 class="ai-summary-label">Amendment ${amendmentCommit.amendmentNumber} AI summary</h2>
       <div>${renderMarkdown(amendmentCommit.summary || "No summary available for this commit.")}</div>
+      <p class="ai-summary-footer">Summary generated with the help of Gemini.</p>
     </section>
 
     <section class="card card--cream">

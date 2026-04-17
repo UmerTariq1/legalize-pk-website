@@ -103,6 +103,19 @@ function commitLabel(commit) {
   return `Amendment ${commit.amendmentNumber}`;
 }
 
+function summaryHeading(commit) {
+  if (!commit?.amendmentNumber) {
+    return "Original Constitution AI summary";
+  }
+  return `Amendment ${commit.amendmentNumber} AI summary`;
+}
+
+function activeSummaryHeading() {
+  const state = store.getState();
+  const activeCommit = commits.find((commit) => commit.hash === state.activeHash) || commits[commits.length - 1] || commits[0];
+  return summaryHeading(activeCommit);
+}
+
 function renderProxyStatus() {
   const target = document.querySelector("[data-proxy-status]");
   if (!target) {
@@ -147,6 +160,11 @@ function syncSummaryPanelState() {
     const hash = card.getAttribute("data-summary-card");
     card.classList.toggle("is-active", hash === state.activeHash);
   });
+
+  const heading = activeSummaryHeading();
+  panel.querySelectorAll("[data-summary-heading]").forEach((element) => {
+    element.textContent = heading;
+  });
 }
 
 function renderSummaryPanelOnce() {
@@ -161,20 +179,23 @@ function renderSummaryPanelOnce() {
       const activeClass = state.activeHash === commit.hash ? " is-active" : "";
       return `
         <section class="summary-panel__card${activeClass}" data-summary-card="${commit.hash}">
-          <h3 class="summary-panel__title">${commitLabel(commit)}</h3>
+          <h3 class="summary-panel__title">${summaryHeading(commit)}</h3>
           <div class="summary-panel__body">${renderMarkdown(summaryForCommit(commit))}</div>
+          <p class="summary-panel__footer">Summary generated with the help of Gemini.</p>
         </section>
       `;
     })
     .join("");
 
+  const heading = activeSummaryHeading();
+
   panel.innerHTML = `
     <button type="button" class="summary-panel__mobile-toggle" data-summary-toggle aria-expanded="${state.summaryCollapsed ? "false" : "true"}">
-      <span>✨ AI Summary. Generated with Gemini</span>
+      <span data-summary-heading>${escapeHtml(heading)}</span>
       <i data-lucide="chevron-up" aria-hidden="true"></i>
     </button>
     <div class="summary-panel__content">
-      <p class="summary-panel__eyebrow">✨ AI SUMMARY. Generated with Gemini</p>
+      <p class="summary-panel__eyebrow" data-summary-heading>${escapeHtml(heading)}</p>
       <div class="summary-panel__cards">${summaryCards}</div>
     </div>
   `;

@@ -43,14 +43,16 @@
         </section>
 
         <section class="timeline-filter" aria-label="Timeline date filters">
-          <label>
-            From
-            <input id="timeline-from" type="date" />
-          </label>
-          <label>
-            To
-            <input id="timeline-to" type="date" />
-          </label>
+          <div class="timeline-filter__dates">
+            <label>
+              From
+              <input id="timeline-from" type="date" />
+            </label>
+            <label>
+              To
+              <input id="timeline-to" type="date" />
+            </label>
+          </div>
           <div class="timeline-filter__presets" data-timeline-presets>
             <button type="button" class="timeline-filter__preset" data-range-preset="all" aria-pressed="false">All Time</button>
             <button type="button" class="timeline-filter__preset" data-range-preset="century21" aria-pressed="false">Since 2000</button>
