@@ -103,7 +103,8 @@ export function updateUrl(params) {
 }
 
 export function routeWithId(baseRoute, idValue) {
-  const id = encodeURIComponent(String(idValue || "").trim());
+  const rawId = idValue === undefined || idValue === null ? "" : String(idValue).trim();
+  const id = encodeURIComponent(rawId);
   return `${baseRoute}/${id}`;
 }
 

@@ -15,6 +15,10 @@ function partyKey(value) {
 }
 
 function collectExternalSources(data, amendmentNumber, affectedArticles) {
+  if (!Number.isFinite(amendmentNumber) || amendmentNumber <= 0) {
+    return [];
+  }
+
   const sources = new Set();
   const affectedSet = new Set(affectedArticles.map((path) => normalizeRepoArticlePath(path)));
 
@@ -36,6 +40,10 @@ function collectExternalSources(data, amendmentNumber, affectedArticles) {
   return Array.from(sources);
 }
 
+function getAmendmentDisplayTitle(amendmentCommit) {
+  return amendmentCommit.isOriginalConstitution ? "Original Constitution" : `Amendment ${amendmentCommit.amendmentNumber}`;
+}
+
 function renderPage(data, amendmentCommit) {
   const outlet = document.querySelector("[data-amendment-content]");
   if (!outlet) {
@@ -43,8 +51,11 @@ function renderPage(data, amendmentCommit) {
   }
 
   const affectedArticles = amendmentCommit.affectedArticles || [];
+  const displayTitle = getAmendmentDisplayTitle(amendmentCommit);
+  const pageKicker = amendmentCommit.isOriginalConstitution ? "Constitution Detail" : "Amendment Detail";
   logInfo("amendment.render", {
     amendmentNumber: amendmentCommit.amendmentNumber,
+    title: displayTitle,
     affectedCount: affectedArticles.length
   });
   const sourceLinks = collectExternalSources(data, amendmentCommit.amendmentNumber, affectedArticles);
@@ -68,8 +79,8 @@ function renderPage(data, amendmentCommit) {
 
   outlet.innerHTML = `
     <section class="card amendment-hero" data-party="${party}">
-      <p class="page-kicker">Amendment Detail</p>
-      <h1 class="page-title">Amendment ${amendmentCommit.amendmentNumber}</h1>
+      <p class="page-kicker">${pageKicker}</p>
+      <h1 class="page-title">${displayTitle}</h1>
       <p class="page-subtitle">${escapeHtml(amendmentCommit.message)}</p>
       <div class="meta-stack">
         <span class="badge badge--calendar"><i data-lucide="calendar-days" aria-hidden="true"></i>Date: ${formatDate(amendmentCommit.date)}</span>
@@ -86,7 +97,7 @@ function renderPage(data, amendmentCommit) {
     </section>
 
     <section class="card ai-summary ai-summary--amendment">
-      <h2 class="ai-summary-label">Amendment ${amendmentCommit.amendmentNumber} AI summary</h2>
+      <h2 class="ai-summary-label">${displayTitle} AI summary</h2>
       <div>${renderMarkdown(amendmentCommit.summary || "No summary available for this commit.")}</div>
       <p class="ai-summary-footer">Summary generated with the help of Gemini.</p>
     </section>
@@ -106,7 +117,7 @@ async function initPage() {
   initSharedPage();
 
   const amendmentNumber = getAmendmentNumberFromUrl();
-  if (!amendmentNumber) {
+  if (amendmentNumber === null) {
     throw new Error("Missing amendment number in URL.");
   }
 
@@ -118,12 +129,14 @@ async function initPage() {
   const data = await loadDatasets();
   const amendmentCommit = await getAmendmentByNumber(amendmentNumber);
   if (!amendmentCommit) {
-    throw new Error(`Amendment ${amendmentNumber} not found in local data.`);
+    throw new Error(amendmentNumber === 0 ? "Original Constitution entry not found in local data." : `Amendment ${amendmentNumber} not found in local data.`);
   }
 
-  setPageTitle(`Amendment ${amendmentNumber}`);
+  const displayTitle = getAmendmentDisplayTitle(amendmentCommit);
+  setPageTitle(displayTitle);
   logInfo("amendment.loaded", {
     amendmentNumber,
+    title: displayTitle,
     commitHash: amendmentCommit.hash
   });
   renderPage(data, amendmentCommit);

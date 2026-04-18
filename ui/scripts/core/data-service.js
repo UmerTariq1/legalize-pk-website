@@ -171,7 +171,26 @@ export async function getArticleCommits(articleId) {
 
 export async function getAmendmentByNumber(numberValue) {
   const data = await loadDatasets();
-  return data.amendmentByNumber.get(Number(numberValue)) || null;
+  const amendmentNumber = Number(numberValue);
+
+  if (!Number.isFinite(amendmentNumber)) {
+    return null;
+  }
+
+  if (amendmentNumber === 0) {
+    const originalCommit = data.commits.find((commit) => Number(commit.commitNumber) === 1) || null;
+    if (!originalCommit) {
+      return null;
+    }
+
+    return {
+      ...originalCommit,
+      amendmentNumber: 0,
+      isOriginalConstitution: true
+    };
+  }
+
+  return data.amendmentByNumber.get(amendmentNumber) || null;
 }
 
 export async function getCommitByHash(hash) {

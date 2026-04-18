@@ -288,8 +288,14 @@ function renderCommitListOnce() {
       const callout = commit.amendmentNumber ? createEditorialCallout(commit.amendmentNumber) : "";
       const party = commitPartyKey(commit);
       const historyHtml = contentCache.get(commit.hash) || '<div class="info-empty info-empty--warning"><span>No historical text loaded for this commit.</span></div>';
-      const amendmentDetailLink = commit.amendmentNumber
-        ? `<div class="meta-stack" style="margin-bottom: var(--space-2)"><a class="btn-ghost" href="${routeWithId("/amendment", commit.amendmentNumber)}">View Amendment Detail →</a></div>`
+      const detailUrl = commit.amendmentNumber
+        ? routeWithId("/amendment", commit.amendmentNumber)
+        : Number(commit.commitNumber) === 1
+          ? routeWithId("/amendment", 0)
+          : "";
+      const detailLabel = Number(commit.commitNumber) === 1 ? "View Original Constitution Detail →" : "View Amendment Detail →";
+      const amendmentDetailLink = detailUrl
+        ? `<div class="meta-stack" style="margin-bottom: var(--space-2)"><a class="btn-ghost" href="${detailUrl}">${detailLabel}</a></div>`
         : "";
 
       return `
