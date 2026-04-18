@@ -9,6 +9,7 @@ At runtime, the browser serves static HTML/CSS/JS from this repository and calls
 - Static data:
   - `data/data.json`
   - `data/current-constitution.json`
+  - `data/federal-article-summaries/*.md` (used during preprocessing and embedded into `data/data.json` article entries)
 - Dynamic API:
   - `/.netlify/functions/github-proxy`
 
@@ -52,6 +53,8 @@ Core idea:
 
 - Scripts under `preprocessing/scripts/`
   - `generate_static_data.js` for amendment timeline/index from Git history
+    - also embeds per-article AI summaries from `data/federal-article-summaries/` into `data.json -> articles[repoPath].summary`
+  - `generate_article_summaries.js` to generate summary markdown files for each article
   - `convert_current_const_md_to_json.js` for current constitution JSON from markdown files
   - `test_github_auth.js` for token/repo connectivity checks
 
@@ -75,6 +78,10 @@ The frontend starts by loading two JSON files once per page session:
 - `amendmentByNumber`
 
 This allows pages to query quickly without refetching.
+
+Each article entry in `data/data.json` also includes:
+
+- `summary`: plain-text AI summary sourced from `data/federal-article-summaries/article-xxx-summary.md` during preprocessing
 
 ### 3.2 Derived commit semantics
 
@@ -147,6 +154,7 @@ Flow:
 
 - Resolves article from route.
 - Loads commit list for that article from static index.
+- Loads the article-level AI summary from static summary data.
 - On expand/select of a commit card, fetches markdown snapshot through proxy.
 - Uses local content cache and shows proxy status badges.
 
@@ -239,6 +247,12 @@ Use this only when refreshing dataset content from source markdown/Git history.
 
 Set `GITHUB_TOKEN` in environment or `.env` at repo root.
 
+If generating article summaries, also set `OPENAI_API_KEY` in `.env`.
+
+Ensure generated summary markdown files exist in:
+
+- `data/federal-article-summaries/`
+
 ### 7.2 Generate timeline/index data
 
 Run:
@@ -251,7 +265,21 @@ Note: this script currently writes to repository root `data.json`.
 The runtime app reads `data/data.json`.
 If you use this script as-is, move/copy output to `data/data.json` (or update script output path).
 
-### 7.3 Generate current constitution JSON
+`articles` entries in this output include `summary` populated from local files in `data/federal-article-summaries` when present.
+
+### 7.3 Generate article summaries (optional, before static data refresh)
+
+Run:
+
+```bash
+node preprocessing/scripts/generate_article_summaries.js
+```
+
+This creates one file per article (for example `article-063-summary.md`) that can be copied to:
+
+- `data/federal-article-summaries/`
+
+### 7.4 Generate current constitution JSON
 
 Run:
 
@@ -261,7 +289,7 @@ node preprocessing/scripts/convert_current_const_md_to_json.js
 
 This writes `data/current-constitution.json`.
 
-### 7.4 Optional auth/repo probe
+### 7.5 Optional auth/repo probe
 
 Run:
 

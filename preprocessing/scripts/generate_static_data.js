@@ -1,3 +1,8 @@
+// run at the root level and make sure .env file is there : node .\preprocessing\scripts\generate_static_data.js 
+
+
+
+
 /* eslint-disable no-console */
 const fs = require('node:fs/promises');
 const path = require('node:path');
@@ -6,7 +11,9 @@ const OWNER = 'UmerTariq1';
 const REPO = 'legalize-pk';
 const TARGET_COMMIT_COUNT = 25;
 const CONSTITUTION_DIR = 'federal-constitution/';
+const PREAMBLE_PATH = `${CONSTITUTION_DIR}preamble.md`;
 const AMENDMENT_SUMMARY_DIR = 'federal-ammendment-summaries/';
+const ARTICLE_SUMMARY_DIR = path.join('data', 'federal-article-summaries');
 
 function parseDotEnv(content) {
 	const env = {};
@@ -112,11 +119,16 @@ async function fetchCommitDetails(sha, token) {
 async function fetchAllConstitutionArticleFiles(token) {
 	const tree = await githubRequest(`/repos/${OWNER}/${REPO}/git/trees/HEAD?recursive=1`, token);
 	const allPaths = Array.isArray(tree.tree) ? tree.tree : [];
+	const articlePathSet = new Set(
+		allPaths
+			.filter((item) => item.type === 'blob' && item.path.startsWith(CONSTITUTION_DIR) && item.path.endsWith('.md'))
+			.map((item) => item.path)
+	);
 
-	return allPaths
-		.filter((item) => item.type === 'blob' && item.path.startsWith(CONSTITUTION_DIR) && item.path.endsWith('.md'))
-		.map((item) => item.path)
-		.sort();
+	// Keep preamble as a first-class constitutional entry even if upstream listing changes.
+	articlePathSet.add(PREAMBLE_PATH);
+
+	return Array.from(articlePathSet).sort();
 }
 
 async function fetchFileContentAtCommit(filePath, ref, token) {
@@ -141,8 +153,45 @@ function isTrackedFile(filePath) {
 	return filePath.startsWith(CONSTITUTION_DIR) || filePath.startsWith(AMENDMENT_SUMMARY_DIR);
 }
 
+function isConstitutionMarkdownFile(filePath) {
+	return String(filePath || '').startsWith(CONSTITUTION_DIR) && String(filePath || '').endsWith('.md');
+}
+
 function titleLine(message) {
 	return String(message || '').split(/\r?\n/, 1)[0].trim();
+}
+
+function summaryFileNameFromArticlePath(articlePath) {
+	const articleFileName = path.posix.basename(articlePath);
+	const baseName = articleFileName.endsWith('.md')
+		? articleFileName.slice(0, -3)
+		: articleFileName;
+
+	return `${baseName}-summary.md`;
+}
+
+async function loadArticleSummaries(repoRoot, articlePaths) {
+	const articleSummaryRoot = path.join(repoRoot, ARTICLE_SUMMARY_DIR);
+	const summaryByArticlePath = new Map();
+
+	for (const articlePath of articlePaths) {
+		const summaryFileName = summaryFileNameFromArticlePath(articlePath);
+		const summaryPath = path.join(articleSummaryRoot, summaryFileName);
+
+		try {
+			const summaryText = await fs.readFile(summaryPath, 'utf8');
+			summaryByArticlePath.set(articlePath, summaryText.trim() || null);
+		} catch (error) {
+			if (error && error.code === 'ENOENT') {
+				summaryByArticlePath.set(articlePath, null);
+				continue;
+			}
+
+			throw error;
+		}
+	}
+
+	return summaryByArticlePath;
 }
 
 async function buildStaticData() {
@@ -175,11 +224,13 @@ async function buildStaticData() {
 	}
 
 	const articleFiles = await fetchAllConstitutionArticleFiles(token);
+	const articleSummaries = await loadArticleSummaries(repoRoot, articleFiles);
 	const articlesIndex = {};
 	for (const filePath of articleFiles) {
 		articlesIndex[filePath] = {
 			changeCount: 0,
 			amendments: [],
+			summary: articleSummaries.get(filePath) || null,
 		};
 	}
 
@@ -191,11 +242,12 @@ async function buildStaticData() {
 		const { sha, details, changedFiles } = relevantCommitRows[i];
 
 		for (const filePath of changedFiles) {
-			if (filePath.startsWith(CONSTITUTION_DIR) && filePath.endsWith('.md')) {
+			if (isConstitutionMarkdownFile(filePath)) {
 				if (!articlesIndex[filePath]) {
 					articlesIndex[filePath] = {
 						changeCount: 0,
 						amendments: [],
+						summary: articleSummaries.get(filePath) || null,
 					};
 				}
 

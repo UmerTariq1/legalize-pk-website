@@ -1,4 +1,4 @@
-import { getArticleById, getArticleCommits } from "../core/data-service.js";
+import { getArticleById, getArticleCommits, loadDatasets } from "../core/data-service.js";
 import { logError, logInfo } from "../core/logger.js";
 import { renderMarkdown } from "../core/markdown.js";
 import { fetchFileAtCommit } from "../core/proxy-api.js";
@@ -10,6 +10,7 @@ import {
   createProxyStatusMarkup,
   formatMetaDate,
   hydrateIcons,
+  routeWithId,
   setPageTitle,
   updateUrl
 } from "../core/ui-helpers.js";
@@ -26,6 +27,7 @@ const store = createStore({
 
 let article;
 let commits = [];
+let articleSummary = "";
 
 function escapePipes(value) {
   return String(value || "").replace(/\|/g, "\\|");
@@ -84,16 +86,8 @@ function commitPartyKey(commit) {
   return "neutral";
 }
 
-function summaryForCommit(commit) {
-  if (!commit) {
-    return "Select a commit to read its summary.";
-  }
-
-  if (commit.summary) {
-    return commit.summary;
-  }
-
-  return "This is the original constitution commit entry. No amendment summary is available for this state.";
+function articleSummaryLabel() {
+  return "Article summary";
 }
 
 function commitLabel(commit) {
@@ -103,19 +97,6 @@ function commitLabel(commit) {
   return `Amendment ${commit.amendmentNumber}`;
 }
 
-function summaryHeading(commit) {
-  if (!commit?.amendmentNumber) {
-    return "Original Constitution AI summary";
-  }
-  return `Amendment ${commit.amendmentNumber} AI summary`;
-}
-
-function activeSummaryHeading() {
-  const state = store.getState();
-  const activeCommit = commits.find((commit) => commit.hash === state.activeHash) || commits[commits.length - 1] || commits[0];
-  return summaryHeading(activeCommit);
-}
-
 function renderProxyStatus() {
   const target = document.querySelector("[data-proxy-status]");
   if (!target) {
@@ -123,6 +104,12 @@ function renderProxyStatus() {
   }
 
   target.innerHTML = createProxyStatusMarkup(store.getState().status);
+}
+
+async function loadArticleSummary() {
+  const data = await loadDatasets();
+  const summaryText = data.articleIndex?.[article.repoPath]?.summary;
+  articleSummary = typeof summaryText === "string" ? summaryText : "";
 }
 
 function syncCommitCardState() {
@@ -156,12 +143,7 @@ function syncSummaryPanelState() {
     toggle.setAttribute("aria-expanded", state.summaryCollapsed ? "false" : "true");
   }
 
-  panel.querySelectorAll("[data-summary-card]").forEach((card) => {
-    const hash = card.getAttribute("data-summary-card");
-    card.classList.toggle("is-active", hash === state.activeHash);
-  });
-
-  const heading = activeSummaryHeading();
+  const heading = articleSummaryLabel();
   panel.querySelectorAll("[data-summary-heading]").forEach((element) => {
     element.textContent = heading;
   });
@@ -174,20 +156,15 @@ function renderSummaryPanelOnce() {
   }
 
   const state = store.getState();
-  const summaryCards = commits
-    .map((commit) => {
-      const activeClass = state.activeHash === commit.hash ? " is-active" : "";
-      return `
-        <section class="summary-panel__card${activeClass}" data-summary-card="${commit.hash}">
-          <h3 class="summary-panel__title">${summaryHeading(commit)}</h3>
-          <div class="summary-panel__body">${renderMarkdown(summaryForCommit(commit))}</div>
-          <p class="summary-panel__footer">Summary generated with the help of Gemini.</p>
-        </section>
-      `;
-    })
-    .join("");
+  const summaryCards = `
+    <section class="summary-panel__card is-active" data-summary-card="article">
+      <h3 class="summary-panel__title">${articleSummaryLabel()}</h3>
+      <div class="summary-panel__body">${renderMarkdown(articleSummary)}</div>
+      <p class="summary-panel__footer">Summary generated with the help of Gemini.</p>
+    </section>
+  `;
 
-  const heading = activeSummaryHeading();
+  const heading = articleSummaryLabel();
 
   panel.innerHTML = `
     <button type="button" class="summary-panel__mobile-toggle" data-summary-toggle aria-expanded="${state.summaryCollapsed ? "false" : "true"}">
@@ -311,6 +288,9 @@ function renderCommitListOnce() {
       const callout = commit.amendmentNumber ? createEditorialCallout(commit.amendmentNumber) : "";
       const party = commitPartyKey(commit);
       const historyHtml = contentCache.get(commit.hash) || '<div class="info-empty info-empty--warning"><span>No historical text loaded for this commit.</span></div>';
+      const amendmentDetailLink = commit.amendmentNumber
+        ? `<div class="meta-stack" style="margin-bottom: var(--space-2)"><a class="btn-ghost" href="${routeWithId("/amendment", commit.amendmentNumber)}">View Amendment Detail →</a></div>`
+        : "";
 
       return `
         <article class="commit-card commit-card--${party} ${open ? "is-expanded" : ""}" data-party="${party}" data-commit-card="${commit.hash}">
@@ -329,6 +309,7 @@ function renderCommitListOnce() {
             </span>
           </button>
           <div class="commit-card__panel">
+            ${amendmentDetailLink}
             ${callout}
             <div class="article-row__markdown">${historyHtml}</div>
           </div>
@@ -376,7 +357,6 @@ function attachEvents() {
     }));
 
     syncCommitCardState();
-    syncSummaryPanelState();
     updateUrl({ active: hash });
 
     logInfo("article.commit.expand", {
@@ -492,6 +472,7 @@ async function initPage() {
     expanded: new Set([initialCommit.hash])
   }));
 
+  await loadArticleSummary();
   await prefetchHistoricalMarkup();
 
   renderSummaryPanelOnce();

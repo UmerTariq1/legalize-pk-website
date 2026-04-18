@@ -45,7 +45,7 @@ function renderCallout() {
     return;
   }
 
-  const featuredIndex = new Date().getUTCDate() % options.length;
+  const featuredIndex = Math.floor(Math.random() * options.length);
   const featuredNumber = options[featuredIndex];
   const featured = LANDMARK_CALLOUTS[featuredNumber];
   if (!featured) {
