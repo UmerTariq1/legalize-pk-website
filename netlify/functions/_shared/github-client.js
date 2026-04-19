@@ -1,6 +1,6 @@
 const DEFAULT_CACHE_TTL_MS = {
-  getFileAtCommit: 10 * 60 * 1000,
-  getFileDiff: 30 * 60 * 1000
+  getFileAtCommit: 864000000,
+  getFileDiff: 864000000
 };
 
 const inMemoryCache = new Map();
@@ -20,7 +20,7 @@ function isValidHash(value) {
 
 function getCacheHeaders() {
   return {
-    "Cache-Control": "public, max-age=300, s-maxage=3600, stale-while-revalidate=86400"
+    "Cache-Control": "public, max-age=864000, s-maxage=864000, immutable"
   };
 }
 

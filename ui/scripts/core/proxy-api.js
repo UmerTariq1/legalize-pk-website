@@ -1,15 +1,7 @@
 import { GITHUB_PROXY_ENDPOINT } from "./constants.js";
 import { endTimer, logError, logInfo, startTimer } from "./logger.js";
 
-const pageSession = `${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 10)}`;
-const pageRoute = (window.location.pathname.replace(/^\/+/, "") || "home").toLowerCase();
-
-let proxyCallCount = 0;
-let pageLoadReported = false;
-
 async function requestProxy(params) {
-  proxyCallCount += 1;
-
   const requestMeta = {
     action: params.action,
     path: params.path,
@@ -25,9 +17,6 @@ async function requestProxy(params) {
       url.searchParams.set(key, value);
     }
   });
-
-  url.searchParams.set("pageSession", pageSession);
-  url.searchParams.set("pageRoute", pageRoute);
 
   const response = await fetch(url.toString(), {
     method: "GET",
@@ -79,33 +68,4 @@ export async function fetchDiff({ path, from, to, viewMode = "unified" }) {
     viewMode
   });
   return payload;
-}
-
-export function getProxyPageCallCount() {
-  return proxyCallCount;
-}
-
-export async function reportProxyPageLoad({ pageName = "" } = {}) {
-  if (pageLoadReported) {
-    return;
-  }
-
-  pageLoadReported = true;
-
-  const url = new URL(GITHUB_PROXY_ENDPOINT, window.location.origin);
-  url.searchParams.set("action", "reportPageLoad");
-  url.searchParams.set("pageSession", pageSession);
-  url.searchParams.set("pageRoute", String(pageName || pageRoute || "unknown"));
-  url.searchParams.set("count", String(proxyCallCount));
-
-  try {
-    await fetch(url.toString(), {
-      method: "GET",
-      headers: {
-        Accept: "application/json"
-      }
-    });
-  } catch {
-    // Intentionally ignore reporting failures. This should not block the UI.
-  }
 }

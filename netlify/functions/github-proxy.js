@@ -1,6 +1,5 @@
 const {
   REPO,
-  computeLineDiff,
   decodeBase64Content,
   getCacheHeaders,
   githubRequest,
@@ -40,28 +39,6 @@ function jsonResponse(statusCode, payload, extraHeaders = {}) {
     },
     body: JSON.stringify(payload)
   };
-}
-
-function handlePageLoadReport(params, trace) {
-  const pageSession = String(params.pageSession || "").trim();
-  const pageRoute = String(params.pageRoute || "unknown");
-  const reportedCount = Number(params.count || 0);
-
-  logServer("info", "proxy.page-load.complete", {
-    requestId: trace.requestId,
-    pageSession,
-    pageRoute,
-    reportedCount
-  });
-
-  return jsonResponse(200, {
-    ok: true,
-    data: {
-      accepted: true,
-      pageSession,
-      pageRoute
-    }
-  });
 }
 
 function validationError(message, code = "VALIDATION_ERROR") {
@@ -189,20 +166,12 @@ async function handleGetFileDiff(path, from, to, trace) {
   let isFallbackComputed = false;
 
   if (!patch) {
-    const [fromVersion, toVersion] = await Promise.all([fetchContentAtRef(path, from), fetchContentAtRef(path, to)]);
-    const fallback = computeLineDiff(fromVersion.content, toVersion.content);
-
-    patch = fallback.patch;
-    additions = fallback.additions;
-    deletions = fallback.deletions;
-    changes = fallback.changes;
-    isFallbackComputed = true;
-
-    logServer("warn", "proxy.getFileDiff.fallback", {
+    logServer("warn", "proxy.getFileDiff.missing-patch", {
       requestId: trace.requestId,
       path,
       from,
-      to
+      to,
+      changedFilePresent: Boolean(changedFile)
     });
   }
 
@@ -270,10 +239,6 @@ exports.handler = async (event) => {
   if (!action) {
     logServer("warn", "proxy.request.missing-action", { requestId, path });
     return validationError("Missing required parameter: action", "MISSING_ACTION");
-  }
-
-  if (action === "reportPageLoad") {
-    return handlePageLoadReport(params, { requestId });
   }
 
   try {

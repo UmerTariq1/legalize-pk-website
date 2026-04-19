@@ -16,7 +16,7 @@ At runtime, the browser serves static HTML/CSS/JS from this repository and calls
 Core idea:
 
 1. Most UI views are powered entirely from local static JSON for speed and reliability.
-2. Historical article snapshots and commit-to-commit diffs are fetched on demand through a Netlify proxy to GitHub.
+2. Article history prefetches commit snapshots at page load, while diff comparisons are fetched through a Netlify proxy to GitHub.
 
 ---
 
@@ -155,7 +155,7 @@ Flow:
 - Resolves article from route.
 - Loads commit list for that article from static index.
 - Loads the article-level AI summary from static summary data.
-- On expand/select of a commit card, fetches markdown snapshot through proxy.
+- Prefetches markdown snapshots for all commits in the selected article history through proxy.
 - Uses local content cache and shows proxy status badges.
 
 ### Diff (`ui/scripts/pages/diff.js`)
@@ -175,7 +175,6 @@ Flow:
 
 - `action=getFileAtCommit`
 - `action=getFileDiff`
-- `action=reportPageLoad` (analytics/logging helper)
 
 ### Validation and safety
 
@@ -192,18 +191,18 @@ Implemented in `_shared/github-client.js`:
 - Calls:
   - `/repos/{owner}/{repo}/contents/{path}?ref={sha}`
   - `/repos/{owner}/{repo}/compare/{from}...{to}`
-- If compare patch is absent, computes fallback line diff in function code.
+- If compare patch is unexpectedly absent, logs a warning and returns compare-derived data without extra upstream file fetches.
 
 ### Caching
 
 In-memory per function instance:
 
-- `getFileAtCommit`: 10 minutes
-- `getFileDiff`: 30 minutes
+- `getFileAtCommit`: 10 days
+- `getFileDiff`: 10 days
 
 Also returns cache headers:
 
-- `Cache-Control: public, max-age=300, s-maxage=3600, stale-while-revalidate=86400`
+- `Cache-Control: public, max-age=864000, s-maxage=864000, immutable`
 
 ### Repository targeting
 
@@ -234,7 +233,7 @@ Set env vars explicitly when deploying a fork or alternate source repo.
 - request receive/validate paths
 - cache hit/miss
 - GitHub request outcomes
-- fallback diff usage
+- unexpected compare patch-missing warnings
 - error code/status details
 
 ---
@@ -366,13 +365,13 @@ Important dynamic rewrites include:
 
 ### 8.6 Validate proxy after deploy
 
-Run a simple proxy ping in browser (replace host):
+Run a simple supported proxy request in browser (replace host):
 
 ```text
-https://<your-site>.netlify.app/.netlify/functions/github-proxy?action=reportPageLoad&pageSession=test&pageRoute=health&count=0
+https://<your-site>.netlify.app/.netlify/functions/github-proxy?action=getFileAtCommit&path=federal-constitution/article-063.md&ref=1eab093823230a641e5d6ae8e19197aadffa3269
 ```
 
-Expected: JSON response with `ok: true`.
+Expected: JSON response with `ok: true` and `data.contentMarkdown`.
 
 Then verify dynamic pages:
 
